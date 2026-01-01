@@ -1,0 +1,137 @@
+{
+  "_resourceType": "scene",
+  "id": "3278b3f1-2224-405f-bbc4-5a40499b9697",
+  "_index": 0,
+  "name": "Map/Outside South Vale",
+  "backgroundId": "e01d8bb8-b683-47c1-9d57-1c18dbf7c21a",
+  "tilesetId": "",
+  "width": 25,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_3",
+  "x": 60,
+  "y": 197.07640402115402,
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "55499af7-f2b1-4482-8d70-d506be25d93b"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3834ea83-e6b5-450c-b678-b2efcd27811f"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "96c36ee8-3e43-4008-b994-69e303033f42"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "c3a95493-1d98-45a8-b49a-8f415a821c29"
+          }
+        ]
+      },
+      "id": "62efef69-1428-4960-bf11-1c2d1d5ec5e1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Map."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__comment": true
+      },
+      "id": "2c59a306-a069-4cce-82c9-94d4480776e0"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "7e91103c-a268-43c6-9ef8-86848e3cc0af",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "6b8e6a2c-45f2-4a70-be84-be98fdb339e3"
+          }
+        ]
+      },
+      "id": "240ebc8b-16c9-42c2-a124-c03ffd73dad1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "914a40db-06ae-4e3d-9115-adcd26187675"
+}

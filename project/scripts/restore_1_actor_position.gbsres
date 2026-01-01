@@ -1,0 +1,78 @@
+{
+  "_resourceType": "script",
+  "id": "d40490ad-124b-43de-b253-c50aa7d40a36",
+  "name": "Restore 1 actor position",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Variable B",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_16",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "variable",
+                "value": "V0"
+              },
+              "y": {
+                "type": "variable",
+                "value": "V1"
+              }
+            },
+            "id": "82392baf-8420-4b64-b25d-32d6ccde2c4c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "76148703-732b-4352-a036-3eb36b5ede80"
+          }
+        ],
+        "false": []
+      },
+      "id": "740189e1-11b1-4a35-866b-f8bba83f817f"
+    }
+  ]
+}

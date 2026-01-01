@@ -1,0 +1,124 @@
+{
+  "_resourceType": "scene",
+  "id": "ce71f77d-867f-4045-a4c6-85b017559082",
+  "_index": 13,
+  "name": "East South Vale/Car",
+  "backgroundId": "3f46c979-bafd-4e3f-979e-bc0bfeb11e00",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_15",
+  "x": 264,
+  "y": 624,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "cf31bbf0-da30-4f82-9964-15200d68a100"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "545b4b12-658b-4cca-884c-bcded3976ef5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "43"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "73f16823-8112-44dc-be89-c4904c826253",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "40dbcc47-4b52-470f-bc08-bdadb9f0cf02"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "43"
+            },
+            "id": "23557c5d-4392-4fd4-9659-c09e19cc4857"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I got a !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Silent Hill map!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__comment": false
+            },
+            "id": "e8860329-5d37-4ec5-9aff-f135cce879a1"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
+              "x": {
+                "type": "number",
+                "value": 20
+              },
+              "y": {
+                "type": "number",
+                "value": 32
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "5ab9cf6c-33ed-498f-920b-497ae8f46645"
+          }
+        ],
+        "false": []
+      },
+      "id": "7b5e066b-32e9-4cd1-95d7-083ff38329b4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

@@ -1,0 +1,48 @@
+{
+  "_resourceType": "actor",
+  "id": "e2558472-4528-489a-954f-2577eee54756",
+  "name": "Enemy 1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
+  "prefabId": "89a4f81f-d20c-42f8-aba7-f8f93d086669",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "74906ee1-3916-4496-9b64-f59eda5877cf": {
+      "id": "74906ee1-3916-4496-9b64-f59eda5877cf",
+      "args": {
+        "flag1": false,
+        "flag14": true
+      }
+    },
+    "4164840b-75d5-4e92-a81d-7ac8f85276af": {
+      "id": "4164840b-75d5-4e92-a81d-7ac8f85276af",
+      "args": {
+        "flag": 13
+      }
+    },
+    "3a999399-4eec-40e1-95fd-83eb691ad9c9": {
+      "id": "3a999399-4eec-40e1-95fd-83eb691ad9c9",
+      "args": {
+        "flag1": false,
+        "flag14": true
+      }
+    }
+  },
+  "symbol": "actor_61",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 17,
+  "_index": 1
+}

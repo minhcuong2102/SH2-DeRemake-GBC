@@ -1,0 +1,113 @@
+{
+  "_resourceType": "trigger",
+  "id": "c84ca391-e7e8-44ee-8859-4e78e11822d3",
+  "name": "",
+  "prefabId": "",
+  "x": 9,
+  "y": 13,
+  "symbol": "trigger_88",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "20",
+              "flag": 11,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {
+                    "__comment": false
+                  },
+                  "id": "133c65ba-2977-480c-9d8a-b0dd1cf681a8"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "907c8686-c881-415a-9e07-4e78add44309",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "a65dfdf6-913a-4074-807b-880c303fcc5e"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "It's blocked."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "38966678-d1cd-4579-9c2d-4e99fdfba0cd"
+                }
+              ]
+            },
+            "id": "3bc818dc-a752-433e-a657-a87a7a8e1270"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+              "__comment": true
+            },
+            "id": "3f449d8b-42ce-41fc-bd93-64093af3424f"
+          }
+        ]
+      },
+      "id": "58a7f66e-c904-495a-8f10-6a77e091794b"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "37e244ef-dc4e-4a71-9293-02e83d579de2"
+    }
+  ],
+  "_index": 0
+}

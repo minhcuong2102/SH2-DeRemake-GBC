@@ -1,0 +1,66 @@
+{
+  "_resourceType": "trigger",
+  "id": "54fa91a9-c0f4-493b-8ae6-e82208477569",
+  "name": "",
+  "prefabId": "",
+  "x": 11,
+  "y": 16,
+  "symbol": "trigger_9",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A bench.\nI don't feel like to rest yet."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "e97ada63-daaa-4233-b66f-34014820bd70"
+          }
+        ]
+      },
+      "id": "19d43f5e-03a0-438a-a30d-e94331ed1657"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "d384252a-1c6a-436e-9480-4bc84bc33ad1"
+    }
+  ],
+  "_index": 6
+}

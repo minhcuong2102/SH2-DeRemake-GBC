@@ -1,0 +1,48 @@
+{
+  "_resourceType": "scene",
+  "id": "84f6b57f-f749-4969-8abe-687113b617f6",
+  "_index": 5,
+  "name": "Footstep",
+  "backgroundId": "843b99a6-e8d6-4e50-8d06-b3887fa54ebe",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "LOGO",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_0",
+  "x": 400,
+  "y": 32,
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "80b51134-b364-4be2-a7bc-b4dd04ac41e2"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2fd20742-1a46-4c1d-92d4-9d3c59a5aec1",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "9f4f5ef2-4847-4385-8d91-5c4e4f397064"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

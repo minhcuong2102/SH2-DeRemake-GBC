@@ -1,0 +1,59 @@
+{
+  "_resourceType": "trigger",
+  "id": "d12200f1-959b-47d6-98bd-6d7b8e6c3871",
+  "name": "",
+  "prefabId": "",
+  "x": 0,
+  "y": 8,
+  "symbol": "trigger_12",
+  "prefabScriptOverrides": {},
+  "width": 28,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I can't go any farther by\ncar.",
+          "Guess I'll have to walk..."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "641ebfd2-7925-4615-acaa-12b9cee85cd5"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "aeb467fd-2611-45d1-a3f2-a01b9e81d21f"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

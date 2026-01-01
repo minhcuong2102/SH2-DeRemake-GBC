@@ -1,0 +1,140 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "2b89d339-bb1e-4635-81e9-a28f817bae0f",
+  "name": "Car Glass 1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0f359d33-e016-4860-8a77-d27765717298",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "3",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "86",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "4fa04b8f-1a87-4802-9cc9-04b54318fd0c"
+          }
+        ],
+        "false": []
+      },
+      "id": "d368bca3-0a29-474a-bba0-d9fb32b00f9d"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "7559014d-db3f-4976-a336-71405df4395d"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "dbe760bd-5f07-4211-839b-7e3c3705a3a2",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "34b58322-89de-44d9-9808-1100b3f0c7e5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "Died",
+        "loopAnim": false
+      },
+      "id": "53404c17-2c04-43c1-a680-6ef58c811132"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "86",
+        "flag1": true,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "3dde472e-b1bf-42c8-a931-0e948eb25ad8"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "84",
+        "flag1": false,
+        "flag2": false,
+        "flag3": true,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false,
+        "__collapse": false
+      },
+      "id": "ec9b0caf-99de-4a43-80be-ae0698c273d3"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "1dceb4b7-9f59-4f2f-97c0-959167fd4496"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "84e70ea5-ee4b-4f21-870f-16e396a4090e"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "bffaf7f3-ff22-46ac-a9d3-cb73ebf68237"
+    }
+  ]
+}

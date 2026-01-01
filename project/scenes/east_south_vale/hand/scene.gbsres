@@ -1,0 +1,102 @@
+{
+  "_resourceType": "scene",
+  "id": "2fd20742-1a46-4c1d-92d4-9d3c59a5aec1",
+  "_index": 6,
+  "name": "East South Vale/Hand",
+  "backgroundId": "1d8d0646-0906-4700-8df3-fa63baed4ed0",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "LOGO",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 576,
+  "y": 32,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "34"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 200
+              }
+            },
+            "id": "6de29ca7-6c21-424d-9621-3c2507e922fc"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 100
+              }
+            },
+            "id": "a8d36683-c833-4d5a-a4a8-2d4e8714c18f"
+          }
+        ]
+      },
+      "id": "bc984bfd-f770-463a-9ac4-e637a373fb5b"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7551e9b0-d548-4073-923d-19cdcdc2ee4b"
+      },
+      "id": "5a1173b5-cf00-4eef-9d58-80f394ef0981"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "b812a5aa-bca0-4c7a-a59d-6079b7ec2a36"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "e165149b-9f83-4c21-b8ad-be1aa1611a01",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "cd300c77-b162-4629-b996-773f615ae9c0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

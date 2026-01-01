@@ -1,0 +1,149 @@
+{
+  "_resourceType": "actor",
+  "id": "ca5a7a2c-51df-40bc-b2ba-3e62f5df7f72",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6a037c5f-29af-4a7e-b4a8-93eaed85ac61",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_50",
+  "script": [
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "20",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": true,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "7e3a616e-5aed-4b01-95a7-279e432c19b6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There's a memo here."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "ce2c0e83-168d-4985-9fc1-939d0a48e973"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ms. Cassandra,\na customer came in today\nOrdered a mixed bouquet, red\nand white.",
+          "I tried to explain it's bad luck,\nbut he couldn't decide on just\none.",
+          "He seemed a bit off, looked at\nme like I wasn't even there. Then\nhe just left, said he'd be back\nto pick'em up later.",
+          "I just wanted to let you know,\nsince I might be gone by then."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "062aad8e-dd09-4de9-9bcd-f4bcfd05ed99"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "73f16823-8112-44dc-be89-c4904c826253",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "e4214847-affc-4717-82bc-683c31b47003"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I got the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Flower Shop\nMessage!F:788a7c71-321c-48e0-b75d-21f6faf83e8d! memo."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "c7dbcd61-2034-47d9-a28e-577c03514c1f"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "b772abdf-aa40-4e35-844e-c48b70c644c2"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 8,
+  "y": 5,
+  "_index": 0
+}

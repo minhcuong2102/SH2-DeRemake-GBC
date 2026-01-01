@@ -1,0 +1,34 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "a5cdaff3-a811-4e74-bf1e-2431b4b16b1f",
+  "name": "White Tape",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8528fd19-c5cf-484b-913b-b0f3351d0181",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "3",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "fb39ac19-6f99-4b55-a3be-31d51de915dc"
+    },
+    {
+      "command": "EVENT_ACTOR_STOP_UPDATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "bbfe2a6d-3d80-49e4-ada1-1bdf41b2d8f7"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,117 @@
+{
+  "_resourceType": "scene",
+  "id": "a115974f-15a2-4774-8177-98dd8aeaee1a",
+  "_index": 36,
+  "name": "East South Vale/Next To Flower Shop",
+  "backgroundId": "2ccba70f-aa34-4eb2-b758-b624200a79f4",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f3d+003+0f!005+0f3+007+0f!009+0f3+002+0f4+00!0f!004+0f3+007+0f4+00!0f!004+0f3+007+0f4+00!0f2+003+0f3+007+0f4+00!0f2+003+0f3+007+0f4+00!0f2+003+0f3+007+0f4+00!0f!0013+0f!0011+0f3+0011+0f4+0010+0f3+003+0f!00d+0f10+003+0f11+003+0f11+003+0f3+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_37",
+  "x": 992.148959481643,
+  "y": 1015.8529328578334,
+  "script": [
+    {
+      "command": "EVENT_AUTO_FLIP_TILES",
+      "args": {
+        "__comment": true
+      },
+      "id": "93b60d51-4994-4147-8946-8b36147bf3b8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 11
+        }
+      },
+      "id": "8de73cf6-86e8-4af6-8b63-05d5ac047d08"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "04b2667e-476a-4ba8-95c9-e208ce7b6d73"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "00a0b993-32f8-4ca3-9950-a8298fecf580"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "b42902ac-28d9-463f-9095-c4f3679204ec"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "b2a2ede9-c949-4cbe-90f6-0a0137979e72"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "f20e6c77-c19d-4778-86ab-0df512ab0595"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "7141a50d-67e2-4e3c-a78e-6822c9661796"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "44af2087-e20c-4670-89b6-aaa68fe65435"
+          }
+        ]
+      },
+      "id": "78cb9d36-7cbc-4d98-aab4-3af46412a746"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

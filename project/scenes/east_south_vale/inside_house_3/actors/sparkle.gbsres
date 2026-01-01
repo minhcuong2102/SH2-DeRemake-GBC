@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "528cd0c3-09a1-4bfe-ac61-ebac6d0f1d81",
+  "name": "Sparkle",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
+  "prefabId": "74699f5a-5297-4c5a-a02b-2a97b8a4bcc1",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "324fc98f-244a-4cb9-ae97-f401c313e0c5": {
+      "id": "324fc98f-244a-4cb9-ae97-f401c313e0c5",
+      "args": {
+        "actorId": "$self$"
+      }
+    },
+    "43459daa-8826-4356-b016-229f72703a25": {
+      "id": "43459daa-8826-4356-b016-229f72703a25",
+      "args": {
+        "actorId": "a5b1a1f9-7170-4fb7-9eec-01d3ded4d4f5"
+      }
+    }
+  },
+  "symbol": "actor_68",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 5,
+  "y": 8,
+  "_index": 1
+}

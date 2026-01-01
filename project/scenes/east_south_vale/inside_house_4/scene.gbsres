@@ -1,0 +1,126 @@
+{
+  "_resourceType": "scene",
+  "id": "14bff2d0-4058-461e-bac6-67197650b4cd",
+  "_index": 53,
+  "name": "East South Vale/Inside House 4",
+  "backgroundId": "863fe18e-03fc-4d5a-a41c-b82651018c38",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "b57f8e36-9f68-4d93-99cc-19583accdcd7"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f58+002+0f!00!0f10+004+0f10+004+0f10+004+0f10+004+0f10+004+0f10+004+0f10+004+0f10+004+0f10+004+0f58+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_54",
+  "x": 1912,
+  "y": 864,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 18
+        }
+      },
+      "id": "a7ab768f-a380-4196-a95c-3e060740517c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "5abf030f-004d-4114-bc6c-a1c3024312f7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "b23c0d47-0ee2-4e92-a193-8eaa05e90f87"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "18ae7ffb-87dc-470c-a30d-6a8bddccbc09"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "ef53db7a-a24f-4edc-ad4c-7880d43f168b"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "4ac187e8-df3f-49d0-9947-39e30f03ace2"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true,
+              "__comment": false
+            },
+            "id": "a8ad6388-92f9-45e3-82c0-b1bc775f49f7"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "c43e4b3c-59b1-4a86-bfa1-19faabb5e1ee"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "5a655a1e-a7a9-4f91-8318-d2707e05d877"
+          }
+        ]
+      },
+      "id": "26922b1e-c225-4821-a27d-06aefd6b76d2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7bad6f1c-c551-40af-998a-2a91278a54ae"
+}

@@ -1,0 +1,105 @@
+{
+  "_resourceType": "actor",
+  "id": "2b4ce109-d269-4fef-841b-d686b1f651e5",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7f1f407c-c17c-4f1c-9298-556d7e16492e",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_20",
+  "script": [
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "49",
+        "flag1": true,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false,
+        "__collapse": false
+      },
+      "id": "56fd5987-e2a5-4db7-ac18-7d7ee0f08c29"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "73f16823-8112-44dc-be89-c4904c826253",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "a0c3f1fa-70f9-4245-a71d-3db36daf050a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I got a Crimson Ceremony\nBook."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "34dd6141-1df7-4533-b943-74d0b3e6acd6"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "47fb635a-431e-427f-b2de-22804cb61f95"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "f49e83c1-3699-4c80-9ce4-74239debb9bd"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 28,
+  "y": 2,
+  "_index": 0
+}

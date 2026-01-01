@@ -1,0 +1,87 @@
+{
+  "_resourceType": "script",
+  "id": "d09cf334-7899-4073-adf7-2a3155ecb089",
+  "name": "Timer",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_3",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "18"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 32767
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "18"
+            },
+            "id": "8d74cb76-3b15-4b4c-bbd5-1091cd6afb67"
+          }
+        ],
+        "false": []
+      },
+      "id": "00bddcfe-6fc2-4fd4-a764-25ef79b8d2a7"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 4,
+        "duration": 1,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "__collapse": false
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "18"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 32767
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "18"
+                  },
+                  "id": "5ee95c6a-bfc4-4ebc-999d-3e167b395b5a"
+                }
+              ],
+              "false": []
+            },
+            "id": "fad56f3e-41fc-405d-a64e-4c30a4b0c787"
+          }
+        ]
+      },
+      "id": "0e5e0b24-3577-4a0f-bdde-09da9f1ed6b5"
+    }
+  ]
+}

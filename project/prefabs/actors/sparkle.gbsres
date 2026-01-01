@@ -1,0 +1,92 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "74699f5a-5297-4c5a-a02b-2a97b8a4bcc1",
+  "name": "Sparkle",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f2442ecd-2dc4-4a09-a259-72b49d525a07",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "630d2c83-e72a-471c-8e79-188154151e08",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "4d84d641-14df-4e9f-b718-ff7c0e87de3e"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "84",
+        "flag1": true,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "1b05ed19-83a3-4a16-b7a0-79dab0a5d1f6"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "43459daa-8826-4356-b016-229f72703a25"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "324fc98f-244a-4cb9-ae97-f401c313e0c5"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "84",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "92634d33-aefe-4ee9-a298-c60847d479f0"
+          }
+        ],
+        "false": []
+      },
+      "id": "45e422aa-ec87-49b2-8b60-6f51f3bd07f7"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

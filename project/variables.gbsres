@@ -1,0 +1,440 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "L0",
+      "symbol": "var_l0"
+    },
+    {
+      "id": "1",
+      "name": "L1",
+      "symbol": "var_l1"
+    },
+    {
+      "id": "2",
+      "name": "L2",
+      "symbol": "var_l2"
+    },
+    {
+      "id": "3",
+      "name": "L3",
+      "symbol": "var_l3"
+    },
+    {
+      "id": "4",
+      "name": "L4",
+      "symbol": "var_l4"
+    },
+    {
+      "id": "5",
+      "name": "L5",
+      "symbol": "var_l5"
+    },
+    {
+      "id": "6",
+      "name": "HP",
+      "symbol": "var_hp"
+    },
+    {
+      "id": "7",
+      "name": "PlayerX",
+      "symbol": "var_playerx"
+    },
+    {
+      "id": "8",
+      "name": "PlayerY",
+      "symbol": "var_playery"
+    },
+    {
+      "id": "9",
+      "name": "Enemy1X",
+      "symbol": "var_enemy1x"
+    },
+    {
+      "id": "10",
+      "name": "Enemy1Y",
+      "symbol": "var_enemy1y"
+    },
+    {
+      "id": "11",
+      "name": "Enemy2X",
+      "symbol": "var_enemy2x"
+    },
+    {
+      "id": "12",
+      "name": "Enemy2Y",
+      "symbol": "var_enemy2y"
+    },
+    {
+      "id": "13",
+      "name": "Enemy1HP",
+      "symbol": "var_enemy1hp"
+    },
+    {
+      "id": "14",
+      "name": "Enemy2HP",
+      "symbol": "var_enemy2hp"
+    },
+    {
+      "id": "15",
+      "name": "CurrentX",
+      "symbol": "var_currentx"
+    },
+    {
+      "id": "16",
+      "name": "CurrentY",
+      "symbol": "var_currenty"
+    },
+    {
+      "id": "17",
+      "name": "step_count",
+      "symbol": "var_step_count"
+    },
+    {
+      "id": "18",
+      "name": "real_game_time",
+      "symbol": "var_real_game_time"
+    },
+    {
+      "id": "19",
+      "name": "terrain",
+      "symbol": "var_terrain"
+    },
+    {
+      "id": "20",
+      "name": "outside_south_vale",
+      "symbol": "var_outside_south_vale"
+    },
+    {
+      "id": "21",
+      "name": "menu_check",
+      "symbol": "var_menu_check"
+    },
+    {
+      "id": "22",
+      "name": "index_gl",
+      "symbol": "var_index_gl"
+    },
+    {
+      "id": "23",
+      "name": "new_game",
+      "symbol": "var_new_game"
+    },
+    {
+      "id": "24",
+      "name": "save_point",
+      "symbol": "var_save_point"
+    },
+    {
+      "id": "25",
+      "name": "save_temp",
+      "symbol": "var_save_temp"
+    },
+    {
+      "id": "26",
+      "name": "save_time",
+      "symbol": "var_save_time"
+    },
+    {
+      "id": "27",
+      "name": "data_temp",
+      "symbol": "var_data_temp"
+    },
+    {
+      "id": "28",
+      "name": "save_data",
+      "symbol": "var_save_data"
+    },
+    {
+      "id": "29",
+      "name": "play_time",
+      "symbol": "var_play_time"
+    },
+    {
+      "id": "30",
+      "name": "time_temp",
+      "symbol": "var_time_temp"
+    },
+    {
+      "id": "31",
+      "name": "hour_temp",
+      "symbol": "var_hour_temp"
+    },
+    {
+      "id": "32",
+      "name": "minute_temp",
+      "symbol": "var_minute_temp"
+    },
+    {
+      "id": "33",
+      "name": "second_temp",
+      "symbol": "var_second_temp"
+    },
+    {
+      "id": "34",
+      "name": "action_diff",
+      "symbol": "var_action_diff"
+    },
+    {
+      "id": "35",
+      "name": "riddle_diff",
+      "symbol": "var_riddle_diff"
+    },
+    {
+      "id": "36",
+      "name": "save_slot",
+      "symbol": "var_save_slot"
+    },
+    {
+      "id": "37",
+      "name": "point_temp",
+      "symbol": "var_point_temp"
+    },
+    {
+      "id": "38",
+      "name": "do_save",
+      "symbol": "var_do_save"
+    },
+    {
+      "id": "39",
+      "name": "previous_score",
+      "symbol": "var_previous_score"
+    },
+    {
+      "id": "40",
+      "name": "score",
+      "symbol": "var_score"
+    },
+    {
+      "id": "41",
+      "name": "position",
+      "symbol": "var_position"
+    },
+    {
+      "id": "42",
+      "name": "map_count",
+      "symbol": "var_map_count"
+    },
+    {
+      "id": "43",
+      "name": "outside_sh_map",
+      "symbol": "var_outside_sh_map"
+    },
+    {
+      "id": "44",
+      "name": "dash",
+      "symbol": "var_dash"
+    },
+    {
+      "id": "45",
+      "name": "direction",
+      "symbol": "var_direction"
+    },
+    {
+      "id": "46",
+      "name": "dash_thread",
+      "symbol": "var_dash_thread"
+    },
+    {
+      "id": "47",
+      "name": "weapon",
+      "symbol": "var_weapon"
+    },
+    {
+      "id": "48",
+      "name": "fog",
+      "symbol": "var_fog"
+    },
+    {
+      "id": "49",
+      "name": "special_item",
+      "symbol": "var_special_item"
+    },
+    {
+      "id": "50",
+      "name": "auto_part_key",
+      "symbol": "var_auto_part_key"
+    },
+    {
+      "id": "51",
+      "name": "glimpse",
+      "symbol": "var_glimpse"
+    },
+    {
+      "id": "52",
+      "name": "east_sv_map",
+      "symbol": "var_east_sv_map"
+    },
+    {
+      "id": "53",
+      "name": "syringe",
+      "symbol": "var_syringe"
+    },
+    {
+      "id": "54",
+      "name": "item_count",
+      "symbol": "var_item_count"
+    },
+    {
+      "id": "55",
+      "name": "health_drink",
+      "symbol": "var_health_drink"
+    },
+    {
+      "id": "56",
+      "name": "inventory_tab",
+      "symbol": "var_inventory_tab"
+    },
+    {
+      "id": "57",
+      "name": "choose_tab",
+      "symbol": "var_choose_tab"
+    },
+    {
+      "id": "58",
+      "name": "knife",
+      "symbol": "var_knife"
+    },
+    {
+      "id": "59",
+      "name": "page_item",
+      "symbol": "var_page_item"
+    },
+    {
+      "id": "60",
+      "name": "atk",
+      "symbol": "var_atk"
+    },
+    {
+      "id": "61",
+      "name": "hg_bullet",
+      "symbol": "var_hg_bullet"
+    },
+    {
+      "id": "62",
+      "name": "hg_bullet_unload",
+      "symbol": "var_hg_bullet_unload"
+    },
+    {
+      "id": "63",
+      "name": "sg_shell",
+      "symbol": "var_sg_shell"
+    },
+    {
+      "id": "64",
+      "name": "sg_shell_unload",
+      "symbol": "var_sg_shell_unload"
+    },
+    {
+      "id": "65",
+      "name": "rifle_round",
+      "symbol": "var_rifle_round"
+    },
+    {
+      "id": "66",
+      "name": "rifle_round_unload",
+      "symbol": "var_rifle_round_unload"
+    },
+    {
+      "id": "67",
+      "name": "wooden_plank",
+      "symbol": "var_wooden_plank"
+    },
+    {
+      "id": "68",
+      "name": "ammo_needed",
+      "symbol": "var_ammo_needed"
+    },
+    {
+      "id": "69",
+      "name": "ammo_to_load",
+      "symbol": "var_ammo_to_load"
+    },
+    {
+      "id": "70",
+      "name": "flashlight_on",
+      "symbol": "var_flashlight_on"
+    },
+    {
+      "id": "71",
+      "name": "radio_on",
+      "symbol": "var_radio_on"
+    },
+    {
+      "id": "72",
+      "name": "steel_pipe",
+      "symbol": "var_steel_pipe"
+    },
+    {
+      "id": "73",
+      "name": "handgun",
+      "symbol": "var_handgun"
+    },
+    {
+      "id": "74",
+      "name": "shotgun",
+      "symbol": "var_shotgun"
+    },
+    {
+      "id": "75",
+      "name": "rifle",
+      "symbol": "var_rifle"
+    },
+    {
+      "id": "76",
+      "name": "chainsaw",
+      "symbol": "var_chainsaw"
+    },
+    {
+      "id": "77",
+      "name": "flashlight",
+      "symbol": "var_flashlight"
+    },
+    {
+      "id": "78",
+      "name": "radio",
+      "symbol": "var_radio"
+    },
+    {
+      "id": "79",
+      "name": "kill_by_melee",
+      "symbol": "var_kill_by_melee"
+    },
+    {
+      "id": "80",
+      "name": "kill_by_gun",
+      "symbol": "var_kill_by_gun"
+    },
+    {
+      "id": "81",
+      "name": "enemy_killed",
+      "symbol": "var_enemy_killed"
+    },
+    {
+      "id": "82",
+      "name": "death_count",
+      "symbol": "var_death_count"
+    },
+    {
+      "id": "83",
+      "name": "cooldown",
+      "symbol": "var_cooldown"
+    },
+    {
+      "id": "84",
+      "name": "reveal",
+      "symbol": "var_reveal"
+    },
+    {
+      "id": "85",
+      "name": "east_south_vale",
+      "symbol": "var_east_south_vale"
+    },
+    {
+      "id": "86",
+      "name": "break_glass",
+      "symbol": "var_break_glass"
+    }
+  ]
+}

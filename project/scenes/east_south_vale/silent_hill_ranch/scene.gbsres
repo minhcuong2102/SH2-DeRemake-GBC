@@ -1,0 +1,80 @@
+{
+  "_resourceType": "scene",
+  "id": "6084c391-fcdb-4ae6-936b-a9c6ac214e92",
+  "_index": 22,
+  "name": "East South Vale/Silent Hill Ranch",
+  "backgroundId": "a16ff5f3-f756-48cc-a7f1-049ff882b8fb",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_24",
+  "x": 472,
+  "y": 1008,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "d9a31fc3-e3e8-4220-9c87-50c5a81f4f33"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "3bcf2d5b-9b7d-4ac1-961e-d372ed9669da"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Silent Hill Ranch\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "2506a54d-07e1-4e4e-bb6a-f0f6a440bec3"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "073b24d3-ec5c-41ad-ac09-73424fadff60",
+        "x": {
+          "type": "number",
+          "value": 35
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "8aee038d-5a94-4a46-8dd8-d17deba2f876"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

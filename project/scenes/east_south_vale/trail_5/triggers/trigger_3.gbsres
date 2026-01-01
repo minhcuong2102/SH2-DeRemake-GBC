@@ -1,0 +1,120 @@
+{
+  "_resourceType": "trigger",
+  "id": "f86b0678-3d9f-493b-80df-d02c0c90b67e",
+  "name": "",
+  "prefabId": "",
+  "x": 5,
+  "y": 9,
+  "symbol": "trigger_41",
+  "prefabScriptOverrides": {},
+  "width": 13,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "2f733990-4c94-4f15-9720-6a0a9d6136c2"
+            },
+            "id": "fed9d60a-7bd8-4150-8f6f-a3e19a205234"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "a"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "51",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "f2b0d3da-bac1-41d6-abaf-5a37a132b442"
+                },
+                {
+                  "command": "EVENT_SCRIPT_LOCK",
+                  "args": {},
+                  "id": "fc6fb172-223b-4206-ae69-111210f41a6e"
+                },
+                {
+                  "command": "GUD_EVENT_ENABLE_ISRFX",
+                  "args": {},
+                  "id": "8798b08b-e503-423e-a1ea-0498ce607220"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 2,
+                    "frames": 30
+                  },
+                  "id": "910985da-eb00-4a7f-8ccd-546af842d729"
+                },
+                {
+                  "command": "GUD_EVENT_DISABLE_ISRFX",
+                  "args": {},
+                  "id": "8aa65d71-ddb9-4880-854d-753e539d4875"
+                },
+                {
+                  "command": "EVENT_SCRIPT_UNLOCK",
+                  "args": {},
+                  "id": "ef8472fc-e56d-4dcc-8201-45e8effc3ef2"
+                }
+              ]
+            },
+            "id": "838414a4-b431-4233-81e3-e077413497a9"
+          }
+        ]
+      },
+      "id": "29986f41-b347-4deb-81a6-719aa9101045"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "2f733990-4c94-4f15-9720-6a0a9d6136c2"
+      },
+      "id": "d7700abb-ef37-40ee-b3dd-a8229e7267a3"
+    },
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "f45fcf68-271b-4ab8-9001-56e6f94c3a20"
+    }
+  ],
+  "_index": 2
+}

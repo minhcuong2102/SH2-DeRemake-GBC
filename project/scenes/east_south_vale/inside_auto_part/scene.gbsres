@@ -1,0 +1,147 @@
+{
+  "_resourceType": "scene",
+  "id": "7986e6bd-47d3-4508-8ddd-06faa5cf27c1",
+  "_index": 25,
+  "name": "East South Vale/Inside Auto Part",
+  "backgroundId": "f00aa334-9563-48f3-bb58-67d9ba00a05d",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f2e+004+0f10+003+0f3+006+0f8+003+0f3+006+0f8+006+0f!005+0f8+002+0f!009+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+009+0fb+009+0fb+009+0f41+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_27",
+  "x": 240,
+  "y": 984,
+  "script": [
+    {
+      "command": "EVENT_AUTO_FLIP_TILES",
+      "args": {
+        "__comment": true
+      },
+      "id": "7330d6c8-c1c5-4b4a-a0dd-4031a80d932e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "14e4c069-bdb1-4e4e-b321-86e4cc16368f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "a6bd36ba-a041-4a2e-88ab-59781b4b6bfa"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "14522425-f193-4e62-89ba-a3e69bb83fb8"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "20",
+              "flag": 3,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "1e773fbd-9abd-4f51-9b88-6378b1dcc7a2"
+                  },
+                  "id": "38f51323-e44d-483d-95b7-48b6bbe4a61c"
+                }
+              ],
+              "false": []
+            },
+            "id": "78676c9c-b795-46fe-b640-9b6dfe731a78"
+          }
+        ]
+      },
+      "id": "a0df2542-b436-4976-809b-b0e9bef90dd3"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "703d624a-644f-4d89-8168-821c01cdc046"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "5010e78b-9093-4791-87ea-a674fef30c3c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "c03ba0ba-db5f-45d0-9290-627eb2a2b372"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "df150ed0-f0f8-41dd-9446-e97bc78b75b6"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "cc720d28-6466-4658-a192-e5f19cccef56"
+          }
+        ]
+      },
+      "id": "d99dfec7-a9f1-436f-9b95-21c30e8bc168"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

@@ -1,0 +1,119 @@
+{
+  "_resourceType": "scene",
+  "id": "ec9f77b1-ad99-4c26-8ff0-5e977c9438e0",
+  "_index": 51,
+  "name": "East South Vale/Inside House 2",
+  "backgroundId": "4ac95f18-2d28-440c-9e0f-814acbdc32d2",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "8dca260b-112d-43ab-baad-c583040895e2"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f57+004+0f10+004+0f10+006+0fc+00a+0fc+008+0fc+008+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0f55+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_52",
+  "x": 1744,
+  "y": 680,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "6adde063-2f48-485f-a3b5-5315f3bdf96d"
+      },
+      "id": "5d53a837-01a6-451a-910d-b5acc5a39ebe"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 18
+        }
+      },
+      "id": "b2979482-d02f-4850-9a2f-69feef61b849"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "303a4760-58e3-4036-8192-c0769b77ed28"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "98d1b299-54e9-4fd0-8128-2baa739aa1e3"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "3618425f-1223-450f-a5e8-ec90a0cb6240"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "08021e58-05ba-473d-84c1-f0946f3c41c4"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "d0442a08-9cd7-4291-bfa4-3376c78ee37f"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "7e2ededf-3c0b-436d-9333-fd2e075eadf9"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "f294d47a-f11a-4440-aa1b-9908d00b014d"
+          }
+        ]
+      },
+      "id": "87902069-46c5-4408-9086-b27bbc802f84"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

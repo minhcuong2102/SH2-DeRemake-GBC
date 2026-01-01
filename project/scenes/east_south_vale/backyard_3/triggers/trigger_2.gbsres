@@ -1,0 +1,91 @@
+{
+  "_resourceType": "trigger",
+  "id": "2e9cf6b2-0a99-4ff1-b1c8-af14005eb826",
+  "name": "",
+  "prefabId": "",
+  "x": 6,
+  "y": 3,
+  "symbol": "trigger_77",
+  "prefabScriptOverrides": {},
+  "width": 3,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "36920ce5-76a2-4c31-9d18-ec1815e30283"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "eb7894fb-4e7e-4061-be4b-ec59b4c71194"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e60f1e6c-2fbe-4a75-be89-4ee23f6b3d0a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ugh..."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1412b35a-2ac4-4a81-85e0-6715b3554f8a"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "63600b91-bfc6-4153-8d18-b8843823450e",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "6525d9a6-22b6-4f89-addc-7fc247632370"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "bfa6b3e6-fc8c-4a4b-b36f-d4e3bdbabbc3"
+    }
+  ],
+  "_index": 1
+}

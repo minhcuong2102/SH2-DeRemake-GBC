@@ -1,0 +1,230 @@
+{
+  "_resourceType": "trigger",
+  "id": "f2d84764-d9ab-4e51-ba75-9de23e27b367",
+  "name": "",
+  "prefabId": "",
+  "x": 5,
+  "y": 15,
+  "symbol": "trigger_48",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "7e23b2be-a932-43ee-b683-129bb91f9bd2"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "80c96236-6587-4b5c-89be-85de8a0b3b70"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "T0",
+              "items": 3,
+              "option1": " Turn on/off",
+              "option2": " Detail",
+              "option3": " Go back",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "menu",
+              "cancelOnLastOption": true
+            },
+            "id": "ed3776bc-e74f-4ef9-92d0-702d3580384a"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__comment": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\06$55$",
+                    "x": 9,
+                    "y": 4,
+                    "location": "background",
+                    "__collapse": true
+                  },
+                  "id": "8d6cf679-b128-4674-8be5-9886b1e8867e"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\06$53$",
+                    "x": 16,
+                    "y": 4,
+                    "location": "background",
+                    "__collapse": true
+                  },
+                  "id": "64600bbb-16fa-4877-88d0-718b275cf392"
+                }
+              ]
+            },
+            "id": "7bc4bd1f-43be-4dd2-abd7-d7f9535a64d0"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "T0",
+              "choices": 2,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "70"
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "70",
+                          "value": {
+                            "type": "true"
+                          }
+                        },
+                        "id": "fffe980c-963b-427d-806a-0504ac94e758"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "70",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "9809e49d-d70c-4b69-9220-b0b778fada03"
+                      }
+                    ]
+                  },
+                  "id": "66552b0e-d106-4d19-abf0-ee8683240816"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Flashlight\nA flashlight with one-touch ON/OFF\npower switch. Currently in the \nbreast pocket."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "6b04e14c-8d5d-438e-892c-3cd421471d67"
+                }
+              ],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "72a1b9f1-b367-4268-bc87-b984c3849310"
+          }
+        ]
+      },
+      "id": "243b81d3-cf08-4727-984a-d7e334967344"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "66b6f2c8-400a-41f9-bf06-a97a5ac875ec"
+    }
+  ],
+  "_index": 0
+}

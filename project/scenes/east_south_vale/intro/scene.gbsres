@@ -1,0 +1,55 @@
+{
+  "_resourceType": "scene",
+  "id": "e165149b-9f83-4c21-b8ad-be1aa1611a01",
+  "_index": 3,
+  "name": "East South Vale/Intro",
+  "backgroundId": "4c61b83b-2239-4689-8d88-cfbfbcf41a04",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "LOGO",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_7",
+  "x": 752,
+  "y": 32,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "900494ff-12c0-4b48-a3b6-31c50c914f6f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "1a932d0a-f10d-4e46-a790-994357a74497"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2d2fe2a0-2774-4eaa-884e-dc62c0abccae",
+        "x": {
+          "type": "number",
+          "value": 32
+        },
+        "y": {
+          "type": "number",
+          "value": 27
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "61b384cd-0374-41f3-924f-8ec6ea89a203"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

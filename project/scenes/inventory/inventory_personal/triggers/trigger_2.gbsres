@@ -1,0 +1,230 @@
+{
+  "_resourceType": "trigger",
+  "id": "a5b8de73-ce1b-4588-ad80-e0f0fd4f7b7b",
+  "name": "",
+  "prefabId": "",
+  "x": 8,
+  "y": 15,
+  "symbol": "trigger_49",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "c3c5bf42-f81e-4bab-899b-a4ce47229d39"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "cf83e157-22e4-43bf-8322-47ed489abcf4"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "T0",
+              "items": 3,
+              "option1": " Turn on/off",
+              "option2": " Detail",
+              "option3": " Go back",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "menu",
+              "cancelOnLastOption": true
+            },
+            "id": "fb63728c-1095-465c-8398-590a134ebf4c"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__comment": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\06$55$",
+                    "x": 9,
+                    "y": 4,
+                    "location": "background",
+                    "__collapse": true
+                  },
+                  "id": "5437f61e-14fd-40ad-8efa-567e3189301f"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\06$53$",
+                    "x": 16,
+                    "y": 4,
+                    "location": "background",
+                    "__collapse": true
+                  },
+                  "id": "f0fccfc4-239a-410c-9ac1-6b19eb3c701c"
+                }
+              ]
+            },
+            "id": "be09334c-ffe5-437a-b8ec-caa2df48f054"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "T0",
+              "choices": 2,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "71"
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "71",
+                          "value": {
+                            "type": "true"
+                          }
+                        },
+                        "id": "ed7bda76-89b1-4ded-b027-a079a57d301e"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "71",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "00e5a2e4-dc4e-4311-99e9-ca4007fc66e3"
+                      }
+                    ]
+                  },
+                  "id": "9c3a8549-96d8-476b-9b5a-6642959bd406"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Radio\nA small portable radio. Emits \nstatic when monsters are nearby."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "83b9eafc-52e5-481b-a99a-f762ef0b5a0d"
+                }
+              ],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "8433c2eb-de82-4ad0-b6d0-7cd6f31ab51e"
+          }
+        ]
+      },
+      "id": "cf05fd01-0226-4370-a749-ced9accd0db9"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "3b3b5253-c93a-4392-83ba-c52bd1dd11c1"
+    }
+  ],
+  "_index": 1
+}
