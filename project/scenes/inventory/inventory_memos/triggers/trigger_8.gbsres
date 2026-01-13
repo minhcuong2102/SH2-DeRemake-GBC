@@ -1,0 +1,150 @@
+{
+  "_resourceType": "trigger",
+  "id": "25c94a80-cf50-4e1c-b425-ebffa4415a55",
+  "name": "",
+  "prefabId": "",
+  "x": 17,
+  "y": 6,
+  "symbol": "trigger_108",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "b0ddb011-b744-4d93-b35d-2a719601fd7d"
+          },
+          {
+            "command": "EVENT_IDLE",
+            "args": {},
+            "id": "e8eebe27-0ba3-47d7-9fb2-f7a6fc88760c"
+          }
+        ]
+      },
+      "id": "9ce71287-662a-4da3-9659-cc54be519116"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "59",
+              "choices": 15,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ms. Cassandra,\na customer came in today\nOrdered a mixed bouquet, red\nand white.",
+                      "I tried to explain it's bad luck,\nbut he couldn't decide on just\none.",
+                      "He seemed a bit off, looked at\nme like I wasn't even there. Then\nhe just left, said he'd be back\nto pick'em up later.",
+                      "I just wanted to let you know,\nsince I might be gone by then."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "0798b6f8-a354-4504-8944-0ef933f9c4e2"
+                }
+              ],
+              "true1": [],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "304d4b8b-8c57-4ed3-95f7-106fad325ef1"
+          }
+        ]
+      },
+      "id": "e65c8284-37cc-4573-bef6-3f62c106a281"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "6699c67e-4662-46b1-86dd-7099f7af8922"
+    }
+  ],
+  "_index": 7
+}

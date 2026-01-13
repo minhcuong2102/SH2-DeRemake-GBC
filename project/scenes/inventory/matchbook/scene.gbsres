@@ -1,0 +1,84 @@
+{
+  "_resourceType": "scene",
+  "id": "3353efb7-8d15-42ee-9a46-53c3e12f4758",
+  "_index": 59,
+  "name": "Inventory/Matchbook",
+  "backgroundId": "d4747bc9-9712-4aae-a3a7-3ab5130535f3",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_60",
+  "x": 1502.6213311686915,
+  "y": 219.9464862840291,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "57",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "a0420e84-9946-4c5e-a3b0-3d5dcf518b4a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "78a8be8f-680b-46be-af2b-e73af7d6de58"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Bar Neely's\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "4fb16a7b-c9a2-4a3c-a20e-366967852921"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "d21777dd-ae78-4929-b9eb-c0107eb7df10",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "064b7c13-d640-4ae9-b148-697b35f263cc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

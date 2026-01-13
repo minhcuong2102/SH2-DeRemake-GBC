@@ -5,14 +5,14 @@
   "symbol": "sprite_objects_car_glass",
   "numFrames": 1.5,
   "filename": "objects/car_glass.png",
-  "checksum": "8a0d8151e3d2faa5ebd526d2f552fdae7632003e",
+  "checksum": "5419f79a4ed6f1c6a81e9f36ad4f7089fa426ed4",
   "width": 24,
-  "height": 16,
+  "height": 32,
   "states": [
     {
       "id": "3973a369-668b-42f3-bff9-59076283789c",
       "name": "",
-      "animationType": "fixed",
+      "animationType": "multi",
       "flipLeft": false,
       "animations": [
         {
@@ -23,6 +23,29 @@
               "tiles": [
                 {
                   "id": "42fbfd04-781f-4066-badc-a5e2ba790313",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": true,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 7,
+                  "priority": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "374a0c94-a7c2-43df-ae12-5de53cd456c6",
+          "frames": [
+            {
+              "id": "8e2fbbd1-feae-4948-8183-8ce85d3e6aae",
+              "tiles": [
+                {
+                  "id": "826627df-3b81-41c3-943a-578980c4811c",
                   "x": 0,
                   "y": 0,
                   "sliceX": 0,
@@ -39,20 +62,38 @@
           ]
         },
         {
-          "id": "374a0c94-a7c2-43df-ae12-5de53cd456c6",
-          "frames": [
-            {
-              "id": "8e2fbbd1-feae-4948-8183-8ce85d3e6aae",
-              "tiles": []
-            }
-          ]
-        },
-        {
           "id": "83f5f2d4-e8c0-49a5-9f04-14fdc342771d",
           "frames": [
             {
               "id": "5593955c-1232-44b1-a411-462aa2e9a550",
-              "tiles": []
+              "tiles": [
+                {
+                  "id": "baebcef7-c226-4837-88c8-efc669126b2d",
+                  "x": 4,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 16,
+                  "palette": 0,
+                  "flipX": true,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 7,
+                  "priority": false
+                },
+                {
+                  "id": "d1dbe7d8-029e-4827-bded-bf78bcb8a644",
+                  "x": -4,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 16,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 7,
+                  "priority": false
+                }
+              ]
             }
           ]
         },
@@ -61,7 +102,34 @@
           "frames": [
             {
               "id": "4028105e-1dc6-42ca-a45e-88138a148f20",
-              "tiles": []
+              "tiles": [
+                {
+                  "id": "c11a6999-4e78-44eb-917f-ae8b90a4fc9d",
+                  "x": -4,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 16,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 7,
+                  "priority": false
+                },
+                {
+                  "id": "edb14051-8473-4e43-8826-278982f5f9c1",
+                  "x": 4,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 16,
+                  "palette": 0,
+                  "flipX": true,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 7,
+                  "priority": false
+                }
+              ]
             }
           ]
         },
@@ -115,7 +183,7 @@
               "tiles": [
                 {
                   "id": "e0f55264-694d-4f01-8f65-017d7b5b79c0",
-                  "x": 0,
+                  "x": 4,
                   "y": 0,
                   "sliceX": 8,
                   "sliceY": 0,
@@ -133,7 +201,7 @@
               "tiles": [
                 {
                   "id": "4f5844c0-f1b1-4ef3-836f-778928886aac",
-                  "x": 0,
+                  "x": 4,
                   "y": 0,
                   "sliceX": 16,
                   "sliceY": 0,
@@ -220,10 +288,10 @@
       "flipLeft": true
     }
   ],
-  "numTiles": 3,
-  "canvasWidth": 8,
+  "numTiles": 5,
+  "canvasWidth": 24,
   "canvasHeight": 16,
-  "boundsX": 0,
+  "boundsX": 8,
   "boundsY": 0,
   "boundsWidth": 8,
   "boundsHeight": 16,

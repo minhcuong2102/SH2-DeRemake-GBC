@@ -22,7 +22,7 @@
     "",
     "",
     "dmg",
-    null,
+    "",
     "e0323961-3399-4571-aa74-50917e96d1fd"
   ],
   "autoFadeSpeed": 1,
@@ -115,6 +115,14 @@
                     "actorId": "7c747744-5443-4ddd-80fd-ef903b4497e6"
                   },
                   "id": "9e2f87ad-7661-4f6a-b3f0-121c16b82756"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+                    "__collapse": true
+                  },
+                  "id": "2205aeed-0dd7-4f69-9a57-e43b9de0c888"
                 }
               ],
               "false": [
@@ -250,14 +258,6 @@
               "__collapse": true
             },
             "id": "edade7b1-2685-4617-9071-9f57bfbdb490"
-          },
-          {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
-            "args": {
-              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
-              "__collapse": true
-            },
-            "id": "2205aeed-0dd7-4f69-9a57-e43b9de0c888"
           },
           {
             "command": "EVENT_SET_VALUE",
