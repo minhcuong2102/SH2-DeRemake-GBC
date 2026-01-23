@@ -21,6 +21,18 @@
   "y": 1552,
   "script": [
     {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "47",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__comment": false
+      },
+      "id": "88ae7816-4ef6-4f28-904d-3f4ea773523e"
+    },
+    {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "6adde063-2f48-485f-a3b5-5315f3bdf96d"
@@ -59,17 +71,6 @@
         }
       },
       "id": "132b3c4e-8922-42ec-9f0f-fae79214be3c"
-    },
-    {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "47",
-        "value": {
-          "type": "number",
-          "value": 1
-        }
-      },
-      "id": "88ae7816-4ef6-4f28-904d-3f4ea773523e"
     },
     {
       "command": "EVENT_GROUP",
