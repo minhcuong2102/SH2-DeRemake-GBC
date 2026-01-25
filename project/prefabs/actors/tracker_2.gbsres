@@ -1,0 +1,93 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "4966ccf6-2cd7-43aa-86fe-1f7b0b5dce79",
+  "name": "Tracker 2",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": true,
+  "collisionGroup": "",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "db7a755b-30b0-4243-9612-2f9893dce113"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "player",
+        "vectorX": "7",
+        "vectorY": "8",
+        "__collapse": false
+      },
+      "id": "df2efeef-ac51-42db-b3db-b2c7e5c7a393",
+      "children": {}
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "8",
+        "operation": "sub",
+        "other": "val",
+        "vectorY": "0",
+        "value": 2,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false,
+        "__collapse": false,
+        "__comment": true
+      },
+      "id": "d6958771-9345-4308-948e-6c21c7b355c4"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "85",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "85",
+              "flag": 0,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "742af8da-e6b0-47b0-8aba-c202f98ecf87"
+                }
+              ],
+              "false": []
+            },
+            "id": "731a37f6-3d93-4f84-a3d4-337ce0979773"
+          }
+        ],
+        "false": []
+      },
+      "id": "866830d9-68d8-45de-aaaa-a9ff8c442ce8"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "7366e76d-d5e9-4e90-902d-882fa63b0c3a"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

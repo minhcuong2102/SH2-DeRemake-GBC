@@ -21,16 +21,78 @@
   "y": 1552,
   "script": [
     {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "47",
-        "value": {
-          "type": "number",
-          "value": 1
-        },
-        "__comment": false
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 200
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "823afa4f-bd21-4c5c-94df-999d11c251b2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "47",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "88ae7816-4ef6-4f28-904d-3f4ea773523e"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "67",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "2c57ed5b-27ed-468a-b502-20bd59b23968"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "78",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "74be764d-b49f-4c3d-acbc-08df1abef253"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "71",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "d907b7f6-9477-43de-891f-6da206702240"
+          }
+        ]
       },
-      "id": "88ae7816-4ef6-4f28-904d-3f4ea773523e"
+      "id": "f950b749-b26f-4ae0-a4b0-ccc778e4419c"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",

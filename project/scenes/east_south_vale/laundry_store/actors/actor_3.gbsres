@@ -15,7 +15,34 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_103",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A bloody green jacket in\nthe washing machine.",
+          "Ugh..."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "10abcd5c-b616-4e41-bdc1-fef43b33475d"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],

@@ -1,0 +1,156 @@
+{
+  "_resourceType": "scene",
+  "id": "a35b295c-5a06-4237-a1e9-cb68f7b75a18",
+  "_index": 64,
+  "name": "East South Vale/Katz 1",
+  "backgroundId": "2e4e5445-a9fb-4e35-bf3f-4379f8c057d3",
+  "tilesetId": "",
+  "width": 40,
+  "height": 24,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
+  ],
+  "spritePaletteIds": [
+    null,
+    null,
+    null,
+    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
+  ],
+  "collisions": "00b+0f1d+00b+0f1d+00b+0f1e+008+0f!00!0f1d+00b+0f1d+00b+0f4+002+0f17+0032+0f!002+0f!005+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!00126+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!0083+0f1d+00b+0f1e+00a+0f1d+00b+0f1d+00b+0f1d+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_65",
+  "x": 1632,
+  "y": 1888,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d40490ad-124b-43de-b253-c50aa7d40a36",
+        "$actor[0]$": "a7097d0f-e504-4231-ac4c-5037d451e796"
+      },
+      "id": "257d3a10-19b0-49e8-8d82-3e0f93791320"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 26
+        }
+      },
+      "id": "c817d534-acda-4056-9c70-8d7429fe8617"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "2166d598-f2d8-4806-8950-4342d5173d41"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e4170d35-b85c-4499-a99c-9cf58cb7a6e3"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": false
+            },
+            "id": "4d30bbfc-fb34-4f7e-926a-80309613e6d9"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "a61a844c-863f-4175-9dcb-cf264b009d11"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "8419d6e8-3f7a-40da-898e-ff22e955aac2"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "9da5e526-7faa-44dc-90f8-8560c4c109a9"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "62560093-381c-44d8-bc12-8143a3edde76"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "71"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "id": "75298f4a-e314-488b-b3a8-fc64df1767db"
+                }
+              ],
+              "false": []
+            },
+            "id": "bb59eee8-8a83-408d-aeee-ca26f7f4e4a3"
+          }
+        ]
+      },
+      "id": "ed52b6bc-450c-4252-98af-7b8adfc46330"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

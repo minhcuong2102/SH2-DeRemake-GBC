@@ -3,18 +3,7 @@
   "id": "d40490ad-124b-43de-b253-c50aa7d40a36",
   "name": "Restore 1 actor position",
   "description": "",
-  "variables": {
-    "V0": {
-      "id": "V0",
-      "name": "Variable A",
-      "passByReference": true
-    },
-    "V1": {
-      "id": "V1",
-      "name": "Variable B",
-      "passByReference": true
-    }
-  },
+  "variables": {},
   "actors": {
     "0": {
       "id": "0",
@@ -47,11 +36,11 @@
               "actorId": "0",
               "x": {
                 "type": "variable",
-                "value": "V0"
+                "value": "9"
               },
               "y": {
                 "type": "variable",
-                "value": "V1"
+                "value": "10"
               }
             },
             "id": "82392baf-8420-4b64-b25d-32d6ccde2c4c"

@@ -1,7 +1,7 @@
 {
   "_resourceType": "actorPrefab",
   "id": "fcab9da6-0327-4d36-b8a0-edf1b4127529",
-  "name": "Tracker",
+  "name": "Tracker 1",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4",
@@ -47,6 +47,25 @@
         "__comment": true
       },
       "id": "915fa3f0-6ebc-4b14-8050-ba9c5edca890"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "85",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "c71adc0a-0905-4a8e-bfc3-7e0f212d2496"
+          }
+        ],
+        "false": []
+      },
+      "id": "5d092f93-f157-4e45-ae83-0436a8baaf19"
     },
     {
       "command": "EVENT_IDLE",
