@@ -400,7 +400,8 @@
                           "duration": 0.5,
                           "wait": true,
                           "effect": 0,
-                          "__collapse": false
+                          "__collapse": false,
+                          "__comment": true
                         },
                         "id": "b13f0f46-166b-436c-b321-9c9634b38418",
                         "children": {}
@@ -2174,6 +2175,19 @@
   ],
   "hit1Script": [],
   "hit2Script": [
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.3,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "44182347-4071-4b16-8a28-1b646a3145d5"
+    },
     {
       "command": "EVENT_GROUP",
       "args": {},
