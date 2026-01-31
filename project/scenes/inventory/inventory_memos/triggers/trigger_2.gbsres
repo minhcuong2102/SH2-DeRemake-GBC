@@ -82,21 +82,35 @@
             "children": {
               "true0": [
                 {
-                  "command": "EVENT_SWITCH_SCENE",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "sceneId": "3353efb7-8d15-42ee-9a46-53c3e12f4758",
-                    "x": {
-                      "type": "number",
-                      "value": 0
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 0
-                    },
-                    "direction": "",
-                    "fadeSpeed": "2"
+                    "variable": "85",
+                    "flag": 3,
+                    "__collapseElse": true
                   },
-                  "id": "7ef68aaa-6875-4848-9993-ef0023ceb88b"
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "3353efb7-8d15-42ee-9a46-53c3e12f4758",
+                          "x": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "7ef68aaa-6875-4848-9993-ef0023ceb88b"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "97179151-fa82-4b64-9058-2c719debcf93"
                 }
               ],
               "true1": [],

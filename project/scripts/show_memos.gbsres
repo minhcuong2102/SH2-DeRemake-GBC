@@ -294,46 +294,80 @@
                   "id": "ce9c4210-89d5-47e5-80cd-c1c733abb937"
                 },
                 {
-                  "command": "EVENT_REPLACE_TILE_XY",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "x": {
-                      "type": "number",
-                      "value": 17
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 3
-                    },
-                    "tilesetId": "96440d45-f06f-4e0a-8297-417ec72b03ad",
-                    "tileIndex": {
-                      "type": "add",
-                      "valueA": {
-                        "type": "number",
-                        "value": 6
-                      },
-                      "valueB": {
-                        "type": "mul",
-                        "valueA": {
-                          "type": "sub",
-                          "valueA": {
-                            "type": "variable",
-                            "value": "59"
-                          },
-                          "valueB": {
+                    "variable": "85",
+                    "flag": 12,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_REPLACE_TILE_XY",
+                        "args": {
+                          "x": {
                             "type": "number",
-                            "value": 1
+                            "value": 17
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 3
+                          },
+                          "tilesetId": "96440d45-f06f-4e0a-8297-417ec72b03ad",
+                          "tileIndex": {
+                            "type": "add",
+                            "valueA": {
+                              "type": "number",
+                              "value": 6
+                            },
+                            "valueB": {
+                              "type": "mul",
+                              "valueA": {
+                                "type": "sub",
+                                "valueA": {
+                                  "type": "variable",
+                                  "value": "59"
+                                },
+                                "valueB": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "valueB": {
+                                "type": "number",
+                                "value": 40
+                              }
+                            }
+                          },
+                          "__collapse": false,
+                          "tileSize": "16px"
+                        },
+                        "id": "db9ae642-1425-43be-a472-63415d2bdfbb"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_REPLACE_TILE_XY",
+                        "args": {
+                          "x": {
+                            "type": "number",
+                            "value": 5
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 3
+                          },
+                          "tilesetId": "2ad50815-8dc2-4f07-a3c4-c756978c8002",
+                          "tileIndex": {
+                            "type": "number",
+                            "value": 0
                           }
                         },
-                        "valueB": {
-                          "type": "number",
-                          "value": 40
-                        }
+                        "id": "af0ca86d-56a9-40b8-8d7b-36da11bbc6d3"
                       }
-                    },
-                    "__collapse": false,
-                    "tileSize": "16px"
+                    ]
                   },
-                  "id": "db9ae642-1425-43be-a472-63415d2bdfbb"
+                  "id": "f3ebf500-290f-4178-8002-89db9a410a49"
                 },
                 {
                   "command": "EVENT_REPLACE_TILE_XY",

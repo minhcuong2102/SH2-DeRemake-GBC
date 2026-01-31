@@ -82,33 +82,47 @@
             "children": {
               "true0": [
                 {
-                  "command": "EVENT_TEXT",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "text": [
-                      "Ms. Cassandra,\na customer came in today\nOrdered a mixed bouquet, red\nand white.",
-                      "I tried to explain it's bad luck,\nbut he couldn't decide on just\none.",
-                      "He seemed a bit off, looked at\nme like I wasn't even there. Then\nhe just left, said he'd be back\nto pick'em up later.",
-                      "I just wanted to let you know,\nsince I might be gone by then."
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30,
-                    "__collapse": true
+                    "variable": "85",
+                    "flag": 12,
+                    "__collapseElse": true
                   },
-                  "id": "6f0191da-2a43-446f-bb41-76a252a6b0de"
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "That man was here again. I told\nhim he'd been warned not to\ncome here. ",
+                            "He acted like he didn't know what\nI was talking about.",
+                            "Anyway, he got up and left. He\ndidn't make any sort of fuss, but\nthere's something about him that\ngives me the creeps.",
+                            "When I look at his face, it's like\nI'm staring at a mask. And there\nis something underneath, waiting\nto get out.",
+                            "I don't want to be there when\nthat happens."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "05bcacc4-31c6-4b93-aa99-4c73fd7fea6a"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "a5ed1fe2-f6c0-461d-a212-2171560d927c"
                 }
               ],
               "true1": [],

@@ -82,81 +82,95 @@
             "children": {
               "true0": [
                 {
-                  "command": "EVENT_TEXT",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "text": [
-                      "IF YOU'RE READING THIS\n     LEAVE",
-                      "THIS PLACE IS NOT\n             WHAT IT SEEMS ",
-                      "SOMETIMES\nYOU JUST HAVE\n  TO LOOK\n     BEHIND"
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
+                    "variable": "85",
+                    "flag": 4,
+                    "__collapseElse": true
                   },
-                  "id": "e861b17b-4146-4cbd-a8d0-24f169a4baed"
-                },
-                {
-                  "command": "EVENT_TEXT",
-                  "args": {
-                    "text": [
-                      "The other side of the note\nwrites:"
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "IF YOU'RE READING THIS\n     LEAVE",
+                            "THIS PLACE IS NOT\n             WHAT IT SEEMS ",
+                            "SOMETIMES\nYOU JUST HAVE\n  TO LOOK\n     BEHIND"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "e861b17b-4146-4cbd-a8d0-24f169a4baed"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "The other side of the note\nwrites:"
+                          ],
+                          "__section": "text",
+                          "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 2,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "276fc32d-abc9-4bf1-b5a6-c16d9e086853"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "RUN AWAY RUN AWAY RUN AWAY \nRUN AWAY RUN AWAY RUN AWAY \nRUN AWAY RUN AWAY RUN AWAY "
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "886161e4-8d8e-4e4a-afd1-7a00e421fb8b"
+                      }
                     ],
-                    "__section": "text",
-                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 2,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
+                    "false": []
                   },
-                  "id": "276fc32d-abc9-4bf1-b5a6-c16d9e086853"
-                },
-                {
-                  "command": "EVENT_TEXT",
-                  "args": {
-                    "text": [
-                      "RUN AWAY RUN AWAY RUN AWAY \nRUN AWAY RUN AWAY RUN AWAY \nRUN AWAY RUN AWAY RUN AWAY "
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
-                  },
-                  "id": "886161e4-8d8e-4e4a-afd1-7a00e421fb8b"
+                  "id": "8a4bf45c-5c0f-4c5b-895d-4b5cce9eaf0c"
                 }
               ],
               "true1": [],

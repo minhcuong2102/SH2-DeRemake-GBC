@@ -82,33 +82,47 @@
             "children": {
               "true0": [
                 {
-                  "command": "EVENT_TEXT",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "text": [
-                      "Ms. Cassandra,\na customer came in today\nOrdered a mixed bouquet, red\nand white.",
-                      "I tried to explain it's bad luck,\nbut he couldn't decide on just\none.",
-                      "He seemed a bit off, looked at\nme like I wasn't even there. Then\nhe just left, said he'd be back\nto pick'em up later.",
-                      "I just wanted to let you know,\nsince I might be gone by then."
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30,
-                    "__collapse": true
+                    "variable": "20",
+                    "flag": 6,
+                    "__collapseElse": true
                   },
-                  "id": "fc63be1d-abc1-43ee-b0a9-fe8075126d7e"
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Ms. Cassandra,\na customer came in today\nOrdered a mixed bouquet, red\nand white.",
+                            "I tried to explain it's bad luck,\nbut he couldn't decide on just\none.",
+                            "He seemed a bit off, looked at\nme like I wasn't even there. Then\nhe just left, said he'd be back\nto pick'em up later.",
+                            "I just wanted to let you know,\nsince I might be gone by then."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "fc63be1d-abc1-43ee-b0a9-fe8075126d7e"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "1d269c65-a13e-4ed4-96b5-9231f99b2c34"
                 }
               ],
               "true1": [],
