@@ -53,7 +53,7 @@
       "args": {
         "variable": "85",
         "flag": 0,
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -62,7 +62,7 @@
             "args": {
               "variable": "85",
               "flag": 0,
-              "__collapseElse": true
+              "__collapseElse": false
             },
             "children": {
               "true": [
@@ -72,12 +72,28 @@
                   "id": "742af8da-e6b0-47b0-8aba-c202f98ecf87"
                 }
               ],
-              "false": []
+              "false": [
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "823448b3-6c00-4d64-a331-20a139448986"
+                  },
+                  "id": "8e34dd42-80c2-4b7c-befe-5c0e3b77703d"
+                }
+              ]
             },
             "id": "731a37f6-3d93-4f84-a3d4-337ce0979773"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "823448b3-6c00-4d64-a331-20a139448986"
+            },
+            "id": "398d4b02-9f44-4f74-a9c7-88e0942cc1a6"
+          }
+        ]
       },
       "id": "866830d9-68d8-45de-aaaa-a9ff8c442ce8"
     },

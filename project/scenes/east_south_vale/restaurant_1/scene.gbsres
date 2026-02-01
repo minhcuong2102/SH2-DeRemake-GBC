@@ -2,27 +2,26 @@
   "_resourceType": "scene",
   "id": "cdef7625-69fb-4f37-bbc2-5d17a304c5a7",
   "_index": 66,
+  "type": "TOPDOWN",
   "name": "East South Vale/Restaurant 1",
-  "backgroundId": "8a3f7fc8-be68-4a47-bcf9-9e585322260a",
-  "tilesetId": "",
+  "symbol": "scene_67",
+  "x": 1616,
+  "y": 1528,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "8a3f7fc8-be68-4a47-bcf9-9e585322260a",
+  "tilesetId": "",
   "paletteIds": [
     "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
     "8dca260b-112d-43ab-baad-c583040895e2"
   ],
   "spritePaletteIds": [
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
   ],
-  "collisions": "0f3d+0012+0f2+0012+0fd+002+0f12+002+0f12+002+0f12+002+0f8+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fb+002+0f9+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_67",
-  "x": 1616,
-  "y": 1528,
   "script": [
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -153,5 +152,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0fd+002+0f12+002+0f12+002+0f12+002+0f8+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fb+002+0f9+"
 }
