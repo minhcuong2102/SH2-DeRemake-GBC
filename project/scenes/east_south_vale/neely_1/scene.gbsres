@@ -2,26 +2,25 @@
   "_resourceType": "scene",
   "id": "618446cc-47e6-4c3a-a8e1-a184d33247eb",
   "_index": 68,
+  "type": "TOPDOWN",
   "name": "East South Vale/Neely 1",
-  "backgroundId": "c11f0f07-3a2d-45ae-8cef-901275e22256",
-  "tilesetId": "",
+  "symbol": "scene_69",
+  "x": 1400,
+  "y": 1688,
   "width": 25,
   "height": 40,
-  "type": "TOPDOWN",
+  "backgroundId": "c11f0f07-3a2d-45ae-8cef-901275e22256",
+  "tilesetId": "",
   "paletteIds": [
     "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
   ],
   "spritePaletteIds": [
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
   ],
-  "collisions": "0f6b+00d+0fc+00d+0fc+00a+0f2+00!0fc+00d+0fc+00d+0fc+00d+0fc+00d+0fc+00d+0fc+00a+0f2+00!0fc+00d+0fc+0012+0f7+0012+0f7+0012+0f6+00e+0fb+00b+0f2+00!0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00f+0fa+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00e+0f5+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_69",
-  "x": 1400,
-  "y": 1688,
   "script": [
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -150,7 +149,21 @@
       "id": "2cf6bc22-679d-4431-8360-18697ad980be"
     }
   ],
-  "playerHit1Script": [],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "205f978d-550b-49d5-855b-14ddffb12441",
+        "__comment": false,
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 15
+        }
+      },
+      "id": "a14fd8f2-524e-4d79-868f-8f244261b085"
+    }
+  ],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f6b+00d+0fc+00d+0fc+00a+0f2+00!0fc+00d+0fc+00d+0fc+00d+0fc+00d+0fc+00d+0fc+00a+0f2+00!0fc+00d+0fc+0012+0f7+0012+0f7+0012+0f6+00e+0fb+00b+0f2+00!0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00f+0fa+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00e+0f5+"
 }
