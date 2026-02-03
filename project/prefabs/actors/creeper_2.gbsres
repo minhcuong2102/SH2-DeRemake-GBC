@@ -276,7 +276,7 @@
               "y": 0,
               "width": 16,
               "height": 8,
-              "__collapse": true
+              "__collapse": false
             },
             "id": "c7472526-2b07-4d97-89d2-53f109e30a55"
           },
@@ -2388,7 +2388,7 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "gte",
+          "type": "lte",
           "valueA": {
             "type": "variable",
             "value": "14"
@@ -2915,7 +2915,7 @@
                             {
                               "command": "EVENT_SOUND_PLAY_EFFECT",
                               "args": {
-                                "type": "6b78a1ee-cece-45d8-a68c-a7bd566fd6fc",
+                                "type": "8d8e2e37-9188-42ea-9669-c9905ed9c6f3",
                                 "priority": "high",
                                 "pitch": 4,
                                 "frequency": 200,

@@ -150,7 +150,20 @@
       "id": "da1a7d55-9f58-473b-9275-5e7fa5af872c"
     }
   ],
-  "playerHit1Script": [],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "205f978d-550b-49d5-855b-14ddffb12441",
+        "__comment": false,
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 15
+        }
+      },
+      "id": "c6c7e365-60cb-4636-8c83-a28f7a56fbe5"
+    }
+  ],
   "playerHit2Script": [],
   "playerHit3Script": [],
   "collisions": "0f3d+0012+0f2+0012+0fd+002+0f12+002+0f12+002+0f12+002+0f8+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fb+002+0f9+"

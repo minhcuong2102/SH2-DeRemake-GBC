@@ -61,6 +61,13 @@
             "command": "EVENT_MUSIC_STOP",
             "args": {},
             "id": "c71adc0a-0905-4a8e-bfc3-7e0f212d2496"
+          },
+          {
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "470c61d1-15cb-4bac-9f96-674cb30ebe80"
           }
         ],
         "false": [
