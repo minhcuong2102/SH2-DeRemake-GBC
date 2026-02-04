@@ -1,0 +1,85 @@
+{
+  "_resourceType": "trigger",
+  "id": "fcbed3db-f5db-461c-9bcb-21fd62817630",
+  "name": "",
+  "prefabId": "",
+  "x": 4,
+  "y": 8,
+  "symbol": "trigger_149",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "90",
+              "flag": 3,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "705a9b4f-2964-4177-8e7d-d6913a830930",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "cc42a91d-8133-4eb3-b405-7aa1a79817a7"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "700aa38e-9139-4c6d-b2b0-b264a4d28e2c"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "b5bb26f4-bfde-4893-a61d-56ce05d03aa2",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "955d78e5-7fe3-491b-a98c-3bc7596682fa"
+                }
+              ]
+            },
+            "id": "062a051b-e17b-44ba-8217-6dd128914134"
+          }
+        ]
+      },
+      "id": "13acba82-6e0c-43fe-81ae-185cf6ff6da1"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}
