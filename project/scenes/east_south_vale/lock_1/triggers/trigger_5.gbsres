@@ -1,24 +1,24 @@
 {
   "_resourceType": "trigger",
-  "id": "07df359f-1e6e-45e3-8737-558bb3d59b42",
+  "id": "25abd198-85a4-4aa1-bec3-cd99270afe0a",
   "name": "",
   "prefabId": "",
-  "x": 13,
-  "y": 5,
-  "symbol": "trigger_147",
+  "x": 8,
+  "y": 2,
+  "symbol": "trigger_145",
   "prefabScriptOverrides": {},
-  "width": 3,
+  "width": 4,
   "height": 2,
   "script": [
     {
       "command": "EVENT_SCRIPT_UNLOCK",
       "args": {},
-      "id": "9e65a4a8-bb61-462a-8cb8-e458425dbb7f"
+      "id": "029e50f4-ab37-4c39-a0c1-fe53b9a77bbf"
     },
     {
       "command": "EVENT_IDLE",
       "args": {},
-      "id": "740a34ec-751c-4596-a732-597fa38e0354"
+      "id": "b6bc82fd-29f8-4c4e-8242-4f3334f209ee"
     },
     {
       "command": "EVENT_ACTOR_SET_FRAME",
@@ -29,7 +29,7 @@
           "value": 0
         }
       },
-      "id": "adcf09b2-3c9a-4163-bc97-905cf0d85005"
+      "id": "6c299ffe-f4a8-4ec1-8645-22f881355367"
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -53,14 +53,14 @@
               "wait": true,
               "effect": 0
             },
-            "id": "c4653bf7-d7be-47bf-9511-2e4428e0d1b5"
+            "id": "91ba47c7-d410-4382-b8e2-e479916d1474"
           },
           {
             "command": "EVENT_IF",
             "args": {
               "condition": {
                 "type": "expression",
-                "value": "$91$ == 4 && $92$ == 4 &&\n$93$ == 4 &&\n$35$ == 2"
+                "value": "$91$ == 4 && $92$ == 4 &&\n$93$ == 4 &&\n$35$ == 0"
               },
               "__collapseElse": false
             },
@@ -87,7 +87,7 @@
                     "flag15": false,
                     "flag16": false
                   },
-                  "id": "456ff712-b19f-49fb-88d1-c03b39925be1"
+                  "id": "4bfaa50c-adf5-459a-817e-c466aaae6653"
                 },
                 {
                   "command": "EVENT_SOUND_PLAY_EFFECT",
@@ -100,7 +100,7 @@
                     "wait": true,
                     "effect": 0
                   },
-                  "id": "f7f5f140-4122-47e9-955f-eb727387c968"
+                  "id": "01894bed-b474-4f5c-9d65-e662a3aae02a"
                 },
                 {
                   "command": "EVENT_TEXT",
@@ -125,7 +125,7 @@
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30
                   },
-                  "id": "d398f10f-53ec-4ec3-8701-b3cf415ff1df"
+                  "id": "45c49490-151b-4372-9e6d-76e21d017671"
                 },
                 {
                   "command": "EVENT_SWITCH_SCENE",
@@ -133,16 +133,16 @@
                     "sceneId": "705a9b4f-2964-4177-8e7d-d6913a830930",
                     "x": {
                       "type": "number",
-                      "value": 4
+                      "value": 3
                     },
                     "y": {
                       "type": "number",
-                      "value": 10
+                      "value": 15
                     },
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "b1050b48-920d-470c-aaea-ad603858b10f"
+                  "id": "5295000a-24e7-483c-bd8e-dee0b9ed6def"
                 }
               ],
               "false": [
@@ -151,15 +151,15 @@
                   "args": {
                     "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
                   },
-                  "id": "b908f18b-ce02-4a7b-87bd-ccad1e4467bd"
+                  "id": "03e5f14c-ebd0-4abc-9d69-e232159848e9"
                 }
               ]
             },
-            "id": "6fa047dc-b759-40d7-8699-c19336ffdc5f"
+            "id": "eb82ec33-33b5-4ee1-a334-aeddab776e04"
           }
         ]
       },
-      "id": "fce73624-d00f-4258-b0da-7b01f5e9b9ac"
+      "id": "3352cb80-61d6-48b5-b28c-a9699ee9e85b"
     }
   ],
   "leaveScript": [
@@ -170,7 +170,7 @@
           "a"
         ]
       },
-      "id": "d8b57820-3cbe-4f6b-a234-3ee84ff0acc1"
+      "id": "0c768cf8-49ca-4729-bbbe-685986d4c8a4"
     },
     {
       "command": "EVENT_ACTOR_SET_FRAME",
@@ -181,8 +181,8 @@
           "value": 1
         }
       },
-      "id": "80f5c454-b21c-4e2b-b698-586cb0a5e104"
+      "id": "ab639c2a-49f0-4acd-819c-2ab974c362a1"
     }
   ],
-  "_index": 6
+  "_index": 4
 }
