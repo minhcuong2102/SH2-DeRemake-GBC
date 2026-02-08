@@ -1,0 +1,124 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "31776363-b4a9-4d25-96a3-15d6402a93df",
+  "name": "Handgun Ammo",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5c4862c3-cc39-49cc-884c-dfec78886983",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "b793e89c-4d29-4b6b-b61d-38da46e88768",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "1c6c29cc-141e-45e9-8dbf-e4e9a58e1f31"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "20",
+        "flag1": true,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "1e3942f4-cc9b-4f36-b92c-9f9d276c2fc4"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "54"
+      },
+      "id": "a9eb741e-02ae-4a45-a5af-f939bc5e6835"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "55"
+      },
+      "id": "3dae31c0-7a7c-4028-aa95-a301190c9dab"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I got a !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Health drink!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1a49f017-fa34-443f-a847-b9be290b3450"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "4d8fdc8d-030f-408b-8feb-84259df472fa"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "85",
+        "flag": 11,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "cbe2d0bb-6b88-43ec-b25b-79dcd23a7aea"
+          }
+        ],
+        "false": []
+      },
+      "id": "4c714acc-01c6-4114-9492-6c8e087fe4f6"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

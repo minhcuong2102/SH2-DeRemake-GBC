@@ -31,16 +31,23 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de"
+                  },
+                  "id": "6e69adab-48b5-43e8-8afd-105f400de8ff"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "9acf90d5-e09a-44eb-b678-7cf7d674b87e",
                     "x": {
                       "type": "number",
-                      "value": 10
+                      "value": 11
                     },
                     "y": {
                       "type": "number",
-                      "value": 15
+                      "value": 17
                     },
                     "direction": "up",
                     "fadeSpeed": "2"
