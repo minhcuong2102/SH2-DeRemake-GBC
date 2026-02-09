@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "65a31c2d-8231-44ff-a7cc-4004ffa4cf2b",
+  "id": "e4836a3d-de4d-4500-a852-ad8d3951b948",
   "name": "",
   "frame": 0,
   "animate": false,
@@ -14,23 +14,29 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {
-    "9e5fff89-3292-4089-ab35-5d69bc7b06a0": {
-      "id": "9e5fff89-3292-4089-ab35-5d69bc7b06a0",
-      "args": {
-        "flag6": false,
-        "flag1": false,
-        "flag5": false,
-        "flag12": true
-      }
-    },
     "6a39275c-c8f0-4cd9-8635-9af718fed281": {
       "id": "6a39275c-c8f0-4cd9-8635-9af718fed281",
       "args": {
-        "flag": 11
+        "flag": 12
+      }
+    },
+    "7fef8f2c-03b8-4bdc-8cec-7e50c6ffce6d": {
+      "id": "7fef8f2c-03b8-4bdc-8cec-7e50c6ffce6d",
+      "args": {
+        "flag3": false,
+        "flag5": true
+      }
+    },
+    "9e5fff89-3292-4089-ab35-5d69bc7b06a0": {
+      "id": "9e5fff89-3292-4089-ab35-5d69bc7b06a0",
+      "args": {
+        "flag1": false,
+        "flag6": false,
+        "flag13": true
       }
     }
   },
-  "symbol": "actor_121",
+  "symbol": "actor_122",
   "script": [],
   "startScript": [],
   "updateScript": [],
@@ -38,6 +44,6 @@
   "hit2Script": [],
   "hit3Script": [],
   "x": 13,
-  "y": 32,
+  "y": 31,
   "_index": 2
 }

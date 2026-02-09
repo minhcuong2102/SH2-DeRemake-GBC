@@ -18,10 +18,63 @@
     "",
     "",
     "",
-    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
+    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8",
+    null,
+    "7cf3bd7d-2c9c-4555-9530-fe543693086f"
   ],
   "autoFadeSpeed": 1,
   "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "90",
+        "flag": 10,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "4b283c10-3eb7-4cbe-abd9-195639b58526"
+            },
+            "id": "a72141c1-77ad-42f2-ba27-0c89f0ec3e64"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "86",
+              "flag": 10,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "4b283c10-3eb7-4cbe-abd9-195639b58526"
+                  },
+                  "id": "7a64e199-4e4d-4210-9530-ec9ab41d2952"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "4b283c10-3eb7-4cbe-abd9-195639b58526"
+                  },
+                  "id": "caf8b82a-28e9-4455-9232-0cc4da3da282"
+                }
+              ]
+            },
+            "id": "e4c870c8-1648-410f-8634-3c48ea15bf93"
+          }
+        ]
+      },
+      "id": "3da1419d-deed-45f9-8ada-c0fac301ab57"
+    },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {

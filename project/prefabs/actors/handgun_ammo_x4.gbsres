@@ -1,7 +1,7 @@
 {
   "_resourceType": "actorPrefab",
-  "id": "31776363-b4a9-4d25-96a3-15d6402a93df",
-  "name": "Handgun Ammo",
+  "id": "7baa43b0-2266-4de5-a282-b102c7a55995",
+  "name": "Handgun Ammo x4",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "5c4862c3-cc39-49cc-884c-dfec78886983",
@@ -14,7 +14,7 @@
     {
       "command": "EVENT_SOUND_PLAY_EFFECT",
       "args": {
-        "type": "b793e89c-4d29-4b6b-b61d-38da46e88768",
+        "type": "73f16823-8112-44dc-be89-c4904c826253",
         "priority": "high",
         "pitch": 4,
         "frequency": 200,
@@ -22,7 +22,7 @@
         "wait": true,
         "effect": 0
       },
-      "id": "1c6c29cc-141e-45e9-8dbf-e4e9a58e1f31"
+      "id": "0faa4b42-2aa0-4229-9a07-ac45bd868b52"
     },
     {
       "command": "EVENT_ADD_FLAGS",
@@ -45,27 +45,34 @@
         "flag15": false,
         "flag16": false
       },
-      "id": "1e3942f4-cc9b-4f36-b92c-9f9d276c2fc4"
+      "id": "8ec33dee-5385-4920-a0e8-640d675c7fea"
     },
     {
       "command": "EVENT_INC_VALUE",
       "args": {
         "variable": "54"
       },
-      "id": "a9eb741e-02ae-4a45-a5af-f939bc5e6835"
+      "id": "f93928e1-b919-4f98-90a8-24c758ad780b"
     },
     {
-      "command": "EVENT_INC_VALUE",
+      "command": "EVENT_VARIABLE_MATH",
       "args": {
-        "variable": "55"
+        "vectorX": "62",
+        "operation": "add",
+        "other": "val",
+        "vectorY": "0",
+        "value": 4,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false
       },
-      "id": "3dae31c0-7a7c-4028-aa95-a301190c9dab"
+      "id": "f60be477-88af-42fd-8590-1702dc5964f9"
     },
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "I got a !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Health drink!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+          "I got 4 !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Handgun ammos!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!.\n"
         ],
         "__section": "text",
         "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
@@ -84,14 +91,14 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "1a49f017-fa34-443f-a847-b9be290b3450"
+      "id": "522aa533-c236-4681-a1b4-71dbeeb14d18"
     },
     {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$"
       },
-      "id": "4d8fdc8d-030f-408b-8feb-84259df472fa"
+      "id": "685b7d23-c461-4b29-99bb-f58a6191f227"
     }
   ],
   "startScript": [
@@ -109,12 +116,12 @@
             "args": {
               "actorId": "$self$"
             },
-            "id": "cbe2d0bb-6b88-43ec-b25b-79dcd23a7aea"
+            "id": "71b50dbb-ebe0-43d3-bfb7-9c11711c7eff"
           }
         ],
         "false": []
       },
-      "id": "4c714acc-01c6-4114-9492-6c8e087fe4f6"
+      "id": "b5bb30d7-b65c-4d10-ba01-1aca48db6b3e"
     }
   ],
   "updateScript": [],
