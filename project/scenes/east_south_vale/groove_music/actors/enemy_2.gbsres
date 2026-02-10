@@ -1,0 +1,61 @@
+{
+  "_resourceType": "actor",
+  "id": "3849ad6d-3bdd-4fed-8f9e-065898a80f30",
+  "name": "Enemy 2",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
+  "prefabId": "d4e78ebe-4788-4d2e-94e7-3dc0fcbda342",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "48cfa2a1-88db-410d-9a35-fe775cf066ab": {
+      "id": "48cfa2a1-88db-410d-9a35-fe775cf066ab",
+      "args": {
+        "flag": 13,
+        "variable": "90"
+      }
+    },
+    "ad160d4c-666b-448d-b008-e2007969f8c0": {
+      "id": "ad160d4c-666b-448d-b008-e2007969f8c0",
+      "args": {
+        "flag1": false,
+        "flag13": false,
+        "variable": "90",
+        "flag14": true
+      }
+    },
+    "cf90cd59-13b3-4892-b02a-5297e1c16fe2": {
+      "id": "cf90cd59-13b3-4892-b02a-5297e1c16fe2",
+      "args": {
+        "flag1": false,
+        "flag13": false,
+        "variable": "90",
+        "flag14": true
+      }
+    },
+    "c3ac7e97-80c3-4669-9a6d-5e9a3fc843de": {
+      "id": "c3ac7e97-80c3-4669-9a6d-5e9a3fc843de",
+      "args": {
+        "flag14": true,
+        "flag1": false,
+        "variable": "90"
+      }
+    }
+  },
+  "symbol": "actor_141",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 10,
+  "y": 8,
+  "_index": 2
+}

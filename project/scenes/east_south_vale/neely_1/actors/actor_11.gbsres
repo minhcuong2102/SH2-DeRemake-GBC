@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "425e3041-a0a0-4c8c-b3f2-29749d0a0153",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "c541c55f-fa50-4fa6-b632-983b710ea0c3",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_120",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Groovy Music\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0a07f9fc-6708-456c-9ba9-241300fcf34f"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 7,
+  "y": 7,
+  "_index": 10
+}

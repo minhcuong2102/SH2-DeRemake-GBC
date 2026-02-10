@@ -1,0 +1,59 @@
+{
+  "_resourceType": "actor",
+  "id": "cfde39b6-2f1c-43ee-9540-f49be0ad1d81",
+  "name": "Enemy 1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
+  "prefabId": "89a4f81f-d20c-42f8-aba7-f8f93d086669",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "bff6f2f7-c12c-4e1c-908d-5a4a8789cf14": {
+      "id": "bff6f2f7-c12c-4e1c-908d-5a4a8789cf14",
+      "args": {
+        "variable": "90",
+        "flag13": true,
+        "flag1": false
+      }
+    },
+    "74906ee1-3916-4496-9b64-f59eda5877cf": {
+      "id": "74906ee1-3916-4496-9b64-f59eda5877cf",
+      "args": {
+        "flag1": false,
+        "flag13": true,
+        "variable": "90"
+      }
+    },
+    "4164840b-75d5-4e92-a81d-7ac8f85276af": {
+      "id": "4164840b-75d5-4e92-a81d-7ac8f85276af",
+      "args": {
+        "flag": 12,
+        "variable": "90"
+      }
+    },
+    "a5cc7ebd-f65f-4aca-8daf-be3c16977abe": {
+      "id": "a5cc7ebd-f65f-4aca-8daf-be3c16977abe",
+      "args": {
+        "flag13": true,
+        "flag1": false,
+        "variable": "90"
+      }
+    }
+  },
+  "symbol": "actor_140",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 6,
+  "y": 12,
+  "_index": 1
+}

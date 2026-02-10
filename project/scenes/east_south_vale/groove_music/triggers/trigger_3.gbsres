@@ -1,24 +1,24 @@
 {
   "_resourceType": "trigger",
-  "id": "a0405117-f6bd-4fa7-a7e3-c0627361d4a3",
+  "id": "7241c797-fbd1-49df-9122-635c86bea2ab",
   "name": "",
   "prefabId": "",
-  "x": 7,
-  "y": 6,
-  "symbol": "trigger_158",
+  "x": 5,
+  "y": 5,
+  "symbol": "trigger_163",
   "prefabScriptOverrides": {},
-  "width": 1,
-  "height": 2,
+  "width": 4,
+  "height": 1,
   "script": [
     {
       "command": "EVENT_SCRIPT_UNLOCK",
       "args": {},
-      "id": "cee5f788-6bf8-4f6c-bb3c-d5eba9ae4f77"
+      "id": "58f77c87-caa1-4802-bdc1-a070013b2ac4"
     },
     {
       "command": "EVENT_IDLE",
       "args": {},
-      "id": "722e5745-9b98-4113-9634-2b7089c98a2b"
+      "id": "8b977ec6-e54c-45be-908c-38af2ec267cc"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -26,10 +26,10 @@
         "variable": "19",
         "value": {
           "type": "number",
-          "value": 0
+          "value": 1
         }
       },
-      "id": "3ec568d6-1b94-4575-af5b-acaa76fc7648"
+      "id": "e1d6f11d-fe1c-45cd-919e-fa53be51dd62"
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -45,8 +45,8 @@
           {
             "command": "EVENT_IF_FLAGS_COMPARE",
             "args": {
-              "variable": "90",
-              "flag": 9,
+              "variable": "86",
+              "flag": 14,
               "__collapseElse": false
             },
             "children": {
@@ -54,53 +54,40 @@
                 {
                   "command": "EVENT_MUSIC_STOP",
                   "args": {},
-                  "id": "00c3ebd3-612e-407e-a46f-5559f675122f"
+                  "id": "51e9044b-58a4-45f4-9f30-8cc1145b1c63"
                 },
                 {
                   "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {
                     "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
-                    "__comment": false
+                    "__comment": true
                   },
-                  "id": "2d9e12d0-89ac-4219-a707-4ae4e98de5e8"
+                  "id": "3f9cdeb3-eaf5-412e-a70d-bae17e47a0d8"
                 },
                 {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
-                    "sceneId": "9acf90d5-e09a-44eb-b678-7cf7d674b87e",
+                    "sceneId": "f673182d-6123-4636-87b0-86dec1c3647d",
                     "x": {
                       "type": "number",
-                      "value": 8
+                      "value": 5
                     },
                     "y": {
                       "type": "number",
-                      "value": 6
+                      "value": 17
                     },
-                    "direction": "down",
+                    "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "3184d546-ff74-41b6-b42a-a6a8d045ba8a"
+                  "id": "5ff62a7a-f2f8-4b93-a39f-b945a1a5836d"
                 }
               ],
               "false": [
                 {
-                  "command": "EVENT_SOUND_PLAY_EFFECT",
-                  "args": {
-                    "type": "66f98da6-5ec4-4f92-92d8-fc8cbb4c0bd4",
-                    "priority": "high",
-                    "pitch": 4,
-                    "frequency": 200,
-                    "duration": 0.5,
-                    "wait": true,
-                    "effect": 0
-                  },
-                  "id": "8a1174ba-9d8f-4184-ab67-b43eb14dbc07"
-                },
-                {
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "It's locked from the other\nside."
+                      "There's a room ahead, but\nthe window is blocking me."
                     ],
                     "__section": "text",
                     "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
@@ -119,15 +106,15 @@
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30
                   },
-                  "id": "426b86ca-e45d-45f3-9240-a886f57c5561"
+                  "id": "3099f1bf-9447-4375-bf8d-e4b516027443"
                 }
               ]
             },
-            "id": "3d4fb14b-57cc-4a3a-81e4-e9e3aff121ee"
+            "id": "9974227b-8ca9-46a3-896e-1a637a4d048b"
           }
         ]
       },
-      "id": "000620f4-f88e-48c4-acd1-f700188e3fe4"
+      "id": "e755ea58-b448-4ee8-a27d-2e6d7d69d270"
     }
   ],
   "leaveScript": [
@@ -138,7 +125,7 @@
           "a"
         ]
       },
-      "id": "544e3640-cc71-4d11-9f75-a1d9c2b94519"
+      "id": "25928936-f082-4e33-8fdb-c2a264db1b7c"
     }
   ],
   "_index": 2
