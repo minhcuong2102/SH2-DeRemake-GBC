@@ -82,33 +82,47 @@
             "children": {
               "true0": [
                 {
-                  "command": "EVENT_TEXT",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "text": [
-                      "Ms. Cassandra,\na customer came in today\nOrdered a mixed bouquet, red\nand white.",
-                      "I tried to explain it's bad luck,\nbut he couldn't decide on just\none.",
-                      "He seemed a bit off, looked at\nme like I wasn't even there. Then\nhe just left, said he'd be back\nto pick'em up later.",
-                      "I just wanted to let you know,\nsince I might be gone by then."
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30,
+                    "variable": "90",
+                    "flag": 11,
+                    "__collapseElse": true,
                     "__collapse": true
                   },
-                  "id": "154d591f-c420-4d3d-8f57-fe2e72ee2f34"
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "The janitor came in the other\nday, drunk and in tears. Had \nhalf a record with him, kept\nyelling we gotta fix it somehow.",
+                            "I was willing to do it just to shut\nhim up, so I got to get the glue\nfrom cabinet,",
+                            "but then he realized he only had\nthe one half, so he ran out.",
+                            "Can't do much about the record,\nmaybe ask around at Neely's\nnext time you're there - might be\none of theirs."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "27476a4a-0d66-42b1-ab1b-8c8d7293e351"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "dda91e75-474c-46db-87a7-319b03cd6a2c"
                 }
               ],
               "true1": [],

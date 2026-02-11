@@ -1,0 +1,248 @@
+{
+  "_resourceType": "trigger",
+  "id": "b316be49-36b6-4536-9488-b6ae47c8337b",
+  "name": "",
+  "prefabId": "",
+  "x": 13,
+  "y": 3,
+  "symbol": "trigger_171",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "d101fafd-510d-4746-ab02-99f7a66e075c"
+          },
+          {
+            "command": "EVENT_IDLE",
+            "args": {},
+            "id": "3a0ecc80-cc4d-44a3-b576-2e198e1a4893"
+          }
+        ]
+      },
+      "id": "582f808a-a17d-411b-a6e5-8eead4d51076"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "59",
+              "choices": 15,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "97"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Broken Vinyl Record\nHalf of a broken vinyl single."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "62a033dd-13fb-42c2-b5d8-d6eba12c0094"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "97"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 3
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Glued Up Vinyl Record\nA glued together vinyl single."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "398b40b8-51b3-4cd1-9efe-9be25d88d487"
+                            },
+                            {
+                              "command": "EVENT_CHOICE",
+                              "args": {
+                                "variable": "T0",
+                                "trueText": " Use item",
+                                "falseText": " Go back"
+                              },
+                              "id": "7b352601-2c10-4b08-af66-4f0a66899dcd"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "T0"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 1
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [],
+                                "false": []
+                              },
+                              "id": "0ba77833-9dea-47eb-b76b-073cba8d765a"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "46f1e40c-eb5d-4ac7-b8b5-6d417f8ef439"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "8e933bcc-c73b-4e2a-bff1-3534687fe655"
+                }
+              ],
+              "true1": [],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "2e5a2688-2381-44cb-a198-226fac4374a6"
+          }
+        ]
+      },
+      "id": "d19b3775-0688-4d9a-9ee6-d6271eb0de04"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "a60738ab-b05a-4624-890e-e43d3f655b11"
+    }
+  ],
+  "_index": 2
+}

@@ -21,7 +21,7 @@
       "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
         "variable": "111",
-        "flag": 0,
+        "flag": 1,
         "__collapseElse": false
       },
       "children": {
@@ -139,8 +139,8 @@
       "command": "EVENT_ADD_FLAGS",
       "args": {
         "variable": "111",
-        "flag1": true,
-        "flag2": false,
+        "flag1": false,
+        "flag2": true,
         "flag3": false,
         "flag4": false,
         "flag5": false,

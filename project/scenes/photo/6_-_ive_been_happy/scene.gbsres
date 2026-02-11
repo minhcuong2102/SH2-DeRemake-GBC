@@ -1,0 +1,71 @@
+{
+  "_resourceType": "scene",
+  "id": "9d88a6fd-1735-490e-85ac-6ccf60b24bcd",
+  "_index": 80,
+  "name": "Photo/6 - I've been happy",
+  "backgroundId": "64eca203-3878-4124-8817-c3ca21a66d61",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_81",
+  "x": 1616,
+  "y": 2504,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "18d99041-0292-45f0-a082-b2e6f2825386"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "54a54d04-6fb2-49b8-a466-e1c390cefe42"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"I've been happy\"",
+          "The other side writes \"6\"."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "15d71595-73a8-44ab-874e-cbee936efc1f"
+    },
+    {
+      "command": "EVENT_SCENE_POP_STATE",
+      "args": {
+        "fadeSpeed": "2"
+      },
+      "id": "5a68401b-c83d-48a7-8bca-ae29893bd180"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

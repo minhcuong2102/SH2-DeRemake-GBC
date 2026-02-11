@@ -1,0 +1,160 @@
+{
+  "_resourceType": "trigger",
+  "id": "2f6a98fc-ac3b-4913-9b4a-7e61146aaccb",
+  "name": "",
+  "prefabId": "",
+  "x": 9,
+  "y": 3,
+  "symbol": "trigger_170",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "c6e7b575-8e7f-4a57-a273-98c226e7313b"
+          },
+          {
+            "command": "EVENT_IDLE",
+            "args": {},
+            "id": "65cb294e-fb6c-4f2e-b62b-f26bec1f1436"
+          }
+        ]
+      },
+      "id": "531ad7c9-07a7-4ee2-832e-4751e51d7a96"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "59",
+              "choices": 15,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "49",
+                    "flag": 0,
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Crimson Ceremony Book\nA book about some ancient\nbeliefs. Author unknown."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "ea9a1c1b-139d-4db3-9cd9-6243a8e304d3"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "844d1b75-b9e7-480d-9db7-9055c581a5d5"
+                }
+              ],
+              "true1": [],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "26acbf76-e107-4db9-9465-ea022c5edca4"
+          }
+        ]
+      },
+      "id": "94671420-671c-4d97-8406-095ed2f72019"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "135dadde-eeee-464c-9bd2-e3540f2e5bf2"
+    }
+  ],
+  "_index": 1
+}

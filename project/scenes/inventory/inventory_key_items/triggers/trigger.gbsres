@@ -1,0 +1,169 @@
+{
+  "_resourceType": "trigger",
+  "id": "591c026f-6b23-43cc-a4b0-16be01d8ba4a",
+  "name": "",
+  "prefabId": "",
+  "x": 5,
+  "y": 3,
+  "symbol": "trigger_169",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "ca617b90-1548-44a0-9205-46f578fd8dfc"
+          },
+          {
+            "command": "EVENT_IDLE",
+            "args": {},
+            "id": "d4ec402e-e848-46b8-9914-becb0c405b14"
+          }
+        ]
+      },
+      "id": "741a79f1-fc71-45a6-8ac8-4a7b18e58b7f"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "59",
+              "choices": 15,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "50"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Auto Parts Key\nA key found in the workshop of \nBest Auto Parts."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "335687bb-eafe-4843-9982-8c140839826a"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "9fd57950-abf8-49c9-9a3a-d5a8826f53fc"
+                }
+              ],
+              "true1": [],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "f351b640-95a1-4d68-94ca-509ecbe4f331"
+          }
+        ]
+      },
+      "id": "ac739132-9b55-4d53-bb83-e07d79b86081"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "b2a7586e-7659-4aa8-b5de-f41cfe014511"
+    }
+  ],
+  "_index": 0
+}

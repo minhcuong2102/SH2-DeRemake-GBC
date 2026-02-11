@@ -92,6 +92,72 @@
       "id": "a0b0385e-ce87-452b-a450-70f638237bbf"
     },
     {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$97$ == 2 && $98$ >= 1"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "73f16823-8112-44dc-be89-c4904c826253",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "286c9268-c902-4adf-af38-606f8de4ec89"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "97",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "bc8c6c72-c4cb-43fe-a0b8-a6dd8d177ff0"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Combined the items to create\n!F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Glued Up Vinyl Record!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!.",
+                "It writes, \"The Long Way Home\"."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "ae382705-0dd6-45d1-b003-f411eba744b5"
+          }
+        ],
+        "false": []
+      },
+      "id": "51b9d4b0-a398-431a-94e3-1fa3ffa496de"
+    },
+    {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$"

@@ -2,31 +2,30 @@
   "_resourceType": "scene",
   "id": "8989280c-e7fb-474e-9919-d4cac41762cd",
   "_index": 73,
-  "name": "East South Vale/Groove Music",
-  "backgroundId": "a650883b-6c32-42c7-8b42-a22dcbc6f422",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [
-    "8dca260b-112d-43ab-baad-c583040895e2",
-    "f674ec11-9244-44fb-8d0e-e61e4dccd770",
-    null,
-    null,
-    null,
-    "843348fd-5301-41ed-995d-d92deb34e79a"
-  ],
-  "spritePaletteIds": [
-    null,
-    null,
-    null,
-    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
-  ],
-  "collisions": "0f67+0010+0f4+0010+0fb+002+0f6+00!0fb+002+0f6+00!0fb+002+0f6+00!0f5+00f+0f2+002+0f7+002+0f6+00!0f2+002+0f7+002+0f6+00!0f2+002+0f7+002+0f6+00!0f2+002+0f!00f+0f2+002+0f!00f+0f2+0012+0fa+002+0f9+",
-  "autoFadeSpeed": 1,
+  "name": "East South Vale/Groove Music",
   "symbol": "scene_74",
   "x": 1216,
   "y": 1712,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a650883b-6c32-42c7-8b42-a22dcbc6f422",
+  "tilesetId": "",
+  "paletteIds": [
+    "8dca260b-112d-43ab-baad-c583040895e2",
+    "f674ec11-9244-44fb-8d0e-e61e4dccd770",
+    "",
+    "",
+    "",
+    "843348fd-5301-41ed-995d-d92deb34e79a"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
+  ],
+  "autoFadeSpeed": 1,
   "script": [
     {
       "command": "EVENT_GROUP",
@@ -274,5 +273,6 @@
     }
   ],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f67+0010+0f4+0010+0fb+002+0f6+00!0fb+002+0f6+00!0fb+002+0f6+00!0f5+00f+0f2+002+0f7+002+0f6+00!0f2+002+0f7+002+0f6+00!0f2+002+0f7+002+0f6+00!0f2+002+0f!00f+0f2+002+0f!00f+0f2+0012+0fa+002+0f9+"
 }

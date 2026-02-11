@@ -20,8 +20,8 @@
     {
       "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
-        "variable": "86",
-        "flag": 15,
+        "variable": "111",
+        "flag": 0,
         "__collapseElse": false
       },
       "children": {
@@ -138,8 +138,8 @@
     {
       "command": "EVENT_ADD_FLAGS",
       "args": {
-        "variable": "86",
-        "flag1": false,
+        "variable": "111",
+        "flag1": true,
         "flag2": false,
         "flag3": false,
         "flag4": false,
@@ -154,7 +154,7 @@
         "flag13": false,
         "flag14": false,
         "flag15": false,
-        "flag16": true
+        "flag16": false
       },
       "id": "2c9f17c0-fe3d-4645-9b17-28947833e0c7"
     },
