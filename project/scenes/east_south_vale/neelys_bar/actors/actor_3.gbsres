@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "76558209-7eb6-49fc-a631-7568d5ae5634",
+  "id": "db17b777-bfad-4323-bd59-bf28e8d5aa62",
   "name": "",
   "frame": 0,
   "animate": false,
@@ -14,15 +14,15 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_139",
+  "symbol": "actor_166",
   "script": [
     {
       "command": "EVENT_ADD_FLAGS",
       "args": {
-        "variable": "90",
+        "variable": "96",
         "flag1": false,
         "flag2": false,
-        "flag3": false,
+        "flag3": true,
         "flag4": false,
         "flag5": false,
         "flag6": false,
@@ -31,13 +31,13 @@
         "flag9": false,
         "flag10": false,
         "flag11": false,
-        "flag12": true,
+        "flag12": false,
         "flag13": false,
         "flag14": false,
         "flag15": false,
         "flag16": false
       },
-      "id": "6fb8b6c0-c981-4655-8087-dbc30bb7782d"
+      "id": "a5a692a2-7019-494f-bc0a-6840e2bbc3da"
     },
     {
       "command": "EVENT_TEXT",
@@ -62,16 +62,16 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "338fb4b9-e4f0-4f56-aadf-85b99e82ae1d"
+      "id": "5a575754-3ede-4c05-b1e0-0df19687d00b"
     },
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "The janitor came in the other\nday, drunk and in tears. Had \nhalf a record with him, kept\nyelling we gotta fix it somehow.",
-          "I was willing to do it just to shut\nhim up, so I got to get the glue\nfrom cabinet,",
-          "but then he realized he only had\nthe one half, so he ran out.",
-          "Can't do much about the record,\nmaybe ask around at Neely's\nnext time you're there - might be\none of theirs."
+          "I don't know what got into him.\nHe just started smashing the\nthing. Had to throw him out. He\nran off, cried he'd \"fix\neverything\".",
+          "I gathered up what I could, still\nhaven't found one of the buttons.\nHalf the record is still lodged\ninside, but the other part's \nmissing.",
+          "Come to think of it, he did run\ntowards Groovy.",
+          "Anyway, maybe go check up on\nhim? See if he's alright. He lives\nover at Saul, by the pharmacy.\nApartment 9."
         ],
         "__section": "text",
         "avatarId": "",
@@ -90,7 +90,7 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "4b2b9b43-fc1f-48d7-b755-84ca12b4caa7"
+      "id": "e4e46728-c118-4d5d-aff9-e61f763ab2a1"
     },
     {
       "command": "EVENT_SOUND_PLAY_EFFECT",
@@ -103,13 +103,13 @@
         "wait": true,
         "effect": 0
       },
-      "id": "f640a26d-77e2-494d-ad52-1f944892292f"
+      "id": "b5c7adac-e797-4f15-ba33-487d7ca95a26"
     },
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "I got the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Record Store \nNote!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+          "I got the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Neely's Bar Note!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
         ],
         "__section": "text",
         "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
@@ -128,22 +128,22 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "b30fe8d7-c22a-4b77-9939-77643afc481d"
+      "id": "46794697-5f85-4742-a932-8d07df162493"
     },
     {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$"
       },
-      "id": "589b8033-c2fe-49ec-8f65-d1bbfbbbe5e6"
+      "id": "e04c4508-a2a2-4845-9b03-0463b02472dc"
     }
   ],
   "startScript": [
     {
       "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
-        "variable": "90",
-        "flag": 11,
+        "variable": "96",
+        "flag": 2,
         "__collapseElse": true
       },
       "children": {
@@ -153,19 +153,19 @@
             "args": {
               "actorId": "$self$"
             },
-            "id": "4df07990-c6f5-401f-a32c-28be843453a5"
+            "id": "66b2b3aa-fde2-4eb5-9e80-fb1f51e5619f"
           }
         ],
         "false": []
       },
-      "id": "75bbb45f-ab70-4b7e-aba6-f4073a9ac336"
+      "id": "742e16ad-64e8-4eed-876f-fdbfb3936ce2"
     }
   ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 3,
-  "y": 14,
-  "_index": 0
+  "x": 11,
+  "y": 13,
+  "_index": 2
 }

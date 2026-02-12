@@ -446,46 +446,80 @@
                   "id": "77c5c37a-17ad-44af-aaff-c297895688e7"
                 },
                 {
-                  "command": "EVENT_REPLACE_TILE_XY",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "x": {
-                      "type": "number",
-                      "value": 9
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 6
-                    },
-                    "tilesetId": "96440d45-f06f-4e0a-8297-417ec72b03ad",
-                    "tileIndex": {
-                      "type": "add",
-                      "valueA": {
-                        "type": "number",
-                        "value": 10
-                      },
-                      "valueB": {
-                        "type": "mul",
-                        "valueA": {
-                          "type": "sub",
-                          "valueA": {
-                            "type": "variable",
-                            "value": "59"
-                          },
-                          "valueB": {
+                    "variable": "96",
+                    "flag": 2,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_REPLACE_TILE_XY",
+                        "args": {
+                          "x": {
                             "type": "number",
-                            "value": 1
+                            "value": 9
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "tilesetId": "96440d45-f06f-4e0a-8297-417ec72b03ad",
+                          "tileIndex": {
+                            "type": "add",
+                            "valueA": {
+                              "type": "number",
+                              "value": 10
+                            },
+                            "valueB": {
+                              "type": "mul",
+                              "valueA": {
+                                "type": "sub",
+                                "valueA": {
+                                  "type": "variable",
+                                  "value": "59"
+                                },
+                                "valueB": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "valueB": {
+                                "type": "number",
+                                "value": 40
+                              }
+                            }
+                          },
+                          "__collapse": false,
+                          "tileSize": "16px"
+                        },
+                        "id": "2a1bba3e-24ee-491a-88de-ae444b32bf8a"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_REPLACE_TILE_XY",
+                        "args": {
+                          "x": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "tilesetId": "2ad50815-8dc2-4f07-a3c4-c756978c8002",
+                          "tileIndex": {
+                            "type": "number",
+                            "value": 0
                           }
                         },
-                        "valueB": {
-                          "type": "number",
-                          "value": 40
-                        }
+                        "id": "2083c0b4-4547-4d86-9d1a-e7bf2a55c7d5"
                       }
-                    },
-                    "__collapse": false,
-                    "tileSize": "16px"
+                    ]
                   },
-                  "id": "2a1bba3e-24ee-491a-88de-ae444b32bf8a"
+                  "id": "ada88d88-0171-4623-a9d6-736083a61787"
                 },
                 {
                   "command": "EVENT_REPLACE_TILE_XY",

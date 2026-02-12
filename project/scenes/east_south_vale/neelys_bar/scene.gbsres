@@ -1,27 +1,120 @@
 {
   "_resourceType": "scene",
   "id": "3267e0eb-38e8-49fe-857a-2da3315a7987",
-  "_index": 78,
+  "_index": 77,
+  "type": "TOPDOWN",
   "name": "East South Vale/Neely's Bar",
-  "backgroundId": "f9fd7829-b982-48eb-b61b-1e3aa75a4476",
-  "tilesetId": "",
+  "symbol": "scene_79",
+  "x": 1816,
+  "y": 2144,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "f9fd7829-b982-48eb-b61b-1e3aa75a4476",
+  "tilesetId": "",
   "paletteIds": [
     "d296302f-db68-4bfa-bed0-6360b2b0847c",
     "8dca260b-112d-43ab-baad-c583040895e2",
-    null,
+    "",
     "cf4d6356-499d-4cbf-a21b-e9c454b9d0a9",
     "e0323961-3399-4571-aa74-50917e96d1fd"
   ],
   "spritePaletteIds": [],
-  "collisions": "0f65+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0fd+007+0fd+006+0f3+00a+0f!005+0f4+00a+0f!004+0f18+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_79",
-  "x": 1816,
-  "y": 2144,
   "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 200
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "3745f9a9-d074-404b-a94d-8b52df0f1c8f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "47",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "5218489c-47df-4744-97ba-dca73914d7b0"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "67",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "1de8d1dd-ae8c-4b47-9ad7-1d919bcfe762"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "78",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "68d0b4f5-fdbb-41f5-afc1-06b73c91fbc2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "71",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__comment": false,
+              "__collapse": true
+            },
+            "id": "fd77b123-6896-4190-ab71-8780d1c9aed6"
+          }
+        ]
+      },
+      "id": "113ad4f7-8aac-439f-83c4-f809d711c95f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "79f3ae6a-0688-4a59-b055-0b703907dafd",
+        "spriteStateId": "Down",
+        "loopAnim": false
+      },
+      "id": "1f08cd18-9d25-4702-a9df-75190419cd3b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+      "args": {
+        "actorId": "79f3ae6a-0688-4a59-b055-0b703907dafd",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      "id": "7cfb9f0d-2eab-4dd4-a8c7-b10bd36b8b94"
+    },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
@@ -119,5 +212,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f65+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0fd+007+0fd+006+0f3+00a+0f!005+0f4+00a+0f!004+0f18+"
 }

@@ -1,0 +1,141 @@
+{
+  "_resourceType": "trigger",
+  "id": "ea9c74a2-698a-4a2d-bf52-9058ab7abab1",
+  "name": "",
+  "prefabId": "",
+  "x": 14,
+  "y": 11,
+  "symbol": "trigger_192",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "281caac7-d1ab-4f78-a4ae-fd12eb308582"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "ab8611ba-9d8b-4bff-9b07-81638ea85121"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "eb0b33ce-3b13-42ff-a854-890ae7cda240"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "102"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "6ced895d-e440-4872-878e-a1f79aa57083",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "172c7f42-1350-4758-9fc3-3a0daa6abc09"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "102"
+                  },
+                  "id": "15ba6834-ec60-46dc-a283-bfd5126b1459"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Used the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Neely's Bar\nCoin!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "dc26b4ff-ec93-4c3b-aa11-c6f7a2f9b9a9"
+                }
+              ],
+              "false": []
+            },
+            "id": "bbb412f7-147f-464a-a1c4-bdc23ffb9f01"
+          }
+        ]
+      },
+      "id": "553b2058-ad81-4b30-8751-ef2bb9552731"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "26fbb379-b39b-4535-b72c-23bea9c049b5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "538f5ebc-6079-42fc-9f73-51b9702f5b6c"
+    }
+  ],
+  "_index": 7
+}

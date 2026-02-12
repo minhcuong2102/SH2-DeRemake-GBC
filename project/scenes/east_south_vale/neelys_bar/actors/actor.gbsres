@@ -17,68 +17,226 @@
   "symbol": "actor_164",
   "script": [
     {
-      "command": "EVENT_IF_FLAGS_COMPARE",
+      "command": "EVENT_IF",
       "args": {
-        "variable": "84",
-        "flag": 6,
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
         "__collapseElse": false
       },
       "children": {
-        "true": [
-          {
-            "command": "EVENT_SWITCH_SCENE",
-            "args": {
-              "sceneId": "1d0c9ae3-4735-48ea-9fb0-c361063486c5",
-              "x": {
-                "type": "number",
-                "value": 0
-              },
-              "y": {
-                "type": "number",
-                "value": 0
-              },
-              "direction": "",
-              "fadeSpeed": "2"
-            },
-            "id": "44eaa4e1-3913-407e-9d52-d161edf685ac"
-          }
-        ],
+        "true": [],
         "false": [
           {
-            "command": "EVENT_ADD_FLAGS",
+            "command": "EVENT_IF_FLAGS_COMPARE",
             "args": {
               "variable": "84",
-              "flag1": false,
-              "flag2": false,
-              "flag3": false,
-              "flag4": false,
-              "flag5": false,
-              "flag6": false,
-              "flag7": true,
-              "flag8": false,
-              "flag9": false,
-              "flag10": false,
-              "flag11": false,
-              "flag12": false,
-              "flag13": false,
-              "flag14": false,
-              "flag15": false,
-              "flag16": false
+              "flag": 6,
+              "__collapseElse": false
             },
-            "id": "2dc89c38-252b-48ca-9622-0949760a1a5d"
-          },
-          {
-            "command": "EVENT_ACTOR_SET_STATE",
-            "args": {
-              "actorId": "$self$",
-              "spriteStateId": "Down",
-              "loopAnim": true
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "97"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "97"
+                        },
+                        "id": "fea3acfc-a1fa-45ae-be68-bb2f63fc213d"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "73f16823-8112-44dc-be89-c4904c826253",
+                          "priority": "high",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0
+                        },
+                        "id": "355779ea-e2a9-4b6b-bd6c-4494ffd61498"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "I got the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Broken Vinyl\nRecord!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+                          ],
+                          "__section": "text",
+                          "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 2,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "ebb8f045-05af-4ef4-b4a9-c9fa4be2f21f"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "expression",
+                            "value": "$97$ == 2 && $98$ >= 1"
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "73f16823-8112-44dc-be89-c4904c826253",
+                                "priority": "high",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                              },
+                              "id": "da46bfa4-0289-4b23-8452-794dbb9d6cb6"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "97",
+                                "value": {
+                                  "type": "number",
+                                  "value": 3
+                                }
+                              },
+                              "id": "34c210f8-8c08-46dc-8b51-6d8bf3fb6365"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Combined the items to create\n!F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Glued Up Vinyl Record!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!.",
+                                  "It writes, \"The Long Way Home\"."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "56b3edd0-0a38-4165-a2df-3e753140a092"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "0e7698e1-607c-431d-a817-d490b350e945"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "1d0c9ae3-4735-48ea-9fb0-c361063486c5",
+                          "x": {
+                            "type": "number",
+                            "value": 11
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 19
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "44eaa4e1-3913-407e-9d52-d161edf685ac"
+                      }
+                    ]
+                  },
+                  "id": "b9167d5f-6731-45c0-b709-305185a32909"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "84",
+                    "flag1": false,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": true,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "2dc89c38-252b-48ca-9622-0949760a1a5d"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "Down",
+                    "loopAnim": true
+                  },
+                  "id": "a63591a0-1878-4f19-a7c8-b467847d1de2"
+                }
+              ]
             },
-            "id": "a63591a0-1878-4f19-a7c8-b467847d1de2"
+            "id": "373b5464-f9b1-4ea0-b259-4a0f362b848f"
           }
         ]
       },
-      "id": "373b5464-f9b1-4ea0-b259-4a0f362b848f"
+      "id": "b5d08f0a-4c11-4c7e-ad66-9739ab8c6696"
     }
   ],
   "startScript": [

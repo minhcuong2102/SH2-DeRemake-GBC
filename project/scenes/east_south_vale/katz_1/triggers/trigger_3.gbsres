@@ -36,7 +36,7 @@
       "args": {
         "variable": "85",
         "flag": 14,
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -60,7 +60,7 @@
                   "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {
                     "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
-                    "__comment": true
+                    "__comment": false
                   },
                   "id": "5d4219a4-0439-4375-8c7f-81fb8ee5818a"
                 },
@@ -86,7 +86,46 @@
             "id": "45696232-36bd-4db4-91df-7292cefe9cc8"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "66f98da6-5ec4-4f92-92d8-fc8cbb4c0bd4",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "61b87ec1-9aa6-4c7a-bf7b-617473e18c3b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's locked from the other\nside."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "7aaf51a9-eee9-42dd-a07f-6ff19f0df6bd"
+          }
+        ]
       },
       "id": "4b4981e1-6148-49d4-a2b8-6e3a0fbd735d"
     }
