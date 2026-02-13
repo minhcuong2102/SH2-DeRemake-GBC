@@ -1,0 +1,128 @@
+{
+  "_resourceType": "actor",
+  "id": "9e96470b-bc7c-4d2a-9d41-7d9623b3eb93",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ea171e05-9b2d-4ccf-b2fb-2fcb8795ea9d",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_171",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "78720a0a-09d1-4757-847b-312429c23e50"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "101"
+            },
+            "id": "d9e834e9-df44-4761-a313-110d095afadf"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Used the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Jukebox Button!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "b9a83ad6-ce85-4a95-808f-9c58695af1d2"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "5efcbce4-1508-4db6-bff9-c491f7b576b0"
+          }
+        ],
+        "false": []
+      },
+      "id": "a8111182-fc69-4cf8-ae09-0a57cc554f97"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "7e6d3e49-377e-49d4-94e9-7457713ed25b"
+          }
+        ],
+        "false": []
+      },
+      "id": "82b27229-2257-4d46-8640-c0bf964b4741"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 4,
+  "y": 12,
+  "_index": 0
+}

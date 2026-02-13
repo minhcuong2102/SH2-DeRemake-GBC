@@ -1,28 +1,29 @@
 {
   "_resourceType": "scene",
-  "id": "4736ee5e-ef97-4a96-8523-b3d2a72a8d5e",
-  "_index": 61,
-  "type": "TOPDOWN",
-  "name": "East South Vale/Cross 1",
-  "symbol": "scene_62",
-  "x": 1960,
-  "y": 1792,
-  "width": 20,
-  "height": 22,
-  "backgroundId": "7ea96e63-0a6a-483a-ab8c-ff440fc38e69",
+  "id": "eac8847a-9a8c-4d1b-84c0-cd6a960ae164",
+  "_index": 81,
+  "name": "East South Vale/Barber",
+  "backgroundId": "3db6881b-486a-4850-bd23-14e5115222b0",
   "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
   "paletteIds": [
-    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
-    "",
-    "f17567f2-65b3-4a59-9fe6-40e62241c598"
+    "8dca260b-112d-43ab-baad-c583040895e2",
+    null,
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
   ],
   "spritePaletteIds": [],
+  "collisions": "0f7c+00!0f3+004+0f3+00!0f8+00!0f3+004+0f3+00!0f8+002+0f2+005+0f2+00!0f8+002+0f2+005+0f2+00!0f8+00c+0fa+00a+0fa+00a+0f8+00c+0f54+",
   "autoFadeSpeed": 1,
+  "symbol": "scene_82",
+  "x": 2160,
+  "y": 2000,
   "script": [
     {
       "command": "EVENT_MUSIC_STOP",
       "args": {},
-      "id": "265a9414-2aeb-4822-abd4-cb370a7b3df2"
+      "id": "71b3f32f-799b-40ba-b75e-cb7e61c4ec1b"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -30,10 +31,10 @@
         "variable": "41",
         "value": {
           "type": "number",
-          "value": 23
+          "value": 35
         }
       },
-      "id": "5b172b77-b41e-4df9-8a8c-faf9da3659b8"
+      "id": "5aef0103-3d8e-4b97-b02e-2d2e5f30c324"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -41,10 +42,10 @@
         "variable": "48",
         "value": {
           "type": "number",
-          "value": 1
+          "value": 0
         }
       },
-      "id": "7a03fad9-72d6-44e1-bc8c-b97ffb138f73"
+      "id": "1e787717-1839-4e79-a96c-bb93c0569852"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -52,10 +53,10 @@
         "variable": "19",
         "value": {
           "type": "number",
-          "value": 0
+          "value": 1
         }
       },
-      "id": "a487d8a2-6eb4-4e23-84b0-b97081078926"
+      "id": "c04c758c-bf8f-43b7-8320-59312c2ce73f"
     },
     {
       "command": "EVENT_GROUP",
@@ -71,9 +72,9 @@
                 "type": "variable",
                 "value": "T0"
               },
-              "__comment": false
+              "__comment": true
             },
-            "id": "efa6b5e4-970b-47be-9dbf-15c3847289ec"
+            "id": "0d6a5274-476c-411a-98be-7428f3689e02"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -81,7 +82,7 @@
               "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
               "__collapse": true
             },
-            "id": "34a1202e-efda-4c43-9ed4-dd6dab71ed88"
+            "id": "1fb57a27-9978-41fb-8303-aa3dd2697add"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -89,7 +90,7 @@
               "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
               "__collapse": true
             },
-            "id": "a9a21372-ac9e-44ce-af2f-432009d87958"
+            "id": "4d8fe083-d61a-4376-8249-1fcbbe8e5fd1"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -97,7 +98,7 @@
               "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
               "__collapse": true
             },
-            "id": "64d9b02c-3221-433f-91e1-037c7162f6cd"
+            "id": "72fb27f8-f4b9-4ce6-81b9-3a9f9ad51f63"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -105,15 +106,14 @@
               "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
               "__collapse": true
             },
-            "id": "acb6b7d1-8074-4e0a-b4e5-c1cf29b4d9ce"
+            "id": "017e6cab-9f2e-4960-b8f2-cd44a3003a81"
           }
         ]
       },
-      "id": "bf730b42-4faf-4044-ab46-0afa8facb59d"
+      "id": "aa189f61-aa64-45e2-9399-55aa677bcc88"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": [],
-  "collisions": "0f4+00c+0f8+00c+0f8+00c+0f4+0015+0f!002+0f!00a+0f!002+0f!008e+0f!002+0f!00a+0f!002+0f!0051+0f5+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0f5+"
+  "playerHit3Script": []
 }

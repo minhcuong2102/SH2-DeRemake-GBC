@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "b8996adb-4c43-44cd-86df-b9d2ce80bed9",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7d7b6237-573a-4784-992d-0d440edfd6fa",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_172",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Gentlemen's Barber\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "fdcdfc38-30fe-4463-a8cf-d0a10dd598e1"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 16,
+  "y": 7,
+  "_index": 0
+}

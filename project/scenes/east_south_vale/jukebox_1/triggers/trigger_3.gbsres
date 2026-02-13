@@ -1,24 +1,24 @@
 {
   "_resourceType": "trigger",
-  "id": "d1eb1eb4-e65e-4fe4-8c7e-e90266a46d38",
+  "id": "7f71170e-339d-4446-92fe-c6dd550d91d1",
   "name": "",
   "prefabId": "",
-  "x": 4,
-  "y": 12,
-  "symbol": "trigger_186",
+  "x": 5,
+  "y": 10,
+  "symbol": "trigger_201",
   "prefabScriptOverrides": {},
   "width": 1,
-  "height": 1,
+  "height": 2,
   "script": [
     {
       "command": "EVENT_SCRIPT_UNLOCK",
       "args": {},
-      "id": "db09e8d5-485f-44ee-8f1a-f6053a753c3a"
+      "id": "863e253a-aae6-40da-b5cc-caf60d41e42b"
     },
     {
       "command": "EVENT_IDLE",
       "args": {},
-      "id": "262c85ef-1f25-4f4a-99a3-7d7ef7678308"
+      "id": "5d288fff-06dd-4961-a1fc-34ee4d282af0"
     },
     {
       "command": "EVENT_ACTOR_SET_FRAME",
@@ -29,7 +29,7 @@
           "value": 0
         }
       },
-      "id": "37c8e0ac-0187-421c-9876-93cc9ceefb77"
+      "id": "8a48d539-b8c8-4acf-9f16-2ac2677ef95c"
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -53,13 +53,13 @@
               "wait": true,
               "effect": 0
             },
-            "id": "927e1720-a591-46b6-aff2-1dca56dad525"
+            "id": "7fadcf58-2840-4d54-83ad-f1e1c82ea981"
           },
           {
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "eq",
+                "type": "gte",
                 "valueA": {
                   "type": "variable",
                   "value": "102"
@@ -69,48 +69,51 @@
                   "value": 2
                 }
               },
-              "__collapseElse": true
+              "__collapseElse": false
             },
             "children": {
               "true": [
                 {
-                  "command": "EVENT_IF",
+                  "command": "EVENT_INC_VALUE",
                   "args": {
-                    "condition": {
-                      "type": "eq",
-                      "valueA": {
-                        "type": "variable",
-                        "value": "91"
-                      },
-                      "valueB": {
-                        "type": "number",
-                        "value": 1
-                      }
-                    },
-                    "__collapseElse": true
+                    "variable": "91"
                   },
-                  "children": {
-                    "true": [
-                      {
-                        "command": "EVENT_INC_VALUE",
-                        "args": {
-                          "variable": "92"
-                        },
-                        "id": "8876bb8f-b2ef-4ded-9b9a-4e616e08dbbc"
-                      }
-                    ],
-                    "false": []
-                  },
-                  "id": "2621e555-5068-48b7-940e-78ed3d0640df"
+                  "id": "dad30f83-65e2-4390-b62d-ec21a493d448"
                 }
               ],
-              "false": []
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The jukebox is not working\nunless I put a coin in."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "175eb522-f609-4934-826c-7fbe5c548726"
+                }
+              ]
             },
-            "id": "7e6c181e-5b68-4101-86cc-70c11a14c967"
+            "id": "a8fd0370-22e8-427c-aa4a-c3df2d0b3a0a"
           }
         ]
       },
-      "id": "650e2e52-9449-4fc1-8446-72d6b8b4a095"
+      "id": "a228e976-4883-4fb8-a222-8997d2834205"
     }
   ],
   "leaveScript": [
@@ -121,7 +124,7 @@
           "a"
         ]
       },
-      "id": "620db975-2a1c-4980-9470-316f16a56326"
+      "id": "c803a620-ffdf-4e57-9db8-c8e5ff3558c8"
     },
     {
       "command": "EVENT_ACTOR_SET_FRAME",
@@ -132,8 +135,8 @@
           "value": 1
         }
       },
-      "id": "bfb04dd8-de01-4459-a3b6-4523dfe0af0c"
+      "id": "98df4aed-f07a-4f58-8684-ad8cf5ba25e6"
     }
   ],
-  "_index": 1
+  "_index": 2
 }

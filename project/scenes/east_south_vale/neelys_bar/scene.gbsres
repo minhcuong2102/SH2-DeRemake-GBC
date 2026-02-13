@@ -96,6 +96,11 @@
       "id": "113ad4f7-8aac-439f-83c4-f809d711c95f"
     },
     {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "6926cc49-4773-477b-b6e9-d897d9d82ad4"
+    },
+    {
       "command": "EVENT_ACTOR_SET_STATE",
       "args": {
         "actorId": "79f3ae6a-0688-4a59-b055-0b703907dafd",
@@ -208,6 +213,42 @@
         ]
       },
       "id": "fb058571-60bf-4cc7-9a38-86d39ddff1d3"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "96",
+        "flag": 4,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "96",
+              "flag": 3,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "f1be2ac3-04ab-482a-8b83-99ffba1a89cd"
+                  },
+                  "id": "b2953dd0-4194-4711-ba93-e46831e7a7e7"
+                }
+              ],
+              "false": []
+            },
+            "id": "f8ea44b9-ecd4-4243-afa0-1da7092da6c8"
+          }
+        ]
+      },
+      "id": "cb239d7d-0fc5-44ba-9270-4226a8bf4f43"
     }
   ],
   "playerHit1Script": [],

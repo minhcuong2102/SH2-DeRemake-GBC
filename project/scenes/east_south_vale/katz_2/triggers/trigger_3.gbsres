@@ -1,0 +1,112 @@
+{
+  "_resourceType": "trigger",
+  "id": "aaaeb3f1-2b24-46fc-a1b8-9f8bbd688eaf",
+  "name": "",
+  "prefabId": "",
+  "x": 20,
+  "y": 5,
+  "symbol": "trigger_196",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "111",
+              "flag": 9,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "edbd93bd-1967-4436-925c-a5d2ff5e1cea"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+                    "__comment": true
+                  },
+                  "id": "10c88a15-be0d-43cf-8f2d-a68fc8481d65"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "eac8847a-9a8c-4d1b-84c0-cd6a960ae164",
+                    "x": {
+                      "type": "number",
+                      "value": 13
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "371f2592-bf4f-4fba-bee5-704723dd73f8"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "There's a window.\nMaybe I can break it."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__comment": true
+                  },
+                  "id": "1bab606f-0429-4647-add8-f24b00da8357"
+                }
+              ]
+            },
+            "id": "eb7447ee-3542-4aae-8bc6-a4dcdcd2ad4d"
+          }
+        ]
+      },
+      "id": "7877d99b-bc29-42fb-b7a1-0b8167af776a"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "2bb2944b-74a6-4943-b065-4489dac51aa6"
+    }
+  ],
+  "_index": 2
+}

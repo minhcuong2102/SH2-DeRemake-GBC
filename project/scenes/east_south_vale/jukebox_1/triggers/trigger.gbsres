@@ -1,24 +1,24 @@
 {
   "_resourceType": "trigger",
-  "id": "ea9c74a2-698a-4a2d-bf52-9058ab7abab1",
+  "id": "65d5bc65-f4f7-468c-94b9-badfadf594aa",
   "name": "",
   "prefabId": "",
-  "x": 14,
-  "y": 11,
-  "symbol": "trigger_192",
+  "x": 3,
+  "y": 10,
+  "symbol": "trigger_199",
   "prefabScriptOverrides": {},
-  "width": 2,
+  "width": 1,
   "height": 2,
   "script": [
     {
       "command": "EVENT_SCRIPT_UNLOCK",
       "args": {},
-      "id": "281caac7-d1ab-4f78-a4ae-fd12eb308582"
+      "id": "339f6f88-3320-4114-bfbb-9dd8ae856dd7"
     },
     {
       "command": "EVENT_IDLE",
       "args": {},
-      "id": "ab8611ba-9d8b-4bff-9b07-81638ea85121"
+      "id": "488aa446-efd1-4aef-ba10-5f3b4654fa15"
     },
     {
       "command": "EVENT_ACTOR_SET_FRAME",
@@ -29,7 +29,7 @@
           "value": 0
         }
       },
-      "id": "eb0b33ce-3b13-42ff-a854-890ae7cda240"
+      "id": "5b97e04f-2342-4c57-a405-f639ca483390"
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -46,14 +46,14 @@
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "eq",
+                "type": "gte",
                 "valueA": {
                   "type": "variable",
                   "value": "102"
                 },
                 "valueB": {
                   "type": "number",
-                  "value": 1
+                  "value": 2
                 }
               },
               "__collapseElse": false
@@ -71,20 +71,15 @@
                     "wait": true,
                     "effect": 0
                   },
-                  "id": "172c7f42-1350-4758-9fc3-3a0daa6abc09"
-                },
-                {
-                  "command": "EVENT_INC_VALUE",
-                  "args": {
-                    "variable": "102"
-                  },
-                  "id": "15ba6834-ec60-46dc-a283-bfd5126b1459"
-                },
+                  "id": "4f491e3c-f00b-49f1-ac27-b920ce019534"
+                }
+              ],
+              "false": [
                 {
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "Used the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Neely's Bar\nCoin!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+                      "The jukebox is not working\nunless I put a coin in."
                     ],
                     "__section": "text",
                     "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
@@ -103,16 +98,15 @@
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30
                   },
-                  "id": "dc26b4ff-ec93-4c3b-aa11-c6f7a2f9b9a9"
+                  "id": "3d4286b3-4452-4704-97db-32d81a1053b2"
                 }
-              ],
-              "false": []
+              ]
             },
-            "id": "bbb412f7-147f-464a-a1c4-bdc23ffb9f01"
+            "id": "b5a8fa3c-f901-4d33-a558-a9f6fdf53ab7"
           }
         ]
       },
-      "id": "553b2058-ad81-4b30-8751-ef2bb9552731"
+      "id": "47e085e9-2b0b-407f-a121-354f3b0baf0a"
     }
   ],
   "leaveScript": [
@@ -123,7 +117,7 @@
           "a"
         ]
       },
-      "id": "26fbb379-b39b-4535-b72c-23bea9c049b5"
+      "id": "b0b86c4f-fce0-4a93-92e0-8edf1349907e"
     },
     {
       "command": "EVENT_ACTOR_SET_FRAME",
@@ -134,8 +128,8 @@
           "value": 1
         }
       },
-      "id": "538f5ebc-6079-42fc-9f73-51b9702f5b6c"
+      "id": "01f1c756-a75c-42af-8919-16cedd580d86"
     }
   ],
-  "_index": 7
+  "_index": 0
 }
