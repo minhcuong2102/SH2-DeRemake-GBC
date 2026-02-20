@@ -55,6 +55,19 @@
             "id": "067e19d7-177a-465e-81e9-af765f562534"
           },
           {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9f5f6957-2f25-4010-a93d-74412bd8f1f6",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "70aa6e2f-57f0-4078-8d3f-ff4be09aeb7d"
+          },
+          {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
@@ -92,6 +105,36 @@
               "actorId": "7c1de10f-8187-4651-8e9b-1c6c03f29cfa"
             },
             "id": "e6efd36a-7776-4122-a507-d980616bddeb"
+          },
+          {
+            "command": "GUD_EVENT_SUBMAP_BG",
+            "args": {
+              "srcX": {
+                "type": "number",
+                "value": 13
+              },
+              "srcY": {
+                "type": "number",
+                "value": 0
+              },
+              "destX": {
+                "type": "number",
+                "value": 3
+              },
+              "destY": {
+                "type": "number",
+                "value": 15
+              },
+              "w": {
+                "type": "number",
+                "value": 7
+              },
+              "h": {
+                "type": "number",
+                "value": 6
+              }
+            },
+            "id": "40ac3bbf-7fee-4e58-8315-9674baa0e68b"
           },
           {
             "command": "EVENT_ACTOR_MOVE_TO",

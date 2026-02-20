@@ -43,10 +43,19 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_IF_FLAGS_COMPARE",
+            "command": "EVENT_IF",
             "args": {
-              "variable": "90",
-              "flag": 14,
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
               "__collapseElse": false
             },
             "children": {
@@ -57,12 +66,50 @@
                   "id": "773a7462-1bce-4ad4-8b57-7c3c12624c87"
                 },
                 {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "9f5f6957-2f25-4010-a93d-74412bd8f1f6",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "5256272f-91b0-46a0-a22f-bd8adeac9559"
+                },
+                {
                   "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {
                     "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
                     "__comment": false
                   },
                   "id": "7cd910a6-f11a-4708-822f-cad640542187"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Used the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Neely's Bar Key!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "937d2dab-7bc7-4f64-93ff-f129bec6f9ef"
                 },
                 {
                   "command": "EVENT_SWITCH_SCENE",
@@ -123,7 +170,7 @@
                 }
               ]
             },
-            "id": "9e18653e-faed-46e7-9adb-95ae1d58f548"
+            "id": "87859d12-1ee7-4b27-973e-a2c6765fe4eb"
           }
         ]
       },

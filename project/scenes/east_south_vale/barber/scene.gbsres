@@ -2,23 +2,22 @@
   "_resourceType": "scene",
   "id": "eac8847a-9a8c-4d1b-84c0-cd6a960ae164",
   "_index": 81,
-  "name": "East South Vale/Barber",
-  "backgroundId": "3db6881b-486a-4850-bd23-14e5115222b0",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [
-    "8dca260b-112d-43ab-baad-c583040895e2",
-    null,
-    "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
-  ],
-  "spritePaletteIds": [],
-  "collisions": "0f7c+00!0f3+004+0f3+00!0f8+00!0f3+004+0f3+00!0f8+002+0f2+005+0f2+00!0f8+002+0f2+005+0f2+00!0f8+00c+0fa+00a+0fa+00a+0f8+00c+0f54+",
-  "autoFadeSpeed": 1,
+  "name": "East South Vale/Barber",
   "symbol": "scene_82",
   "x": 2160,
   "y": 2000,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "3db6881b-486a-4850-bd23-14e5115222b0",
+  "tilesetId": "",
+  "paletteIds": [
+    "8dca260b-112d-43ab-baad-c583040895e2",
+    "",
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
   "script": [
     {
       "command": "EVENT_MUSIC_STOP",
@@ -31,7 +30,7 @@
         "variable": "41",
         "value": {
           "type": "number",
-          "value": 35
+          "value": 36
         }
       },
       "id": "5aef0103-3d8e-4b97-b02e-2d2e5f30c324"
@@ -115,5 +114,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f7c+00!0f3+004+0f3+00!0f8+00!0f3+004+0f3+00!0f8+002+0f2+005+0f2+00!0f8+002+0f2+005+0f2+00!0f8+00c+0fa+00a+0fa+00a+0f8+00c+0f54+"
 }

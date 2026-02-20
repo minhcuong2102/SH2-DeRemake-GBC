@@ -30,7 +30,7 @@
             "value": 1
           }
         },
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -47,6 +47,19 @@
               "variable": "101"
             },
             "id": "d9e834e9-df44-4761-a313-110d095afadf"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9f5f6957-2f25-4010-a93d-74412bd8f1f6",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "26443f26-9428-44be-a16f-80d3976e73d2"
           },
           {
             "command": "EVENT_TEXT",
@@ -81,7 +94,33 @@
             "id": "5efcbce4-1508-4db6-bff9-c491f7b576b0"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's missing a button."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8d6738a4-fdb1-44d3-85ae-9a8541b5e536"
+          }
+        ]
       },
       "id": "a8111182-fc69-4cf8-ae09-0a57cc554f97"
     }

@@ -17,6 +17,19 @@
   "symbol": "actor_187",
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "9f5f6957-2f25-4010-a93d-74412bd8f1f6",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "e7ca7930-a837-4e91-ba5e-db3930b88a75"
+    },
+    {
       "command": "EVENT_ACTOR_SET_STATE",
       "args": {
         "actorId": "$self$",

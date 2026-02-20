@@ -2,27 +2,26 @@
   "_resourceType": "scene",
   "id": "3b41524e-7d6d-4af7-a368-7f68e659db21",
   "_index": 82,
+  "type": "TOPDOWN",
   "name": "East South Vale/Texan Cafe",
-  "backgroundId": "55cd95c0-b59f-43dd-bfa9-00f4f2864093",
-  "tilesetId": "",
+  "symbol": "scene_83",
+  "x": 2168,
+  "y": 2176,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "55cd95c0-b59f-43dd-bfa9-00f4f2864093",
+  "tilesetId": "",
   "paletteIds": [
     "8dca260b-112d-43ab-baad-c583040895e2",
     "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
   ],
   "spritePaletteIds": [
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
   ],
-  "collisions": "0f54+008+0f!00!0f3+00!0ff+002+0f!002+0ff+005+0f4+0010+0f4+00!0f3+003+0f3+002+0f3+00!0f4+002+0f!003+0f!00!0f!004+0f!002+0f4+0010+0f4+0010+0f4+00!0f3+003+0f3+002+0f3+00!0f4+002+0f!005+0f!004+0f!002+0f4+0010+0f3e+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_83",
-  "x": 2168,
-  "y": 2176,
   "script": [
     {
       "command": "EVENT_GROUP",
@@ -171,14 +170,6 @@
               ],
               "false": [
                 {
-                  "command": "EVENT_CALL_CUSTOM_EVENT",
-                  "args": {
-                    "customEventId": "d40490ad-124b-43de-b253-c50aa7d40a36",
-                    "$actor[0]$": "fce467ac-bda6-4ff0-bcd2-a9a3f7c811a5"
-                  },
-                  "id": "225fad5c-ef5e-48bb-92e8-1793b0f44245"
-                },
-                {
                   "command": "EVENT_ACTOR_ACTIVATE",
                   "args": {
                     "actorId": "fce467ac-bda6-4ff0-bcd2-a9a3f7c811a5"
@@ -215,12 +206,20 @@
       "id": "28e05203-9d19-48aa-a03d-2d49a06d552f"
     },
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d40490ad-124b-43de-b253-c50aa7d40a36",
+        "$actor[0]$": "fce467ac-bda6-4ff0-bcd2-a9a3f7c811a5"
+      },
+      "id": "225fad5c-ef5e-48bb-92e8-1793b0f44245"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "41",
         "value": {
           "type": "number",
-          "value": 36
+          "value": 37
         }
       },
       "id": "ce9d898b-5265-4fe3-9db0-908000e8b4a1"
@@ -350,5 +349,6 @@
     }
   ],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f54+008+0f!00!0f3+00!0ff+002+0f!002+0ff+005+0f4+0010+0f4+00!0f3+003+0f3+002+0f3+00!0f4+002+0f!003+0f!00!0f!004+0f!002+0f4+0010+0f4+0010+0f4+00!0f3+003+0f3+002+0f3+00!0f4+002+0f!005+0f!004+0f!002+0f4+0010+0f3e+"
 }

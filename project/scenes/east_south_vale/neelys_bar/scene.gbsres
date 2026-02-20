@@ -90,15 +90,59 @@
               "__collapse": true
             },
             "id": "fd77b123-6896-4190-ab71-8780d1c9aed6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "102",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true,
+              "__comment": true
+            },
+            "id": "0a2bfe69-1216-4c9b-9293-fb919790e5fa"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true
+            },
+            "id": "45e4f74e-f4f2-4a07-98fc-c9aab437dd8f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "97",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": false
+            },
+            "id": "88a7e076-452d-41bd-a464-7f78e2096b7b"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "98",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true
+            },
+            "id": "730e2241-89eb-4bc6-be0d-1b9abbedabf8"
           }
         ]
       },
       "id": "113ad4f7-8aac-439f-83c4-f809d711c95f"
-    },
-    {
-      "command": "EVENT_MUSIC_STOP",
-      "args": {},
-      "id": "6926cc49-4773-477b-b6e9-d897d9d82ad4"
     },
     {
       "command": "EVENT_ACTOR_SET_STATE",
@@ -133,7 +177,7 @@
         "variable": "41",
         "value": {
           "type": "number",
-          "value": 33
+          "value": 34
         }
       },
       "id": "5d5f844a-08fc-4d57-aa70-dff4af1b3f6b"

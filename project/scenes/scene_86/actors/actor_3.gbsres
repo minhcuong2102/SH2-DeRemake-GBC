@@ -1,0 +1,101 @@
+{
+  "_resourceType": "actor",
+  "id": "84e5e6ca-fa8a-4ba3-b293-11faaa756075",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "4f740365-4f14-4b39-942d-b8bf18fe610b",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "3",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_194",
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "debfd807-1a0c-4aca-a352-697f88f6180f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "$L0$"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "notModal",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "7a406d74-4fcc-4484-b191-f9e7873a5d26"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "1156a9b3-6ad3-4e7b-b694-8d80b03afeb9"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "L0",
+        "operation": "add",
+        "other": "var",
+        "vectorY": "60",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false
+      },
+      "id": "61ba6686-49e2-4cdd-be3d-c35ab825800e"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "$self$",
+        "distance": 20,
+        "speed": 2,
+        "time": 0.2,
+        "frames": 30,
+        "__comment": true
+      },
+      "id": "a234e96d-35ad-43c5-81cb-7e168584e6ea"
+    }
+  ],
+  "x": 9,
+  "y": 8,
+  "_index": 2
+}

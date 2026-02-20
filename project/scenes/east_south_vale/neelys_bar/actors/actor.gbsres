@@ -294,21 +294,44 @@
                           ],
                           "false": [
                             {
-                              "command": "EVENT_SWITCH_SCENE",
+                              "command": "EVENT_IF",
                               "args": {
-                                "sceneId": "7df0f454-2849-4f4a-af05-b8d2761f5b89",
-                                "x": {
-                                  "type": "number",
-                                  "value": 9
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "97"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 4
+                                  }
                                 },
-                                "y": {
-                                  "type": "number",
-                                  "value": 10
-                                },
-                                "direction": "up",
-                                "fadeSpeed": "2"
+                                "__collapseElse": false
                               },
-                              "id": "c991ec82-133b-467e-9242-9936a9da978b"
+                              "children": {
+                                "true": [],
+                                "false": [
+                                  {
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                      "sceneId": "7df0f454-2849-4f4a-af05-b8d2761f5b89",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 9
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "direction": "up",
+                                      "fadeSpeed": "2"
+                                    },
+                                    "id": "c991ec82-133b-467e-9242-9936a9da978b"
+                                  }
+                                ]
+                              },
+                              "id": "f260d75f-2714-4181-b20d-55d708a0a589"
                             }
                           ]
                         },

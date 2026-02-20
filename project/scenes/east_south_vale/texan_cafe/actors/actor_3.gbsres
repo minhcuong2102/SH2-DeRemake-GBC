@@ -35,6 +35,17 @@
       "children": {
         "true": [
           {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "4c5bdc27-da16-4e3c-ae6e-805e8708e2b4"
+          },
+          {
             "command": "EVENT_SWITCH_SCENE",
             "args": {
               "sceneId": "2afbf6c1-f533-49a9-9eb5-8bba5eb3a01c",

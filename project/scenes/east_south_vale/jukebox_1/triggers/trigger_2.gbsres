@@ -46,7 +46,7 @@
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "eq",
+                "type": "gte",
                 "valueA": {
                   "type": "variable",
                   "value": "102"
@@ -63,8 +63,8 @@
                 {
                   "command": "EVENT_SOUND_PLAY_EFFECT",
                   "args": {
-                    "type": "6ced895d-e440-4872-878e-a1f79aa57083",
-                    "priority": "medium",
+                    "type": "9f5f6957-2f25-4010-a93d-74412bd8f1f6",
+                    "priority": "high",
                     "pitch": 4,
                     "frequency": 200,
                     "duration": 0.5,
@@ -106,7 +106,33 @@
                   "id": "187e7dce-ec14-4d9e-bbc5-39afaaf569dc"
                 }
               ],
-              "false": []
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "I don't have a coin to put\nin."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "18df588a-e224-4495-8a8a-4ab7666dfd53"
+                }
+              ]
             },
             "id": "2ebeda2f-10d0-4fbd-94f5-2c0f7040ad19"
           }

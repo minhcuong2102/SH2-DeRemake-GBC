@@ -165,7 +165,29 @@
       "id": "3b0b87ea-f40a-448c-96dd-0fea10f0626e"
     }
   ],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "90",
+        "flag": 15,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "298c20a8-0901-4f94-94ae-de563d9ef13f"
+          }
+        ],
+        "false": []
+      },
+      "id": "432f7fb7-55c4-4d3d-b615-aa8c4a562518"
+    }
+  ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],

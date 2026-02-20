@@ -22,6 +22,14 @@
       "id": "485da63b-2ed7-4fd7-b361-37baf355c234"
     },
     {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "64d3bca2-9629-44f4-b614-829398249904"
+    },
+    {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
@@ -39,6 +47,14 @@
       },
       "children": {
         "true": [
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 7
+            },
+            "id": "cd38b320-c5fd-46b5-aa68-2b19f868c693"
+          },
           {
             "command": "EVENT_SWITCH_SCENE",
             "args": {

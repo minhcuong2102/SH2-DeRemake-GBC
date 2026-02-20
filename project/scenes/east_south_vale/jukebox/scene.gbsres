@@ -13,7 +13,9 @@
     "dbf10128-5454-48b0-8eba-f4d8500f0a07",
     "84f904de-98d6-41fb-9b20-2b853593f75e",
     "fbe1bab7-b0fd-4d49-97ae-225af416218a",
-    "a545772e-d888-4c4d-a7a0-32d4d0bfa739"
+    "a545772e-d888-4c4d-a7a0-32d4d0bfa739",
+    "af3bb378-b170-45fa-b0ba-c11255bcae5f",
+    "619c9e63-3f3e-4981-b560-3b0971597d94"
   ],
   "spritePaletteIds": [],
   "collisions": "",
@@ -100,6 +102,16 @@
         ]
       },
       "id": "eacf36a7-0165-4a7f-baf0-956a3ba36439"
+    },
+    {
+      "command": "EVENT_CAMERA_LOCK",
+      "args": {
+        "speed": 0,
+        "axis": [
+          "x"
+        ]
+      },
+      "id": "926a6521-70f2-4d20-b350-43f2112cc959"
     }
   ],
   "playerHit1Script": [],
