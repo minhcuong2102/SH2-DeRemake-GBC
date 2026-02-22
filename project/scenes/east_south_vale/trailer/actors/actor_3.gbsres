@@ -26,8 +26,8 @@
         "flag4": false,
         "flag5": false,
         "flag6": false,
-        "flag7": true,
-        "flag8": false,
+        "flag7": false,
+        "flag8": true,
         "flag9": false,
         "flag10": false,
         "flag11": false,
@@ -43,7 +43,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "There's a note on the \ntable."
+          "There's a note on the \nground."
         ],
         "__section": "text",
         "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
@@ -68,11 +68,9 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "That man was here again. I told\nhim he'd been warned not to\ncome here. ",
-          "He acted like he didn't know what\nI was talking about.",
-          "Anyway, he got up and left. He\ndidn't make any sort of fuss, but\nthere's something about him that\ngives me the creeps.",
-          "When I look at his face, it's like\nI'm staring at a mask. And there\nis something underneath, waiting\nto get out.",
-          "I don't want to be there when\nthat happens."
+          "Checked from\n0000 to 4013",
+          "took almost\ntwo hours",
+          "had to run"
         ],
         "__section": "text",
         "avatarId": "",
@@ -94,6 +92,58 @@
       "id": "e30eb385-3470-439a-a4d6-ce22f629b726"
     },
     {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The other side writes:"
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "83ec9ee7-d66a-46df-9627-b3272d4ef5f0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Checked from\n4014 to 4439\nhad to run again",
+          "I FEEL like\nI'm SO CLOSE now,",
+          "I just KNOW IT"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "bdf5e2f8-cfcd-46a6-8644-e8bcddcdff77"
+    },
+    {
       "command": "EVENT_SOUND_PLAY_EFFECT",
       "args": {
         "type": "73f16823-8112-44dc-be89-c4904c826253",
@@ -110,7 +160,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "I got the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Big Jay's Note!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+          "I got the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Code Note!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
         ],
         "__section": "text",
         "avatarId": "c638579a-222e-444a-942e-d7194fec1120",

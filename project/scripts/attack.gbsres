@@ -1999,7 +1999,7 @@
                             {
                               "command": "EVENT_GROUP",
                               "args": {
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -2034,6 +2034,15 @@
                                     "id": "3659a86b-307a-420b-b7db-f07cbf0c05b9"
                                   },
                                   {
+                                    "command": "EVENT_WAIT",
+                                    "args": {
+                                      "time": 0.5,
+                                      "frames": 3,
+                                      "units": "frames"
+                                    },
+                                    "id": "85709579-3d37-4153-b3f1-abe6a06c7f1a"
+                                  },
+                                  {
                                     "command": "EVENT_LAUNCH_PROJECTILE",
                                     "args": {
                                       "__section": "source",
@@ -2064,6 +2073,15 @@
                                     "id": "c48f4afc-aa5c-4034-a75f-a592e06a274b"
                                   },
                                   {
+                                    "command": "EVENT_WAIT",
+                                    "args": {
+                                      "time": 0.5,
+                                      "frames": 3,
+                                      "units": "frames"
+                                    },
+                                    "id": "f5abdfc4-b08c-4dce-88c3-0dcfa8d2ff99"
+                                  },
+                                  {
                                     "command": "EVENT_LAUNCH_PROJECTILE",
                                     "args": {
                                       "__section": "source",
@@ -2092,6 +2110,15 @@
                                       "__comment": false
                                     },
                                     "id": "5f24b749-7629-4150-860f-72a3d78bf646"
+                                  },
+                                  {
+                                    "command": "EVENT_WAIT",
+                                    "args": {
+                                      "time": 0.5,
+                                      "frames": 3,
+                                      "units": "frames"
+                                    },
+                                    "id": "246f4da0-80cb-4237-adb0-d7e5329489d8"
                                   },
                                   {
                                     "command": "EVENT_LAUNCH_PROJECTILE",
@@ -2153,7 +2180,7 @@
                                   {
                                     "command": "EVENT_GROUP",
                                     "args": {
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -2188,6 +2215,15 @@
                                           "id": "3cbab8a5-43b8-49d4-8160-dc6c918ff818"
                                         },
                                         {
+                                          "command": "EVENT_WAIT",
+                                          "args": {
+                                            "time": 0.5,
+                                            "frames": 3,
+                                            "units": "frames"
+                                          },
+                                          "id": "a4c6c8b0-dac7-4747-85da-e2c5a64117e0"
+                                        },
+                                        {
                                           "command": "EVENT_LAUNCH_PROJECTILE",
                                           "args": {
                                             "__section": "source",
@@ -2218,6 +2254,15 @@
                                           "id": "6e4f3b04-93f2-4e42-953e-04965d195062"
                                         },
                                         {
+                                          "command": "EVENT_WAIT",
+                                          "args": {
+                                            "time": 0.5,
+                                            "frames": 3,
+                                            "units": "frames"
+                                          },
+                                          "id": "324ef571-1ff0-4be0-a4f7-0cdefc88b743"
+                                        },
+                                        {
                                           "command": "EVENT_LAUNCH_PROJECTILE",
                                           "args": {
                                             "__section": "source",
@@ -2246,6 +2291,15 @@
                                             "__comment": false
                                           },
                                           "id": "b473b27c-bed7-4f34-86bb-b60ed4b7a0bf"
+                                        },
+                                        {
+                                          "command": "EVENT_WAIT",
+                                          "args": {
+                                            "time": 0.5,
+                                            "frames": 3,
+                                            "units": "frames"
+                                          },
+                                          "id": "7281843a-7ad5-4f4d-b9ac-3e15f588deb1"
                                         },
                                         {
                                           "command": "EVENT_LAUNCH_PROJECTILE",
@@ -2307,7 +2361,7 @@
                                         {
                                           "command": "EVENT_GROUP",
                                           "args": {
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
                                           "children": {
                                             "true": [
@@ -2342,6 +2396,15 @@
                                                 "id": "ba012e1e-bde2-4d6c-aa40-c6134fe5bd28"
                                               },
                                               {
+                                                "command": "EVENT_WAIT",
+                                                "args": {
+                                                  "time": 0.5,
+                                                  "frames": 3,
+                                                  "units": "frames"
+                                                },
+                                                "id": "8dd7e7d4-7fb1-432e-a9ac-5fd6b06be6c8"
+                                              },
+                                              {
                                                 "command": "EVENT_LAUNCH_PROJECTILE",
                                                 "args": {
                                                   "__section": "source",
@@ -2372,6 +2435,15 @@
                                                 "id": "9e1af471-7977-42a5-b297-5526f22b66b8"
                                               },
                                               {
+                                                "command": "EVENT_WAIT",
+                                                "args": {
+                                                  "time": 0.5,
+                                                  "frames": 3,
+                                                  "units": "frames"
+                                                },
+                                                "id": "9e59a8e1-53e9-4193-9f27-233af9dade27"
+                                              },
+                                              {
                                                 "command": "EVENT_LAUNCH_PROJECTILE",
                                                 "args": {
                                                   "__section": "source",
@@ -2400,6 +2472,15 @@
                                                   "__comment": false
                                                 },
                                                 "id": "c95f0727-ec66-4afa-bdea-75a7b9934d3f"
+                                              },
+                                              {
+                                                "command": "EVENT_WAIT",
+                                                "args": {
+                                                  "time": 0.5,
+                                                  "frames": 3,
+                                                  "units": "frames"
+                                                },
+                                                "id": "a4b44745-9f89-494f-98cf-d3defff79135"
                                               },
                                               {
                                                 "command": "EVENT_LAUNCH_PROJECTILE",
@@ -2461,7 +2542,7 @@
                                               {
                                                 "command": "EVENT_GROUP",
                                                 "args": {
-                                                  "__collapse": true
+                                                  "__collapse": false
                                                 },
                                                 "children": {
                                                   "true": [
@@ -2496,6 +2577,15 @@
                                                       "id": "2d05ae00-fcc2-4b44-ba28-5dac795e51a7"
                                                     },
                                                     {
+                                                      "command": "EVENT_WAIT",
+                                                      "args": {
+                                                        "time": 0.5,
+                                                        "frames": 3,
+                                                        "units": "frames"
+                                                      },
+                                                      "id": "9f853a46-0c51-42d1-a34b-70ad12ded642"
+                                                    },
+                                                    {
                                                       "command": "EVENT_LAUNCH_PROJECTILE",
                                                       "args": {
                                                         "__section": "source",
@@ -2526,6 +2616,15 @@
                                                       "id": "dc5cee81-306b-47b6-b509-845dec8fbe9e"
                                                     },
                                                     {
+                                                      "command": "EVENT_WAIT",
+                                                      "args": {
+                                                        "time": 0.5,
+                                                        "frames": 3,
+                                                        "units": "frames"
+                                                      },
+                                                      "id": "0d55981a-0434-407a-abc7-4ef3d73cb2bf"
+                                                    },
+                                                    {
                                                       "command": "EVENT_LAUNCH_PROJECTILE",
                                                       "args": {
                                                         "__section": "source",
@@ -2554,6 +2653,15 @@
                                                         "__comment": false
                                                       },
                                                       "id": "bc097d41-b26a-43fc-aff1-a9661a5dc218"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_WAIT",
+                                                      "args": {
+                                                        "time": 0.5,
+                                                        "frames": 3,
+                                                        "units": "frames"
+                                                      },
+                                                      "id": "459a4895-1e0a-4c35-a16c-01b1074ba8d1"
                                                     },
                                                     {
                                                       "command": "EVENT_LAUNCH_PROJECTILE",
