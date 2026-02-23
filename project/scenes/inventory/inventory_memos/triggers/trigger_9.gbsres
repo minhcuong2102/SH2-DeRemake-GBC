@@ -82,33 +82,35 @@
             "children": {
               "true0": [
                 {
-                  "command": "EVENT_TEXT",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "text": [
-                      "Ms. Cassandra,\na customer came in today\nOrdered a mixed bouquet, red\nand white.",
-                      "I tried to explain it's bad luck,\nbut he couldn't decide on just\none.",
-                      "He seemed a bit off, looked at\nme like I wasn't even there. Then\nhe just left, said he'd be back\nto pick'em up later.",
-                      "I just wanted to let you know,\nsince I might be gone by then."
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30,
-                    "__collapse": true
+                    "variable": "96",
+                    "flag": 10,
+                    "__collapseElse": true
                   },
-                  "id": "5b2788bd-b651-463c-919a-88bd63b2f926"
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "92e252c2-3e80-4120-919e-0d37ecd69cac",
+                          "x": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "403ef50a-2d1e-440a-9b8a-cbe9dc883c36"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "1628aa89-ab62-423d-8190-18e9dde9640e"
                 }
               ],
               "true1": [],

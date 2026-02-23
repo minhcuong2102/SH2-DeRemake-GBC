@@ -3,19 +3,142 @@
   "id": "4ab09cd3-7161-4576-91a8-0b1594132aa0",
   "_index": 88,
   "name": "East South Vale/Happy Burger 1",
-  "backgroundId": "22e83bd2-84a6-4cb2-a261-9ee70d41f233",
+  "backgroundId": "ac1c499c-1f01-4b6f-bfc1-8f7192673465",
   "tilesetId": "",
-  "width": 20,
-  "height": 18,
+  "width": 31,
+  "height": 19,
   "type": "TOPDOWN",
-  "paletteIds": [],
+  "paletteIds": [
+    "8dca260b-112d-43ab-baad-c583040895e2",
+    "e160c251-469a-44ea-86f3-18c8e56e1a00",
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
+  ],
   "spritePaletteIds": [],
-  "collisions": "",
+  "collisions": "0f20+00!0f11+004+0f3+003+0f3+0015+0f5+002+0f3+001c+0f3+001c+0f3+0016+0f3+003+0f3+0015+0f5+002+0f15+00a+0f15+00a+0f4+004+0f3+006+0f3+00b+0f4+003+0f5+004+0f5+00a+0f3+001b+0f4+005+0f3+0013+0f5+003+0f5+0012+0f5+0012+0f!00!0f2+00!0f8+007+0f3+006+0f3+00!0f2+00!0f8+007+0f3+006+0f3+00!0f2+00!0f44+",
   "autoFadeSpeed": 1,
   "symbol": "scene_75",
-  "x": 1808,
-  "y": 2576,
-  "script": [],
+  "x": 1720,
+  "y": 2672,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 43
+        }
+      },
+      "id": "402f4743-d77c-408e-8735-c730687d0f6f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "f89095d7-1864-4a67-b6a7-73daa496aaff"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "6c1ac993-9604-4a40-b402-00e2ac75625c"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "0f12ebce-c706-4bf2-a216-45286e503aaa"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "35c3e9a8-10ec-43a3-92cf-cb8c031facb5"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "64095cbb-6509-4d22-a02b-fd98c39674df"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "078ed621-8a0e-4420-af38-5f070ad1a86a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "53215d82-0624-4ee9-b92d-7d1df738596d"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "71"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "id": "2c2588e6-f6cf-4286-bf6c-e5b38f2cbe6f"
+                }
+              ],
+              "false": []
+            },
+            "id": "c346ca6c-b92f-4090-bb6e-aba5c6405f05"
+          }
+        ]
+      },
+      "id": "62efd176-3804-4519-9af7-c2ceb36677c1"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": []

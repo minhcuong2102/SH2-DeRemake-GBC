@@ -17,6 +17,11 @@
   "y": 32,
   "script": [
     {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "6555e9f4-e091-4fd8-af6c-756f912eb09b"
+    },
+    {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$"

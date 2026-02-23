@@ -17,6 +17,13 @@
   "y": 219.9464862840291,
   "script": [
     {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "38be27b5-f38a-4e1a-9f32-628004b65ac3"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "57",

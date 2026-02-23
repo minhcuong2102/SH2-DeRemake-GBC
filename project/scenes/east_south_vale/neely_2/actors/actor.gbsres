@@ -1,0 +1,81 @@
+{
+  "_resourceType": "actor",
+  "id": "9c6cf416-c2b2-404f-886e-01219701d5c6",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6a037c5f-29af-4a7e-b4a8-93eaed85ac61",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_209",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There're some posters on \nthe wall."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7e9b4ac7-c264-4642-aa72-93455731b2b3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"TOLUCA LAKE\nEnjoy almost 60 acres of a\npicturesque retreat.\nIt's the perfect romantic getaway!",
+          "\"LAKESIDE AMUSEMENT PARK\nSpend a magical evening with\nRobbie the Rabbit, Kathy the Kitty,\nHuey the Horse and Dawn the\nDuck! Fun times await!",
+          "\"LIGHTHOUSE\nTake in the view.\nLet it take your breath away.",
+          "\"OLD SILENT HILL\nVenture off the beaten path and\ndiscover the hidden gems of Silent\nHill, such as the beautifully\npreserved Balkan Church.\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7b494c1f-b147-4c19-b103-56138c0bc44b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 5,
+  "y": 29,
+  "_index": 0
+}

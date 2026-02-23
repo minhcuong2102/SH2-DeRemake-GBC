@@ -1,22 +1,23 @@
 {
   "_resourceType": "scene",
-  "id": "83f79915-2a7c-4e6e-9973-b87474df48e5",
-  "_index": 90,
-  "name": "Scene 91",
-  "backgroundId": "c9f2b2bd-306f-4dc6-a407-206213d86a07",
+  "id": "0c741dca-23fd-4569-b31b-c6b14ebefa75",
+  "_index": 93,
+  "name": "East South Vale/Happy Burger 2",
+  "backgroundId": "5b90d3e7-eb91-472f-8a55-3cb2eee6855f",
   "tilesetId": "",
-  "width": 40,
-  "height": 24,
+  "width": 20,
+  "height": 18,
   "type": "TOPDOWN",
   "paletteIds": [
-    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
+    "8dca260b-112d-43ab-baad-c583040895e2"
   ],
   "spritePaletteIds": [],
-  "collisions": "0f1d+00a+0f1e+00a+0f1e+00a+0f1e+00a+0f1e+00a+0f1e+00a+0f1e+00a+0f20+006+0f15+00!0fc+006+0f3+0028+0f!004+0f!004+0f!004+0f!00130+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!00e+0f!002+0f!0050+0f19+008+0f20+008+0f20+008+0f7+",
+  "collisions": "0f3d+003+0f5+003+0f9+003+0f5+003+0fa+005+0f2+004+0fa+004+0f2+00a+0f4+004+0f2+00a+0f4+004+0f2+008+0f6+004+0f2+008+0f6+004+0f2+008+0f6+004+0f2+008+0f6+004+0f2+008+0f6+004+0f2+008+0f4+006+0f2+008+0f4+006+0f8+002+0f4+006+0f8+002+0f17+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_91",
-  "x": 1080,
-  "y": 2408,
+  "symbol": "scene_94",
+  "x": 1496,
+  "y": 2672,
   "script": [
     {
       "command": "EVENT_SET_VALUE",
@@ -24,10 +25,10 @@
         "variable": "41",
         "value": {
           "type": "number",
-          "value": 41
+          "value": 43
         }
       },
-      "id": "0e374151-1117-4e36-8f6b-89076c0c5931"
+      "id": "077b56b4-18b0-4c6b-a9ef-4502bbee4d80"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -35,10 +36,10 @@
         "variable": "48",
         "value": {
           "type": "number",
-          "value": 1
+          "value": 0
         }
       },
-      "id": "472cbdab-275f-414c-861c-c7db6cff18fb"
+      "id": "b3ca4cce-fba7-4901-b9d5-d1c65938e51b"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -49,7 +50,7 @@
           "value": 0
         }
       },
-      "id": "a1eefe25-2e90-4069-ae88-8a978764ac11"
+      "id": "436baa55-33b1-414a-8db3-10eb390f5def"
     },
     {
       "command": "EVENT_GROUP",
@@ -65,9 +66,9 @@
                 "type": "variable",
                 "value": "T0"
               },
-              "__comment": false
+              "__comment": true
             },
-            "id": "e0b34644-3c1e-43b6-b56b-d5613d0c2652"
+            "id": "ec689389-3fe1-4482-8c60-e344d126314d"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -75,7 +76,7 @@
               "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
               "__collapse": true
             },
-            "id": "12219806-e37b-4953-b398-dc2b6309dd6a"
+            "id": "5cbdaa9d-199c-4263-b43f-705801512ff4"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -83,7 +84,7 @@
               "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
               "__collapse": true
             },
-            "id": "e25f215f-1cc6-4b52-9b26-f1200da83565"
+            "id": "755699af-6854-4d5e-a599-6579a338cb42"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -91,7 +92,7 @@
               "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
               "__collapse": true
             },
-            "id": "c374e54b-545d-448f-a014-642ddca40334"
+            "id": "2f0bd86d-1c39-460d-b4b1-84e13e3c3a4a"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -99,7 +100,7 @@
               "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
               "__collapse": true
             },
-            "id": "12741b01-e6e4-46bf-890a-4050d450c1c7"
+            "id": "23fb69d7-9a8f-408f-afaa-4f6124cf4864"
           },
           {
             "command": "EVENT_IF",
@@ -125,16 +126,16 @@
                   "args": {
                     "__collapse": true
                   },
-                  "id": "9ae9c03e-ec1f-4709-b8b9-6fd08893fb9c"
+                  "id": "af680edd-57bb-4a9b-ba58-756badfc95c4"
                 }
               ],
               "false": []
             },
-            "id": "865b0393-5b34-4f59-870f-85e61b8442d0"
+            "id": "ed3db3d4-8208-4b34-b73f-35145d165f2b"
           }
         ]
       },
-      "id": "5b934478-9e9a-4af1-bc12-a3f3a0006162"
+      "id": "3a08fca0-7207-4af3-b4aa-2fadf2e2ad9d"
     }
   ],
   "playerHit1Script": [],
