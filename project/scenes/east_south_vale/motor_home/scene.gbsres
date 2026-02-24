@@ -2,27 +2,26 @@
   "_resourceType": "scene",
   "id": "6c979ce0-a09d-4dd3-9d0d-e5eda0ed413a",
   "_index": 96,
+  "type": "TOPDOWN",
   "name": "East South Vale/Motor Home",
-  "backgroundId": "5c3f915b-799d-4cbd-a6c6-1998193433dd",
-  "tilesetId": "",
+  "symbol": "scene_97",
+  "x": 824,
+  "y": 2176,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "5c3f915b-799d-4cbd-a6c6-1998193433dd",
+  "tilesetId": "",
   "paletteIds": [
     "f17567f2-65b3-4a59-9fe6-40e62241c598",
     "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
   ],
   "spritePaletteIds": [
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
   ],
-  "collisions": "0f64+003+0ff+005+0ff+004+0f10+004+0f4+003+0f9+004+0f2+006+0f6+00a4+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_97",
-  "x": 824,
-  "y": 2176,
   "script": [
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -166,5 +165,6 @@
     }
   ],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f64+003+0ff+005+0ff+004+0f10+004+0f4+003+0f9+004+0f2+006+0f6+00a4+"
 }
