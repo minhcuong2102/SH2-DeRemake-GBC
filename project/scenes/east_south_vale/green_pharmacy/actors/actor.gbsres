@@ -1,0 +1,78 @@
+{
+  "_resourceType": "actor",
+  "id": "16677077-6e8d-456c-ba35-ab47e98b0f0d",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6a037c5f-29af-4a7e-b4a8-93eaed85ac61",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_144",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There's a receipt on the\ntable. It reads:"
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "ab6efdf8-04bb-4066-b9ff-d0d867c41570"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Relevmid x3 - $48.21\nBerolmin x3 - $96.14\nXalprazinax x3 - $24.51\nImatnelimed x3 - $282.81\nTotal: $451.6"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "81afc51f-91eb-4513-8fc0-f9b001b5179d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 6,
+  "_index": 0
+}

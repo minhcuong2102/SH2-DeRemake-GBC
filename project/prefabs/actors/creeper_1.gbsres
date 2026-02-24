@@ -245,6 +245,44 @@
       "children": {
         "true": [
           {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "13"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_STOP_UPDATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "d5504074-fc38-48e0-bc64-3c617604744b"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "989525a7-b328-4d17-91f6-1d13db642d4a"
+                }
+              ],
+              "false": []
+            },
+            "id": "5cec8638-7002-4acd-8f15-75af2bb52071"
+          },
+          {
             "command": "EVENT_WAIT",
             "args": {
               "time": 0.1,

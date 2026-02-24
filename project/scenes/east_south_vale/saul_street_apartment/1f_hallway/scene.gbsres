@@ -1,0 +1,136 @@
+{
+  "_resourceType": "scene",
+  "id": "f4901f2a-6269-4f33-b4e6-c98ff5cfb426",
+  "_index": 91,
+  "name": "East South Vale/Saul Street Apartment/1F Hallway",
+  "backgroundId": "a8b511af-f1bc-4f45-b9dc-7e075576da9f",
+  "tilesetId": "",
+  "width": 26,
+  "height": 24,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
+    "8dca260b-112d-43ab-baad-c583040895e2",
+    "f17567f2-65b3-4a59-9fe6-40e62241c598"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f3c+005+0f!00!0f6+004+0f9+0011+0f9+005+0f!006+0f4+00!0f7+007+0f!006+0f4+00!0f9+002+0f7+002+0ff+002+0f18+002+0f11+0018+0f2+0018+0f2+0018+0fe+004+0f16+004+0f16+004+0f16+004+0f15+005+0f15+005+0f16+004+0f16+004+0f16+004+0f16+004+0f16+004+0f23+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_92",
+  "x": 1008,
+  "y": 2160,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "262bc22b-d297-4265-ad5c-b0526d8d7a6a",
+        "$actor[0]$": "02394957-dbb4-44eb-82af-9cf4d7242cdb",
+        "$actor[1]$": "f0bf5566-9e83-422d-ba41-876039c98574"
+      },
+      "id": "2c1ee664-c48c-4fb5-b07e-baec5424a048"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 45
+        }
+      },
+      "id": "285ce269-5641-41b5-98af-fe67c18bb750"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "54737c22-8046-4050-bbb2-a4ef177261a4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "ea5f1444-c143-48b1-a91f-3d45ce82705b"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "3a19e6e7-88a3-4b79-b104-1e14f4f30c9b"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "fe91fb80-c4c5-43ef-a6fe-0ab5a3b9ea09"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "a99526be-d84f-4e98-bab1-07e26198eb80"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "8aa9e98c-46e1-4aef-ac8b-31e9ad7e97f5"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "b82e3a3b-1063-4aeb-94c7-395d8f755717"
+          }
+        ]
+      },
+      "id": "f6c26aca-a1a5-4a70-9aa1-0563f32ffb7c"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "205f978d-550b-49d5-855b-14ddffb12441",
+        "__comment": false,
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 15
+        }
+      },
+      "id": "cd353e36-8862-4461-bf22-0d3eeed3e109"
+    }
+  ],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

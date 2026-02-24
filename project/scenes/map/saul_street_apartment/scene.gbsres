@@ -15,8 +15,42 @@
   "symbol": "scene_76",
   "x": 1240,
   "y": 2240,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f4901f2a-6269-4f33-b4e6-c98ff5cfb426",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "526d5a49-0ed1-4c34-a72d-04d9eccb5c8f"
+          }
+        ]
+      },
+      "id": "b780fdfe-a254-4584-9c73-1ac4662fd8b4"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4"
 }

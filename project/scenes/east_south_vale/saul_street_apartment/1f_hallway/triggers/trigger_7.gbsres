@@ -1,0 +1,79 @@
+{
+  "_resourceType": "trigger",
+  "id": "424cd74f-8b1f-4b32-89cc-f5d76c6fde91",
+  "name": "",
+  "prefabId": "",
+  "x": 13,
+  "y": 20,
+  "symbol": "trigger_242",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "1b10e50d-5d98-40a6-aa99-5ce4eab609f5",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "283c71ff-ee48-4b4e-af7c-7b165ec68e2e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It looks like the lock is\nbroken. I can't open it."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2a87d285-899b-40d7-8227-a909b0e5afa2"
+          }
+        ]
+      },
+      "id": "dfefe8dc-41fb-41a3-aca5-8547311b1d02"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "ee556e15-37d1-4847-a25e-c1bb8724bd15"
+    }
+  ],
+  "_index": 6
+}

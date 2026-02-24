@@ -126,7 +126,47 @@
                   "id": "a5ed1fe2-f6c0-461d-a212-2171560d927c"
                 }
               ],
-              "true1": [],
+              "true1": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "104",
+                    "flag": 5,
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "this place\nall it's ever brought me\nis pain and misery"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "fd652380-b86b-41dc-a0dc-e7181de98719"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "367a326d-2c43-4c25-9c8e-5096ac0b0083"
+                }
+              ],
               "true2": [],
               "true3": [],
               "true4": [],
