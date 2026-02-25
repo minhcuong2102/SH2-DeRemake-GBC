@@ -1,0 +1,157 @@
+{
+  "_resourceType": "trigger",
+  "id": "af4ead45-68a7-461d-8650-64ad0ed29313",
+  "name": "",
+  "prefabId": "",
+  "x": 11,
+  "y": 10,
+  "symbol": "trigger_254",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "0aa6429b-0db9-4f5f-9869-d15cfefcedd7"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "49313700-9548-4244-a6ae-882d3e3ba7a6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "bd4cd072-da07-4cb6-88e4-71d4d8aba115"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "104",
+              "flag": 10,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "231c779f-79a9-417b-9724-0e03f0ffc8b4"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+                    "__comment": false
+                  },
+                  "id": "9ec69cfb-c6de-4eb0-9da2-32ccb2a33dd0"
+                },
+                {
+                  "command": "EVENT_FADE_OUT",
+                  "args": {
+                    "speed": "2"
+                  },
+                  "id": "cdcdfa5a-826e-4997-9c35-32a0d2002760"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": -3
+                    }
+                  },
+                  "id": "7a180938-921e-4523-b31a-9f6f226a128c"
+                },
+                {
+                  "command": "EVENT_FADE_IN",
+                  "args": {
+                    "speed": "2"
+                  },
+                  "id": "31ec8c22-f6d3-436a-9f73-5cd74c2ac178"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "66f98da6-5ec4-4f92-92d8-fc8cbb4c0bd4",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "d2ea1c59-aa75-4edb-9531-d0e0fda1c872"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "It's locked from the other\nside."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "e13325ca-ce97-4736-baef-4f95657ba172"
+                }
+              ]
+            },
+            "id": "6499453d-18e5-4216-9e2f-876b5ade4659"
+          }
+        ]
+      },
+      "id": "544071d3-e112-4168-8fc6-4825efd2b08f"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "3386613e-e37d-403e-9972-dc24e54938bf"
+    }
+  ],
+  "_index": 9
+}

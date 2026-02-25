@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "cc34c5a8-3854-4698-a109-4548fc7af161",
+  "name": "",
+  "prefabId": "",
+  "x": 12,
+  "y": 10,
+  "symbol": "trigger_261",
+  "prefabScriptOverrides": {},
+  "width": 5,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "7fca04f7-a0e3-49a8-aad7-26b01bda7e2f"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "fab4d049-c513-4025-b113-2fea754f597a"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The hallway is blocked by\nthe debris."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "a0c9a0d9-3656-4154-9065-4d715cb3dce3"
+          }
+        ]
+      },
+      "id": "cd6a5615-9b85-483d-856b-eeaf875265c8"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "5720356d-9a67-4e7a-8c87-e647387d387c"
+    }
+  ],
+  "_index": 16
+}

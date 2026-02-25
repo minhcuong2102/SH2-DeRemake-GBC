@@ -58,7 +58,8 @@
                         "value": 2
                       }
                     },
-                    "__collapseElse": false
+                    "__collapseElse": false,
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -76,7 +77,8 @@
                               "value": 0
                             }
                           },
-                          "__collapseElse": false
+                          "__collapseElse": false,
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -195,7 +197,8 @@
                             "type": "expression",
                             "value": "$97$ == 2 && $98$ >= 1"
                           },
-                          "__collapseElse": true
+                          "__collapseElse": true,
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -310,8 +313,7 @@
                                 "__collapseElse": false
                               },
                               "children": {
-                                "true": [],
-                                "false": [
+                                "true": [
                                   {
                                     "command": "EVENT_SWITCH_SCENE",
                                     "args": {
@@ -329,7 +331,8 @@
                                     },
                                     "id": "c991ec82-133b-467e-9242-9936a9da978b"
                                   }
-                                ]
+                                ],
+                                "false": []
                               },
                               "id": "f260d75f-2714-4181-b20d-55d708a0a589"
                             }
