@@ -2,12 +2,15 @@
   "_resourceType": "scene",
   "id": "eeb7bc80-9c99-4dbe-86ae-9bb2e78e61bc",
   "_index": 101,
+  "type": "TOPDOWN",
   "name": "East South Vale/Saul Street Apartment/3F Hallway",
-  "backgroundId": "4427606e-6e1e-44a5-8ec0-a50a7e49b2fe",
-  "tilesetId": "",
+  "symbol": "scene_102",
+  "x": 344,
+  "y": 1896,
   "width": 30,
   "height": 28,
-  "type": "TOPDOWN",
+  "backgroundId": "4427606e-6e1e-44a5-8ec0-a50a7e49b2fe",
+  "tilesetId": "",
   "paletteIds": [
     "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
     "8dca260b-112d-43ab-baad-c583040895e2",
@@ -19,14 +22,10 @@
     "9440983c-90e3-49cd-90f4-32068ac9b02d"
   ],
   "spritePaletteIds": [
-    null,
+    "",
     "73688cfb-51f9-474a-8477-e3ce4719e586"
   ],
-  "collisions": "00348+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_102",
-  "x": 344,
-  "y": 1896,
   "script": [
     {
       "command": "EVENT_SET_VALUE",
@@ -118,5 +117,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "00348+"
 }
