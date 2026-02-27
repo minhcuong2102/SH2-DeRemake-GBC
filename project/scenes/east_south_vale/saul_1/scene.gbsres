@@ -20,7 +20,9 @@
   "script": [
     {
       "command": "EVENT_GROUP",
-      "args": {},
+      "args": {
+        "__comment": true
+      },
       "children": {
         "true": [
           {

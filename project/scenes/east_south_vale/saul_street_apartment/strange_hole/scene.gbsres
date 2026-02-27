@@ -5,7 +5,7 @@
   "type": "TOPDOWN",
   "name": "East South Vale/Saul Street Apartment/Strange Hole",
   "symbol": "scene_103",
-  "x": 176,
+  "x": 120,
   "y": 1944,
   "width": 20,
   "height": 18,
@@ -193,7 +193,7 @@
                   "command": "EVENT_ACTOR_SET_STATE",
                   "args": {
                     "actorId": "fc49a5d3-0a32-4307-9678-e8711f62eca6",
-                    "spriteStateId": "",
+                    "spriteStateId": "Left",
                     "loopAnim": false
                   },
                   "id": "b4424711-954f-4425-a0ac-148694e516fe"
@@ -246,6 +246,23 @@
                     "closeDelayFrames": 30
                   },
                   "id": "5bf218fa-9877-4d7d-b665-21460af069c6"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "eeb7bc80-9c99-4dbe-86ae-9bb2e78e61bc",
+                    "x": {
+                      "type": "number",
+                      "value": 25
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 5
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "ef55b268-10a5-4a68-8cd2-db5867b7db4a"
                 }
               ],
               "false": [
