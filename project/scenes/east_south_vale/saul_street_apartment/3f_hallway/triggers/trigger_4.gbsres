@@ -1,0 +1,107 @@
+{
+  "_resourceType": "trigger",
+  "id": "caed516b-a480-4ea9-ba59-17d38c200286",
+  "name": "",
+  "prefabId": "",
+  "x": 31,
+  "y": 11,
+  "symbol": "trigger_272",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "There's nothing in the hole."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "6a4b290c-ef4e-40c1-ace3-2dd5ee6c3ae5"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "4d68deb9-ccae-4f36-b2c5-49e029cb0e42",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "8589c302-72c6-4907-843c-48c700b586e2"
+                }
+              ]
+            },
+            "id": "5e6ca62f-288f-4f3b-8866-b9b511334273"
+          }
+        ]
+      },
+      "id": "fce7bb81-f67c-46bd-a363-54c65aad48af"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "0e1150ad-6c82-46d5-bea8-687b24032818"
+    }
+  ],
+  "_index": 3
+}

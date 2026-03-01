@@ -223,6 +223,13 @@
                   "id": "f5299b86-21cb-4d2a-bd86-86ea08ae97bb"
                 },
                 {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "101"
+                  },
+                  "id": "644bb197-f938-43fb-b4c3-ebd679070877"
+                },
+                {
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
@@ -253,11 +260,11 @@
                     "sceneId": "eeb7bc80-9c99-4dbe-86ae-9bb2e78e61bc",
                     "x": {
                       "type": "number",
-                      "value": 25
+                      "value": 32
                     },
                     "y": {
                       "type": "number",
-                      "value": 5
+                      "value": 13
                     },
                     "direction": "up",
                     "fadeSpeed": "2"
