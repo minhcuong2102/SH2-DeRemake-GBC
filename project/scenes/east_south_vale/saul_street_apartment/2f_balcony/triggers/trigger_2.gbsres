@@ -46,6 +46,19 @@
             "id": "ee6ad059-8167-4d01-a4a0-cce39184df2e"
           },
           {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "c70dd4be-b57d-4715-9f3a-089216d10cee",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "211502e6-8ee5-4a4b-aafb-4cd7d5fa8f86"
+          },
+          {
             "command": "EVENT_PLAYER_SET_SPRITE",
             "args": {
               "spriteSheetId": "7bad6f1c-c551-40af-998a-2a91278a54ae"

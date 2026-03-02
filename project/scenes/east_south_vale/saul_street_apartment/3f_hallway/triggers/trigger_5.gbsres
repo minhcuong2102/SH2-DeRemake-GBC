@@ -1,0 +1,103 @@
+{
+  "_resourceType": "trigger",
+  "id": "92a88370-5fa1-404a-8cf3-15069b4f84d8",
+  "name": "",
+  "prefabId": "",
+  "x": 31,
+  "y": 31,
+  "symbol": "trigger_273",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "104",
+              "flag": 11,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The stair is collapsed.\nI can't go back anymore."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "48283715-302b-4e13-aca1-013d6c9289d6"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "a1588c12-ea24-451d-9bea-0450e9d52db0"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "a464627b-e49f-42ad-b722-23afc78b324d",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "4f19b1c5-04a2-4a6e-a3eb-4c2c8ca7cf72"
+                }
+              ]
+            },
+            "id": "ef5ac6f8-efaa-44f0-9cae-1d3aa8677a94"
+          }
+        ]
+      },
+      "id": "27784c5f-42e7-4e7e-a651-bd9321c92f1a"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "dc409d07-6097-477b-bccc-3e14c091ed5a"
+    }
+  ],
+  "_index": 4
+}
