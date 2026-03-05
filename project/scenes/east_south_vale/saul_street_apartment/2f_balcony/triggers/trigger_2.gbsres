@@ -171,6 +171,57 @@
                   "id": "be68022b-b24d-4bff-b4df-c2d3e16daaa3"
                 },
                 {
+                  "command": "EVENT_GROUP",
+                  "args": {},
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_ACTIVATE",
+                        "args": {
+                          "actorId": "bac9848f-b658-4aa7-92c8-a223d8df07b6"
+                        },
+                        "id": "5cd674f9-7873-4ac3-8798-3450e54c8dfe"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_ACTIVATE",
+                        "args": {
+                          "actorId": "0f27a9e3-0e6e-4f22-a4c8-14143a3e8590"
+                        },
+                        "id": "e4728359-149a-499d-914f-26ac782e9e9a"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_ACTIVATE",
+                        "args": {
+                          "actorId": "48e12d53-7d95-4133-8995-d0614c338a02"
+                        },
+                        "id": "02469e5a-a4a9-4d10-8273-1686d6d0a00c"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_ACTIVATE",
+                        "args": {
+                          "actorId": "9537c208-c72a-45f3-81d6-809781a2c704"
+                        },
+                        "id": "3ce6ba40-11c2-4a85-8cef-45b31ac1dffa"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_ACTIVATE",
+                        "args": {
+                          "actorId": "5025af55-0bfc-4666-bf30-c6a83616279c"
+                        },
+                        "id": "2719acdb-f688-417d-824a-d333d28e1696"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_ACTIVATE",
+                        "args": {
+                          "actorId": "17250759-e8eb-480a-bf21-7aea5a461953"
+                        },
+                        "id": "52a2478e-f386-474d-9b6e-e9b19da7b3ad"
+                      }
+                    ]
+                  },
+                  "id": "b0b9ffaf-ca4d-4d3a-bbc5-0ef7552a3ea0"
+                },
+                {
                   "command": "EVENT_ACTOR_SET_STATE",
                   "args": {
                     "actorId": "$self$",

@@ -25,7 +25,32 @@
       "id": "6155d410-d630-4c7f-bb9f-5c4d9bfe65ab"
     }
   ],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "4a6cde0f-9af6-4837-89b5-fcb8c2508aa2"
+    },
+    {
+      "command": "EVENT_ACTOR_STOP_UPDATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "61ea1998-c4f2-4e36-b5f1-e9cb9914e09f"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
