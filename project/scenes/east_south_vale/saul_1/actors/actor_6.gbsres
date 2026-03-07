@@ -35,6 +35,21 @@
       "id": "81d7dbd4-1882-42f5-8740-ad5ca19dbd60"
     },
     {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        }
+      },
+      "id": "bbc3fee4-18ff-4065-958b-d852910cc71e"
+    },
+    {
       "command": "EVENT_PLAYER_SET_SPRITE",
       "args": {
         "spriteSheetId": "f3b4c9fd-f205-4a53-aa86-d65a339b52d2"
@@ -44,7 +59,7 @@
     {
       "command": "EVENT_ACTOR_MOVE_RELATIVE",
       "args": {
-        "actorId": "$self$",
+        "actorId": "player",
         "x": {
           "type": "number",
           "value": 0
@@ -57,6 +72,17 @@
         "useCollisions": false
       },
       "id": "72477a7a-7b1e-41b6-a861-0a2b844755a7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "37a9fe71-3b1d-4b35-920c-8d1f8209f02c"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

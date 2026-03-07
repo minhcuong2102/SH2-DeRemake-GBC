@@ -32,6 +32,11 @@
       "children": {
         "true": [
           {
+            "command": "EVENT_SCRIPT_LOCK",
+            "args": {},
+            "id": "8905f5bb-2a8c-4265-86dd-f5a201f25570"
+          },
+          {
             "command": "EVENT_SOUND_PLAY_EFFECT",
             "args": {
               "type": "9fcb594e-8f41-4eb9-a84f-fe460ae678f0",
@@ -74,6 +79,11 @@
               "speed": "2"
             },
             "id": "d2cc0938-ae78-4a91-a426-8aec08ab5552"
+          },
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "3cf3c61f-fd22-4643-a187-c0746022d8b0"
           }
         ]
       },
