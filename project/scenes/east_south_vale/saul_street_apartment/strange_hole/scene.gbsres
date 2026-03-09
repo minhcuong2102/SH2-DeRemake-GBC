@@ -350,6 +350,23 @@
         ],
         "false": [
           {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "eeb7bc80-9c99-4dbe-86ae-9bb2e78e61bc",
+              "x": {
+                "type": "number",
+                "value": 31
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "c2b00933-5ed4-4939-ab05-197de6ab2e49"
+          },
+          {
             "command": "GUD_EVENT_CALL_SCENE_INIT",
             "args": {},
             "id": "60e91e1a-bdd3-498e-bca8-3e6144552480"

@@ -3,19 +3,204 @@
   "id": "a629de68-b600-4d16-b471-e4d40263d8a9",
   "_index": 72,
   "name": "East South Vale/Katz 3",
-  "backgroundId": "22e83bd2-84a6-4cb2-a261-9ee70d41f233",
+  "backgroundId": "ed23fd1a-7906-4631-8499-c18dbe1be706",
   "tilesetId": "",
-  "width": 20,
-  "height": 18,
+  "width": 30,
+  "height": 25,
   "type": "TOPDOWN",
-  "paletteIds": [],
-  "spritePaletteIds": [],
-  "collisions": "",
+  "paletteIds": [
+    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
+  ],
+  "spritePaletteIds": [
+    null,
+    null,
+    null,
+    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
+  ],
+  "collisions": "0f96+0018+0f6+001e+0fd+004+0f1a+004+0fd+005d+0f4+0019+0f5+0019+0f5+0072+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!003d+0fc+006+0f18+006+0f18+006+0f18+006+0fc+",
   "autoFadeSpeed": 1,
   "symbol": "scene_73",
-  "x": 1024,
-  "y": 1704,
-  "script": [],
+  "x": 960,
+  "y": 1688,
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "90",
+        "flag": 10,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "4b283c10-3eb7-4cbe-abd9-195639b58526"
+            },
+            "id": "0fddddaf-68e8-468e-bc21-379bde7f262c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "86",
+              "flag": 10,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "4b283c10-3eb7-4cbe-abd9-195639b58526"
+                  },
+                  "id": "855ae750-2345-4a8c-b827-4bab4c0411da"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "4b283c10-3eb7-4cbe-abd9-195639b58526"
+                  },
+                  "id": "0bbae92e-bc59-4462-8731-b9be58ab36a0"
+                }
+              ]
+            },
+            "id": "f64512fd-87a7-481e-83bf-ac8a9a56707e"
+          }
+        ]
+      },
+      "id": "948b348e-bb32-4903-b75b-ddbf3ccab16b"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d40490ad-124b-43de-b253-c50aa7d40a36",
+        "$actor[0]$": "e2fc5cfe-552d-4b68-8c15-7b07c7e9e7e5"
+      },
+      "id": "c865aba5-a172-4c9b-8ac8-0100447711ee"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 28
+        }
+      },
+      "id": "3e463a63-1bca-4b49-aff6-74fed429263f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "98e25fd9-d212-4a3e-b12c-e42cd36dfe2d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "ea6b011c-0a7a-4266-a40b-6fa882267c1a"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": false
+            },
+            "id": "76941df4-ff00-417e-8e64-60fcc52ca0f3"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "8b488580-a735-4bed-a7ea-06bd10fe9c47"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "a0f7fbac-45f3-4b56-a5d2-2f9db5761ea9"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "b7d4901c-5fa4-4483-8e31-d4dde59b58af"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "060b8e38-20cf-49eb-b111-fc9aef16ee79"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "71"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "id": "c377add5-6f27-4514-a4e2-5e9a12283ea8"
+                }
+              ],
+              "false": []
+            },
+            "id": "814806d4-8fd0-4d00-844e-f9f7665f02fb"
+          }
+        ]
+      },
+      "id": "5638ff59-038f-4e32-9446-b94263a8ade0"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": []
