@@ -2,26 +2,25 @@
   "_resourceType": "scene",
   "id": "a629de68-b600-4d16-b471-e4d40263d8a9",
   "_index": 72,
+  "type": "TOPDOWN",
   "name": "East South Vale/Katz 3",
-  "backgroundId": "ed23fd1a-7906-4631-8499-c18dbe1be706",
-  "tilesetId": "",
+  "symbol": "scene_73",
+  "x": 960,
+  "y": 1688,
   "width": 30,
   "height": 25,
-  "type": "TOPDOWN",
+  "backgroundId": "ed23fd1a-7906-4631-8499-c18dbe1be706",
+  "tilesetId": "",
   "paletteIds": [
     "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
   ],
   "spritePaletteIds": [
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
   ],
-  "collisions": "0f96+0018+0f6+001e+0fd+004+0f1a+004+0fd+005d+0f4+0019+0f5+0019+0f5+0072+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!003d+0fc+006+0f18+006+0f18+006+0f18+006+0fc+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_73",
-  "x": 960,
-  "y": 1688,
   "script": [
     {
       "command": "EVENT_IF_FLAGS_COMPARE",
@@ -203,5 +202,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f96+0018+0f6+001e+0fd+004+0f1a+004+0fd+005d+0f4+0019+0f5+0019+0f5+0072+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!002+0f!003d+0fc+006+0f18+006+0f18+006+0f18+006+0fc+"
 }
