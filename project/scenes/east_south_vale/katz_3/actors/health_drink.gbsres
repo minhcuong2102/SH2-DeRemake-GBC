@@ -1,11 +1,11 @@
 {
   "_resourceType": "actor",
-  "id": "b433f5de-ddac-444c-a50c-53f8a6d6f0e3",
-  "name": "",
+  "id": "d00caad8-2c02-464d-84ee-0385ae45a2d4",
+  "name": "Health Drink",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
-  "prefabId": "fcab9da6-0327-4d36-b8a0-edf1b4127529",
+  "prefabId": "b6082600-8ede-43b8-8932-d2ab92446836",
   "direction": "down",
   "moveSpeed": 1,
   "animSpeed": 15,
@@ -14,22 +14,29 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {
-    "5d092f93-f157-4e45-ae83-0436a8baaf19": {
-      "id": "5d092f93-f157-4e45-ae83-0436a8baaf19",
+    "97dfa55b-a4db-4f37-9ab4-b51d3dda11d3": {
+      "id": "97dfa55b-a4db-4f37-9ab4-b51d3dda11d3",
+      "args": {
+        "flag": 8
+      }
+    },
+    "ebe57cb8-eafb-4c53-bebe-107535a583ae": {
+      "id": "ebe57cb8-eafb-4c53-bebe-107535a583ae",
       "args": {
         "variable": "104",
-        "flag": 14
+        "flag1": false,
+        "flag14": true
       }
     }
   },
-  "symbol": "actor_246",
+  "symbol": "actor_251",
   "script": [],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 0,
-  "y": 0,
-  "_index": 0
+  "x": 5,
+  "y": 14,
+  "_index": 5
 }
