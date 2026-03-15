@@ -1,0 +1,140 @@
+{
+  "_resourceType": "actor",
+  "id": "4c41508d-36c7-48fc-b42a-3f63a1b3ac52",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d2b82810-874b-4243-a1d4-c86a086d34b8",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_256",
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "6d9ebdff-b8e2-4f73-b6c0-32c4370d92fe"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "16d8a64d-7d35-4f1b-86a3-736351b324c5"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 4,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "808d2f2f-fa57-444e-80e9-80878752a543"
+            },
+            "id": "bbe48642-dd00-4c82-9171-a345eec50f8c"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "51",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": true,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "01c659df-945d-4cf8-b27c-16e24e1f154a"
+          },
+          {
+            "command": "EVENT_SCRIPT_LOCK",
+            "args": {},
+            "id": "0db4a0d1-9a69-43e7-bfe2-583d13dc37e4"
+          },
+          {
+            "command": "GUD_EVENT_ENABLE_ISRFX",
+            "args": {},
+            "id": "6b93bcc3-cd45-4da0-a74b-059ac1a5ab1b"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 5,
+              "frames": 30
+            },
+            "id": "787712de-5b8c-4fef-ab0f-57f0a1ade8c0"
+          },
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "eece6d90-44b4-4505-b266-86da4cf7a567"
+          },
+          {
+            "command": "GUD_EVENT_DISABLE_ISRFX",
+            "args": {},
+            "id": "dc89f203-dcaa-4ae9-a9a2-1874cba2c318"
+          },
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "61acf69d-afdd-452d-99b2-58b141ba8d33"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The door that wakes\n   in darkness,\nopening into\n     nightmares."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "ba734c0b-e8e2-4ff9-9314-5b7b9ebc18d5"
+          }
+        ]
+      },
+      "id": "f803286e-91e3-4f9e-b34a-32f7fba747e4"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 2,
+  "y": 11,
+  "_index": 1
+}

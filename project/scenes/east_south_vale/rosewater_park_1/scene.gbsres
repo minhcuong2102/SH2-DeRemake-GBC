@@ -1,0 +1,83 @@
+{
+  "_resourceType": "scene",
+  "id": "61c23d76-00b7-48b9-b81f-6aed1fee0679",
+  "_index": 106,
+  "name": "East South Vale/Rosewater Park 1",
+  "backgroundId": "f4cd6032-88f7-4133-93cf-27e400a0676a",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "f17567f2-65b3-4a59-9fe6-40e62241c598",
+    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00c+0f!00b+0f3+005+0f4+006+0f5+005+0f6+004+0f5+005+0f6+004+0f4+007+0f5+003+0f5+007+0f6+002+0f5+007+0f6+003+0f4+007+0f5+004+0f4+007+0f5+004+0f4+007+0f6+003+0f4+007+0f6+003+0f4+007+0f5+004+0f4+007+0f4+005+0fe+007+0fd+007+0fc+00e+0f6+0019+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_107",
+  "x": 2360,
+  "y": 2528,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "f71309c5-d747-42be-bf66-0f47c6e01d65"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY_SEQUENCE",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "tilesetId": "9614dc0f-4be9-4d17-a78b-7b51395daf80",
+        "tileIndex": {
+          "type": "number",
+          "value": 0
+        },
+        "frames": {
+          "type": "number",
+          "value": 2
+        },
+        "variable": "T0"
+      },
+      "id": "e7e2bb73-4296-4efb-8878-aa893c66633c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "b02e1fa9-1530-448d-a5fe-ac7efadf4fda"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3267e0eb-38e8-49fe-857a-2da3315a7987",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "cc9c1d4f-8f11-4f56-a132-043e57ebc6c8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4"
+}

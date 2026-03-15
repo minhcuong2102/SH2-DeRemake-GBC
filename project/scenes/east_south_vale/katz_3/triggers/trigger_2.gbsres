@@ -91,7 +91,7 @@
                 {
                   "command": "EVENT_WAIT",
                   "args": {
-                    "time": 2,
+                    "time": 5,
                     "frames": 30
                   },
                   "id": "25303850-732e-4e18-b73f-9abc632d3966"
@@ -110,6 +110,13 @@
                   "command": "EVENT_SCRIPT_UNLOCK",
                   "args": {},
                   "id": "9ae2eaa7-a7c3-4774-aaeb-0bc0ed50b543"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "783e8a17-9456-4dd3-a11b-b8817ea830c1"
+                  },
+                  "id": "3c6ecba3-dddc-4f7b-889b-06ed5c655ade"
                 }
               ]
             },

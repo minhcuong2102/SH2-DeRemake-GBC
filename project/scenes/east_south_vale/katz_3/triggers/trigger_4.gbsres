@@ -1,24 +1,24 @@
 {
   "_resourceType": "trigger",
-  "id": "fcff8400-3a1b-446a-8f16-0811d7a286b9",
+  "id": "d1756162-ca33-44d2-b20b-6526df938bc1",
   "name": "",
   "prefabId": "",
-  "x": 12,
-  "y": 16,
-  "symbol": "trigger_183",
+  "x": 14,
+  "y": 5,
+  "symbol": "trigger_280",
   "prefabScriptOverrides": {},
-  "width": 2,
+  "width": 4,
   "height": 1,
   "script": [
     {
       "command": "EVENT_SCRIPT_UNLOCK",
       "args": {},
-      "id": "31eb7fef-3fa9-4b18-9343-b6d0a10241c0"
+      "id": "45f67ea3-78a9-48f0-b429-cd23c9dae013"
     },
     {
       "command": "EVENT_IDLE",
       "args": {},
-      "id": "7d1c76d5-871a-4f85-9bd5-cb093c71a4a7"
+      "id": "d2e3abd0-24bb-48b5-9dd0-523b83be9b10"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -26,10 +26,10 @@
         "variable": "19",
         "value": {
           "type": "number",
-          "value": 1
+          "value": 0
         }
       },
-      "id": "46d7e524-873c-4134-9836-f159545154d2"
+      "id": "5c97679b-a1f4-45d9-9f84-95c91f885a38"
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -43,19 +43,10 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_IF",
+            "command": "EVENT_IF_FLAGS_COMPARE",
             "args": {
-              "condition": {
-                "type": "gte",
-                "valueA": {
-                  "type": "variable",
-                  "value": "100"
-                },
-                "valueB": {
-                  "type": "number",
-                  "value": 1
-                }
-              },
+              "variable": "90",
+              "flag": 14,
               "__collapseElse": false
             },
             "children": {
@@ -63,59 +54,20 @@
                 {
                   "command": "EVENT_MUSIC_STOP",
                   "args": {},
-                  "id": "773a7462-1bce-4ad4-8b57-7c3c12624c87"
-                },
-                {
-                  "command": "EVENT_SOUND_PLAY_EFFECT",
-                  "args": {
-                    "type": "9f5f6957-2f25-4010-a93d-74412bd8f1f6",
-                    "priority": "high",
-                    "pitch": 4,
-                    "frequency": 200,
-                    "duration": 0.5,
-                    "wait": true,
-                    "effect": 0
-                  },
-                  "id": "5256272f-91b0-46a0-a22f-bd8adeac9559"
-                },
-                {
-                  "command": "EVENT_TEXT",
-                  "args": {
-                    "text": [
-                      "Used the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Neely's Bar Key!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
-                    ],
-                    "__section": "text",
-                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 2,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
-                  },
-                  "id": "937d2dab-7bc7-4f64-93ff-f129bec6f9ef"
+                  "id": "62f13ea3-12bd-4ee5-a2d5-35b7cbb00d65"
                 },
                 {
                   "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {
                     "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
-                    "__comment": false,
-                    "__collapse": false
+                    "__comment": false
                   },
-                  "id": "7cd910a6-f11a-4708-822f-cad640542187"
+                  "id": "243b9d5f-4355-4ec5-bbac-80595507f7e4"
                 },
                 {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
-                    "sceneId": "630b7d70-28ef-40c0-b7d6-f8c3f73e0c06",
+                    "sceneId": "f673182d-6123-4636-87b0-86dec1c3647d",
                     "x": {
                       "type": "number",
                       "value": 1
@@ -127,7 +79,7 @@
                     "direction": "down",
                     "fadeSpeed": "2"
                   },
-                  "id": "57a90b42-31bd-40eb-a026-0e01255d327a"
+                  "id": "4ff753b0-969f-4a6f-96ec-dfb2cbce0da4"
                 }
               ],
               "false": [
@@ -142,13 +94,13 @@
                     "wait": true,
                     "effect": 0
                   },
-                  "id": "36c1b6c7-f22b-474b-8f48-4ef720382e55"
+                  "id": "eab4764b-22a7-4542-9c04-d5c8e5e883fa"
                 },
                 {
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "It's locked."
+                      "It's locked from the other\nside."
                     ],
                     "__section": "text",
                     "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
@@ -167,15 +119,15 @@
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30
                   },
-                  "id": "8fcf9fc4-9524-4c90-846e-2b49b43f5746"
+                  "id": "5c65a619-fe24-4c24-821f-06c95c79cc43"
                 }
               ]
             },
-            "id": "87859d12-1ee7-4b27-973e-a2c6765fe4eb"
+            "id": "a3919e5d-28a6-4b7d-9948-259c58b5138c"
           }
         ]
       },
-      "id": "fa8b72c4-bcd0-4dd8-9b96-a18feb64a6ca"
+      "id": "2ca24c66-7eb7-4f2f-81b5-5fac2067b163"
     }
   ],
   "leaveScript": [
@@ -186,8 +138,8 @@
           "a"
         ]
       },
-      "id": "54c83089-d3a4-4d0a-8431-503e940504ad"
+      "id": "e980be59-f0b6-4716-bc05-841f0f56a7dc"
     }
   ],
-  "_index": 1
+  "_index": 3
 }

@@ -18,7 +18,7 @@ void scanline_isr(void) NONBANKED {
     while (STAT_REG & STATF_BUSY);
 
     // keep default draw position outside these scanlines
-    if (LYC_REG < 0 || LYC_REG > 142) {
+    if (LYC_REG < 1 || LYC_REG > 142) {
         SCX_REG = draw_scroll_x;
         SCY_REG = draw_scroll_y;
     } else {
