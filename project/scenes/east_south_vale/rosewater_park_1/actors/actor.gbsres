@@ -19,7 +19,34 @@
   "startScript": [],
   "updateScript": [
     {
-      "command": "EVENT_REPLACE_TILE_XY_SEQUENCE",
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "tilesetId": "9614dc0f-4be9-4d17-a78b-7b51395daf80",
+        "tileIndex": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "a3fd302a-ddd9-41ae-97c8-852140c02649"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "d0ed40d9-eddf-47c2-90a6-2afeda7327bb"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
       "args": {
         "x": {
           "type": "number",
@@ -33,20 +60,23 @@
         "tileIndex": {
           "type": "number",
           "value": 0
-        },
-        "frames": {
-          "type": "number",
-          "value": 2
-        },
-        "variable": "T0"
+        }
       },
-      "id": "7d23fda4-f990-4809-a31f-3d7869b2739b"
+      "id": "a01ee7c0-e5bc-4161-9c55-86906425d8ee"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "77451178-5ed8-4e63-b2ff-e662446d2b26"
     }
   ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 9,
+  "x": 8,
   "y": 12,
   "_index": 0
 }
