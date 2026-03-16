@@ -17,7 +17,32 @@
   "symbol": "actor_259",
   "script": [],
   "startScript": [],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_REPLACE_TILE_XY_SEQUENCE",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "tilesetId": "9614dc0f-4be9-4d17-a78b-7b51395daf80",
+        "tileIndex": {
+          "type": "number",
+          "value": 0
+        },
+        "frames": {
+          "type": "number",
+          "value": 2
+        },
+        "variable": "T0"
+      },
+      "id": "7d23fda4-f990-4809-a31f-3d7869b2739b"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
