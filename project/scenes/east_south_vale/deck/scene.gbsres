@@ -2,23 +2,25 @@
   "_resourceType": "scene",
   "id": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
   "_index": 1,
-  "name": "East South Vale/Deck",
-  "backgroundId": "ce74936e-14ff-4c3f-ad43-995dc4d6f778",
-  "tilesetId": "",
-  "width": 40,
-  "height": 46,
   "type": "TOPDOWN",
-  "paletteIds": [
-    "9d8e2ae3-7c68-472c-946b-60d4fd8d4933",
-    "186bfe65-0ff0-4eb7-b85d-952558eebf2c",
-    "266e40fd-7ea8-432d-9033-b078389eeb7b"
-  ],
-  "spritePaletteIds": [],
-  "collisions": "001e2+0f9+0014+0f9+002+0f9+0014+0f9+002+0f!007+0f7+00e+0f9+002+0f!007+0f7+00e+0fc+003+0f5+005+0f1b+003+0f5+005+0f18+001f+0f9+001f+0f9+001f+0f9+001e+0fa+001e+0fa+001f+0f9+001f+0f9+0024+0f!00283+0f28+0078+",
-  "autoFadeSpeed": 1,
+  "name": "East South Vale/Deck",
   "symbol": "scene_5",
   "x": 304,
   "y": 224,
+  "width": 40,
+  "height": 46,
+  "backgroundId": "ce74936e-14ff-4c3f-ad43-995dc4d6f778",
+  "tilesetId": "",
+  "paletteIds": [
+    "9d8e2ae3-7c68-472c-946b-60d4fd8d4933",
+    "186bfe65-0ff0-4eb7-b85d-952558eebf2c",
+    "266e40fd-7ea8-432d-9033-b078389eeb7b",
+    "",
+    "b8b9e10b-d0f1-4ce5-89b6-41068d8d7715",
+    "eedd2209-e294-4278-8eb2-4e0ddd59544f"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
   "script": [
     {
       "command": "EVENT_AUTO_FLIP_TILES",
@@ -529,5 +531,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "001e2+0f9+0014+0f9+002+0f9+0014+0f9+002+0f!007+0f7+00e+0f9+002+0f!007+0f7+00e+0fc+003+0f5+005+0f1b+003+0f5+005+0f18+001f+0f9+001f+0f9+001f+0f9+001e+0fa+001e+0fa+001f+0f9+001f+0f9+0024+0f!00283+0f28+0078+"
 }
