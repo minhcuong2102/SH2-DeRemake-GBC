@@ -11,68 +11,114 @@
   "height": 1,
   "script": [
     {
-      "command": "EVENT_SET_INPUT_SCRIPT",
+      "command": "EVENT_IF",
       "args": {
-        "input": [
-          "a"
-        ],
-        "override": true,
-        "__scriptTabs": "press"
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "112"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
       },
       "children": {
-        "true": [
+        "true": [],
+        "false": [
           {
-            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "command": "EVENT_SET_INPUT_SCRIPT",
             "args": {
-              "type": "1b10e50d-5d98-40a6-aa99-5ce4eab609f5",
-              "priority": "high",
-              "pitch": 4,
-              "frequency": 200,
-              "duration": 0.5,
-              "wait": true,
-              "effect": 0
-            },
-            "id": "9bf1a5eb-ebc9-4b73-bb73-afe02a2b29b8"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "It looks like the lock is\nbroken. I can't open it."
+              "input": [
+                "a"
               ],
-              "__section": "text",
-              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 2,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "override": true,
+              "__scriptTabs": "press"
             },
-            "id": "431b92a9-fccb-4377-a95d-1edf74f2ef10"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "1b10e50d-5d98-40a6-aa99-5ce4eab609f5",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "9bf1a5eb-ebc9-4b73-bb73-afe02a2b29b8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "It looks like the lock is\nbroken. I can't open it."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "431b92a9-fccb-4377-a95d-1edf74f2ef10"
+                }
+              ]
+            },
+            "id": "7f134c6b-51de-4a03-8128-4dbd0a0a8bd8"
           }
         ]
       },
-      "id": "7f134c6b-51de-4a03-8128-4dbd0a0a8bd8"
+      "id": "0975edc1-24d4-4097-88a3-ecd70e208fd2"
     }
   ],
   "leaveScript": [
     {
-      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "command": "EVENT_IF",
       "args": {
-        "input": [
-          "a"
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "112"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "a"
+              ]
+            },
+            "id": "e2e9f7b3-480c-40b3-a8d0-91dd678d77e0"
+          }
         ]
       },
-      "id": "fdd9d5a2-68b9-466b-9144-992712587cc1"
+      "id": "0bfebe64-2128-4e71-87e7-a528bae976af"
     }
   ],
   "_index": 0
