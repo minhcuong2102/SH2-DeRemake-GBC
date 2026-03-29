@@ -1,0 +1,170 @@
+{
+  "_resourceType": "actor",
+  "id": "26e7094d-6659-45e2-aad3-238bbf7c43c6",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6a037c5f-29af-4a7e-b4a8-93eaed85ac61",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_263",
+  "script": [
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "106",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": true,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "a543ed56-1bd1-4bb3-8dca-7fa6ec5c5a5f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There's a note on the desk."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f2153b38-d498-436f-a55f-3d5e82808732"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"He came back after you left.\nIt's fine, he didn't try anything.\nHe just seemed sad.",
+          "\"Mumbled something about\ngetting out of town with someone.\nI wasn't gonna let him drive in\nhis condition, so I locked him out.",
+          "\"His car should be out back.\nMaybe check if it's still there by\nmorning. It's the greenish-blue\none, plate number ending with\n06, I think.\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "b38b014a-52ea-40e5-b213-35e62433ec74"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "73f16823-8112-44dc-be89-c4904c826253",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "3decbf61-6324-4bc6-8b72-8e3435977f0a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I got the !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Back Room Letter!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "09eb7c09-39db-4224-9a0e-cb49361ee628"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "089f2e2f-2628-49d6-b821-bc213114cf7b"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "106",
+        "flag": 3,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "f3ee432e-837e-437c-806f-965bf8568112"
+          }
+        ],
+        "false": []
+      },
+      "id": "e51b69fd-0878-40eb-be19-56ba1e03bd3b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 7,
+  "y": 13,
+  "_index": 0
+}

@@ -1,0 +1,43 @@
+{
+  "_resourceType": "actor",
+  "id": "0cd8ec54-2756-426c-9d7d-22e6a0de55e8",
+  "name": "Health Drink",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
+  "prefabId": "b6082600-8ede-43b8-8932-d2ab92446836",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "97dfa55b-a4db-4f37-9ab4-b51d3dda11d3": {
+      "id": "97dfa55b-a4db-4f37-9ab4-b51d3dda11d3",
+      "args": {
+        "flag": 9
+      }
+    },
+    "ebe57cb8-eafb-4c53-bebe-107535a583ae": {
+      "id": "ebe57cb8-eafb-4c53-bebe-107535a583ae",
+      "args": {
+        "variable": "106",
+        "flag1": false,
+        "flag14": false,
+        "flag5": true
+      }
+    }
+  },
+  "symbol": "actor_264",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 7,
+  "y": 6,
+  "_index": 1
+}

@@ -31,6 +31,13 @@
         ],
         "false": [
           {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "751cd7bf-dce1-4921-b89e-2ca6eb54bd41"
+          },
+          {
             "command": "EVENT_IF_ACTOR_DIRECTION",
             "args": {
               "actorId": "$self$",
@@ -78,6 +85,13 @@
                           "height": 16
                         },
                         "id": "def6d5dd-e3ee-4b7c-a7a4-9635486e9d7e"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "8a88765e-d3a8-457b-bce5-461ada3632cd"
                       }
                     ],
                     "false": [
@@ -145,6 +159,13 @@
               ]
             },
             "id": "31857078-a701-445b-b122-d781d53b149f"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "df4547be-fafe-4fc6-b743-f7e93b6ed6e0"
           }
         ]
       },

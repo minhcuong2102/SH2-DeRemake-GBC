@@ -45,7 +45,7 @@
         "__collapseCase15": false,
         "value15": 16,
         "__collapseElse": false,
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "children": {
@@ -269,7 +269,7 @@
                       }
                     },
                     "__collapseElse": false,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -321,6 +321,13 @@
                           "variable": "46"
                         },
                         "id": "8882d640-98e8-40ad-b62d-168786353683"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "bf1c50c2-f10c-452b-a893-287b63771ede"
                       },
                       {
                         "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
@@ -810,7 +817,7 @@
                           "value15": 16,
                           "__collapseElse": false,
                           "__comment": false,
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true0": [
@@ -1094,6 +1101,13 @@
                           "false": []
                         },
                         "id": "df2d03f5-f5ca-4076-9772-ae50bf913c82"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "19e5633c-c49a-4c7d-bb13-f41742a59d11"
                       },
                       {
                         "command": "EVENT_WAIT",
