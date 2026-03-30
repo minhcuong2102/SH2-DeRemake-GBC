@@ -2,25 +2,24 @@
   "_resourceType": "scene",
   "id": "c2740c14-f133-457f-981f-b591a2a8d29e",
   "_index": 108,
-  "name": "East South Vale/Behind Neely's Bar",
-  "backgroundId": "5c55e53d-2e2c-4c72-ac80-34ca835309d3",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [
-    "f17567f2-65b3-4a59-9fe6-40e62241c598",
-    "8dca260b-112d-43ab-baad-c583040895e2",
-    null,
-    null,
-    "default-bg-3"
-  ],
-  "spritePaletteIds": [],
-  "collisions": "0f5+007+0f8+002+0f!009+0f3+003+0f!00!0f5+007+0f10+004+0f10+004+0f10+007+0fd+007+0fd+003+0fe+006+0fe+007+0f2+00!0fe+002+0f12+002+0f12+002+0f11+007+0fa+00a+0fa+00a+0fa+00a+0f19+",
-  "autoFadeSpeed": 1,
+  "name": "East South Vale/Behind Neely's Bar",
   "symbol": "scene_109",
   "x": 2340.83846282959,
   "y": 1868.8358573913574,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "5c55e53d-2e2c-4c72-ac80-34ca835309d3",
+  "tilesetId": "",
+  "paletteIds": [
+    "f17567f2-65b3-4a59-9fe6-40e62241c598",
+    "8dca260b-112d-43ab-baad-c583040895e2",
+    "",
+    "",
+    "default-bg-3"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
   "script": [
     {
       "command": "EVENT_GROUP",
@@ -264,5 +263,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f5+007+0f8+002+0f!009+0f3+003+0f!00!0f5+007+0f10+004+0f10+004+0f10+007+0fd+007+0fd+003+0fe+006+0fe+007+0f2+00!0f5+0014+0f9+002+0f12+002+0f11+007+0fa+00a+0fa+00a+0fa+00a+0f19+"
 }
