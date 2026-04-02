@@ -2,152 +2,25 @@
   "_resourceType": "scene",
   "id": "dec4a9ac-9b24-482b-9d85-d708c6fe732b",
   "_index": 109,
+  "type": "TOPDOWN",
   "name": "East South Vale/Behind Neely's Bar 1",
-  "backgroundId": "39c16df4-e16c-47db-8cfc-d787a4761b05",
-  "tilesetId": "",
+  "symbol": "scene_110",
+  "x": 2384,
+  "y": 1520,
   "width": 22,
   "height": 40,
-  "type": "TOPDOWN",
+  "backgroundId": "39c16df4-e16c-47db-8cfc-d787a4761b05",
+  "tilesetId": "",
   "paletteIds": [
-    null,
+    "",
     "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
     "f17567f2-65b3-4a59-9fe6-40e62241c598",
     "default-bg-3",
     "8229b0ab-91ec-4164-bb9c-9b6a37a8be84"
   ],
   "spritePaletteIds": [],
-  "collisions": "0f59+0014+0f2+0014+0f2+0014+0f2+0014+0f2+0014+0f2+00!0f4+00a+0f4+00!0f7+00a+0fc+00a+0fc+00a+0ff+007+0ff+007+0ff+006+0f10+005+0f11+005+0fe+00a+0fc+00a+0f6+00d+0f3+0013+0f3+006+0f6+007+0ff+007+0ff+007+0f10+009+0fe+008+0fe+008+0fc+00a+0fc+00a+0f6+002c+0f6+00a+0ff+007+0ff+007+0ff+006+0f10+006+0f10+007+0fc+00a+0fc+00a+0f6+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_110",
-  "x": 2384,
-  "y": 1520,
   "script": [
-    {
-      "command": "EVENT_GROUP",
-      "args": {
-        "__comment": false,
-        "__collapse": false
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "6",
-              "value": {
-                "type": "number",
-                "value": 200
-              },
-              "__comment": false,
-              "__collapse": true
-            },
-            "id": "3a27b354-b3ac-4eea-bb6c-cb271ecd692c"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "47",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__comment": false,
-              "__collapse": true
-            },
-            "id": "a5a54baa-0fc6-42b2-afeb-6dad6026cd51"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "67",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__comment": false,
-              "__collapse": true
-            },
-            "id": "36867ba0-027f-4e9d-bc55-b29455eda8e6"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "78",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__comment": false,
-              "__collapse": true
-            },
-            "id": "7086bc43-b22e-43db-bff5-712bbff9fa12"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "71",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__comment": false,
-              "__collapse": true
-            },
-            "id": "d448ce58-54e9-4202-9f07-a8ca8e52e3b2"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "102",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__collapse": true,
-              "__comment": false
-            },
-            "id": "715b1312-4be5-4355-bdb6-e54e62d59900"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "101",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__collapse": true
-            },
-            "id": "c68e7983-8524-496a-999e-805b9ab512cf"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "97",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__collapse": false
-            },
-            "id": "16d19483-27af-4b1f-95e8-11b8964e0024"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "98",
-              "value": {
-                "type": "number",
-                "value": 1
-              },
-              "__collapse": true
-            },
-            "id": "c4cf92ca-59f0-4bb0-a74e-71e6379caf6d"
-          }
-        ]
-      },
-      "id": "b013d224-28ea-428b-a1a0-50e100043133"
-    },
     {
       "command": "EVENT_MUSIC_STOP",
       "args": {},
@@ -264,5 +137,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f59+0014+0f2+0014+0f2+0014+0f2+0014+0f2+0014+0f2+00!0f4+00a+0f4+00!0f7+00a+0fc+00a+0fc+00a+0ff+007+0ff+007+0ff+006+0f10+005+0f11+005+0fe+00a+0fc+00a+0f6+00d+0f3+0013+0f3+006+0f6+007+0ff+007+0ff+007+0f10+009+0fe+008+0fe+008+0fc+00a+0fc+00a+0f6+002c+0f6+00a+0ff+007+0ff+007+0ff+006+0f10+006+0f10+007+0fc+00a+0fc+00a+0f6+"
 }
