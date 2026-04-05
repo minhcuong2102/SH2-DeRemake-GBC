@@ -22,42 +22,56 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "command": "EVENT_IF_FLAGS_COMPARE",
             "args": {
-              "type": "1b10e50d-5d98-40a6-aa99-5ce4eab609f5",
-              "priority": "high",
-              "pitch": 4,
-              "frequency": 200,
-              "duration": 0.5,
-              "wait": true,
-              "effect": 0
+              "variable": "106",
+              "flag": 11,
+              "__collapseElse": false
             },
-            "id": "03f0fc12-3a8e-4c13-99ed-74327dcb8cab"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "It looks like the lock is\nbroken. I can't open it."
-              ],
-              "__section": "text",
-              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 2,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+            "children": {
+              "true": [],
+              "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "66f98da6-5ec4-4f92-92d8-fc8cbb4c0bd4",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "03f0fc12-3a8e-4c13-99ed-74327dcb8cab"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "It's locked from the other\nside."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "55bb5a1e-36e9-4ea4-9ec2-c4bb5f675aee"
+                }
+              ]
             },
-            "id": "55bb5a1e-36e9-4ea4-9ec2-c4bb5f675aee"
+            "id": "7cb40f3b-6d02-4438-8be1-6638eb6514b3"
           }
         ]
       },

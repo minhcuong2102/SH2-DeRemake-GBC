@@ -1,29 +1,28 @@
 {
   "_resourceType": "scene",
-  "id": "dec4a9ac-9b24-482b-9d85-d708c6fe732b",
-  "_index": 109,
+  "id": "c1a19000-4761-40e2-864c-5349f01d5188",
+  "_index": 110,
   "type": "TOPDOWN",
-  "name": "East South Vale/Behind Neely's Bar 1",
-  "symbol": "scene_110",
-  "x": 2384,
-  "y": 1520,
-  "width": 22,
-  "height": 40,
-  "backgroundId": "39c16df4-e16c-47db-8cfc-d787a4761b05",
+  "name": "East South Vale/Behind Neely's Bar 2",
+  "symbol": "scene_111",
+  "x": 2400,
+  "y": 1320,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a24d010c-ee88-4071-95fd-3a41fdd7e779",
   "tilesetId": "",
   "paletteIds": [
-    "",
-    "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
     "f17567f2-65b3-4a59-9fe6-40e62241c598",
-    "default-bg-3",
-    "8229b0ab-91ec-4164-bb9c-9b6a37a8be84",
-    "f17567f2-65b3-4a59-9fe6-40e62241c598"
+    "",
+    "f17567f2-65b3-4a59-9fe6-40e62241c598",
+    "",
+    "9d8e2ae3-7c68-472c-946b-60d4fd8d4933"
   ],
   "spritePaletteIds": [
     "",
     "",
-    "",
-    "",
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
+    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8",
     "",
     "",
     "default-bg-3"
@@ -31,39 +30,18 @@
   "autoFadeSpeed": 1,
   "script": [
     {
-      "command": "EVENT_MUSIC_STOP",
-      "args": {},
-      "id": "66bedbf1-1400-4eec-b613-075556a44266"
-    },
-    {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "262bc22b-d297-4265-ad5c-b0526d8d7a6a",
-        "$actor[0]$": "b7bf0f26-105a-409b-a8ba-f5acbc0766d6",
-        "$actor[1]$": "bcb5dfe4-dbf8-4869-bdea-fd35b061ee4e"
+        "$actor[0]$": "73e20270-ad86-456e-9ee2-daa5f2178a43",
+        "$actor[1]$": "3e2a9239-7a9f-4bb5-901d-6d4d36d5725b"
       },
-      "id": "a9219ea2-5543-43d8-bb9f-e3802e03e2a8"
+      "id": "b0d74cc9-dad7-47a5-a3a3-4cc989c546ce"
     },
     {
-      "command": "EVENT_IF_FLAGS_COMPARE",
-      "args": {
-        "variable": "113",
-        "flag": 5,
-        "__collapseElse": true
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_ACTOR_DEACTIVATE",
-            "args": {
-              "actorId": "bbfbaca5-90d5-4e4b-b221-d45744167e60"
-            },
-            "id": "58f73d4d-c6f9-4456-9400-a79128b47a83"
-          }
-        ],
-        "false": []
-      },
-      "id": "ac98180d-e181-48a3-bb8c-cb84cc3a55a8"
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "3324bf1b-7d20-4f1a-bc52-acc2040b9b86"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -71,10 +49,10 @@
         "variable": "41",
         "value": {
           "type": "number",
-          "value": 48
+          "value": 49
         }
       },
-      "id": "f0850086-d530-4a49-aae2-4d15316a75a3"
+      "id": "41b8c312-3e8b-4a7f-80b0-efbe5f6c25ec"
     },
     {
       "command": "EVENT_IF_FLAGS_COMPARE",
@@ -94,7 +72,7 @@
                 "value": 1
               }
             },
-            "id": "bb913fea-14a4-479b-af4b-21fd888141d9"
+            "id": "ff9b9634-aa7c-4b0f-a057-73316c28413b"
           }
         ],
         "false": [
@@ -107,18 +85,18 @@
                 "value": 0
               }
             },
-            "id": "905291fa-eb3a-488d-b896-7a9455974898"
+            "id": "45d6c549-f7f7-476c-8997-82b598799835"
           },
           {
             "command": "EVENT_ACTOR_DEACTIVATE",
             "args": {
-              "actorId": "3e1d486d-acbb-4d27-a8b6-1898d44c07c5"
+              "actorId": "13d9d5da-21a5-4278-95f3-60e1dbc4c555"
             },
-            "id": "88729900-547a-4d49-a70d-b6c5b4237a6f"
+            "id": "64d00a64-e07a-4a54-bbc4-1b7db2627bd0"
           }
         ]
       },
-      "id": "bfddbb37-7879-42ee-a858-694d4446d757"
+      "id": "1784fefe-972a-4680-ac0b-e8ee5e904bdd"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -129,7 +107,7 @@
           "value": 0
         }
       },
-      "id": "e108e6ac-e770-42b7-aeb7-885677dfa900"
+      "id": "00c87a70-9379-4155-9a0d-2e7cbc94f320"
     },
     {
       "command": "EVENT_GROUP",
@@ -147,7 +125,7 @@
               },
               "__comment": true
             },
-            "id": "3de628fd-4746-4235-906a-866c60a1f849"
+            "id": "534e5124-f3a3-4f93-b506-ab4ad6e56072"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -155,7 +133,7 @@
               "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
               "__collapse": true
             },
-            "id": "8c0d428c-7414-4bba-8baf-be176456a2f1"
+            "id": "200eb1aa-ea1f-433e-8073-34079950f65b"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -163,7 +141,7 @@
               "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
               "__collapse": true
             },
-            "id": "ccd49610-0fbe-4a90-8447-fc44b730f8d0"
+            "id": "8828f0a5-1abd-483a-b097-ad427fb43838"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -171,7 +149,7 @@
               "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
               "__collapse": true
             },
-            "id": "127f25ae-b2b4-4374-b726-84c0b44bf5c4"
+            "id": "bb911e95-cd58-4809-87a8-c8d1f34b1eac"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -179,11 +157,11 @@
               "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
               "__collapse": true
             },
-            "id": "9cc3ea88-6eb1-4e7b-8940-8962aec8dd14"
+            "id": "07d5da5a-003a-4004-9f52-621ba873a53f"
           }
         ]
       },
-      "id": "9e7d9a97-868d-4552-a39f-170a3f5d912c"
+      "id": "64e9c01f-469b-44bf-8144-9a7852d3ee37"
     },
     {
       "command": "EVENT_IF",
@@ -199,36 +177,21 @@
             "value": 1
           }
         },
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
-          {
-            "command": "EVENT_PALETTE_SET_BACKGROUND",
-            "args": {
-              "palette0": "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
-              "palette1": "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
-              "palette2": "keep",
-              "palette3": "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
-              "palette4": "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
-              "palette5": "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
-              "palette6": "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
-              "palette7": "keep",
-              "__collapse": false
-            },
-            "id": "d84ffceb-edc3-4485-9344-4dbe378b335b"
-          },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
               "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362"
             },
-            "id": "6420b2f9-5fa1-4916-b917-cfeb39f74403"
+            "id": "cdf0b203-8821-4591-baa2-b0a2d07765a4"
           }
         ],
         "false": []
       },
-      "id": "b47e03fd-a62d-4f9d-bae2-c2e6283ad46b"
+      "id": "47c63c6a-e6c6-4eeb-828f-597e27da73db"
     }
   ],
   "playerHit1Script": [
@@ -242,10 +205,10 @@
           "value": 15
         }
       },
-      "id": "b6f73195-728d-44e1-9852-e4a3673d91f1"
+      "id": "6e5a773b-5d86-4792-b1cf-b1a7eae8d6c7"
     }
   ],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "0f59+0014+0f2+0014+0f2+0014+0f2+0014+0f2+0014+0f2+00!0f4+00a+0f4+00!0f7+00a+0fc+00a+0fc+00a+0ff+007+0ff+007+0ff+006+0f10+005+0f11+005+0fe+00a+0fc+00a+0f6+00d+0f3+0013+0f3+006+0f6+007+0ff+007+0ff+007+0f10+009+0fe+008+0fe+008+0fc+00a+0fc+00a+0f6+002c+0f6+00a+0ff+007+0ff+007+0ff+006+0f10+006+0f10+007+0fc+00a+0fc+00a+0f6+"
+  "collisions": "0f3d+00e+0f3+00!0f2+00e+0f3+00!0f2+0012+0f!0013+0f!0013+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f6+00e+0f6+00e+0f2+00d+0f4+00!0f2+00c+0f5+00!0f2+00c+0f5+00!0f15+"
 }

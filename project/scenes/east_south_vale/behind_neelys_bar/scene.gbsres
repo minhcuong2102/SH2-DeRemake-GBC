@@ -179,7 +179,7 @@
         "variable": "41",
         "value": {
           "type": "number",
-          "value": 34
+          "value": 47
         }
       },
       "id": "7fd89f94-6b55-410c-b4b1-1a703fd4b5b3"
@@ -196,15 +196,51 @@
       "id": "aba453a9-0cd1-46d6-9a71-2bb33f55a66a"
     },
     {
-      "command": "EVENT_SET_VALUE",
+      "command": "EVENT_IF",
       "args": {
-        "variable": "19",
-        "value": {
-          "type": "number",
-          "value": 1
-        }
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "property",
+            "target": "player",
+            "property": "ypos"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 13
+          }
+        },
+        "__collapseElse": false
       },
-      "id": "c75a2cbe-b6af-4bf4-bf31-2e230843f13a"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "c75a2cbe-b6af-4bf4-bf31-2e230843f13a"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "24e02170-f57d-401f-885f-90eba8f96cb0"
+          }
+        ]
+      },
+      "id": "f7405ac5-066f-48c1-a1d4-fc8211ec7782"
     },
     {
       "command": "EVENT_GROUP",
