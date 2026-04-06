@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "LOGO",
+  "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
@@ -26,7 +26,7 @@
     {
       "command": "EVENT_WAIT",
       "args": {
-        "time": 3,
+        "time": 4,
         "frames": 30
       },
       "id": "b5637884-f797-4056-89cf-513da37c717c"
@@ -41,7 +41,7 @@
         "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
         "minHeight": 4,
         "maxHeight": 7,
-        "textX": 1,
+        "textX": 2,
         "textY": 1,
         "textHeight": 5,
         "position": "bottom",
@@ -49,7 +49,7 @@
         "showFrame": "true",
         "speedIn": -1,
         "speedOut": -1,
-        "closeWhen": "text",
+        "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
@@ -69,12 +69,13 @@
           "value": 27
         },
         "direction": "down",
-        "fadeSpeed": "2"
+        "fadeSpeed": 3
       },
       "id": "09dcbdc5-59d2-41ba-beb4-737e7386f707"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4"
 }

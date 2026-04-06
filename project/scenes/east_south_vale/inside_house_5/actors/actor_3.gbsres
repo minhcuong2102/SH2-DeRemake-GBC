@@ -28,6 +28,11 @@
       "children": {
         "true": [
           {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "82bf5fa5-1bc2-403e-8579-8daad2163687"
+          },
+          {
             "command": "EVENT_ACTOR_DEACTIVATE",
             "args": {
               "actorId": "$self$"
@@ -98,6 +103,11 @@
                     "flag16": true
                   },
                   "id": "89bc5b2f-f0de-498a-b6cf-24576a8cd440"
+                },
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "680c3f31-41bf-4b0b-bd0f-3a2b5b375048"
                 },
                 {
                   "command": "EVENT_ACTOR_DEACTIVATE",

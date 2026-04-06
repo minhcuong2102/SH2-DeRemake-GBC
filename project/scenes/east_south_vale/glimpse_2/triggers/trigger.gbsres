@@ -67,6 +67,13 @@
                   "id": "aadcbd46-4676-4541-b2fc-d549dff0c07d"
                 },
                 {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "808d2f2f-fa57-444e-80e9-80878752a543"
+                  },
+                  "id": "35089b40-7988-4dcd-8228-b23fb9b686c1"
+                },
+                {
                   "command": "GUD_EVENT_ENABLE_ISRFX",
                   "args": {},
                   "id": "47e6fb94-8f37-498c-a0c1-9591bbbafef7"
@@ -78,6 +85,11 @@
                     "frames": 30
                   },
                   "id": "55860410-c5f1-43e0-8898-af10f51adfa5"
+                },
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "1715fb78-da13-4536-bcf0-eb69fa191d8d"
                 },
                 {
                   "command": "GUD_EVENT_DISABLE_ISRFX",
@@ -120,6 +132,15 @@
                     "actorId": "e1e77726-f342-472b-87ee-dfce85296111"
                   },
                   "id": "b9f60e1d-58bb-4b8e-8547-10546592c35b"
+                },
+                {
+                  "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a"
+                    ]
+                  },
+                  "id": "ef607ce2-8fa9-4b84-8b32-ff04655dcb5b"
                 }
               ]
             },
