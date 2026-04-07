@@ -24,7 +24,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false,
+        "__comment": true,
         "__collapse": false
       },
       "children": {
@@ -291,6 +291,18 @@
               "__collapse": true
             },
             "id": "151322da-f8fa-4f81-b877-d1d81e4871d4"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "08cd8a6d-b06f-4833-a3f7-655749d51a52"
           }
         ]
       },
