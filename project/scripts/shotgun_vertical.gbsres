@@ -1,0 +1,172 @@
+{
+  "_resourceType": "script",
+  "id": "bca2dcd4-bacd-4e6b-aa80-69416d34e7a8",
+  "name": "Shotgun Vertical",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_19",
+  "script": [
+    {
+      "command": "EVENT_LAUNCH_PROJECTILE",
+      "args": {
+        "__section": "projectile",
+        "spriteSheetId": "73717e96-119f-40a3-8cd2-831b57ba248d",
+        "spriteStateId": "",
+        "actorId": "$self$",
+        "x": 0,
+        "y": 16,
+        "directionType": "actor",
+        "otherActorId": "$self$",
+        "direction": "right",
+        "angle": 0,
+        "angleVariable": "V0",
+        "targetActorId": "$self$",
+        "initialOffset": 0,
+        "speed": 4,
+        "animSpeed": 255,
+        "lifeTime": 1,
+        "loopAnim": false,
+        "destroyOnHit": false,
+        "collisionGroup": "3",
+        "collisionMask": [
+          "3"
+        ],
+        "__comment": true
+      },
+      "id": "e89ea958-bccc-4da2-a34d-4e3ab51bb282"
+    },
+    {
+      "id": "fdf5fc9d-01ca-44bb-8e30-0f5d1eb687d8",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Launch Vertical Projectiles",
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "6e101a96-5e6f-48a8-bc7b-ef8c73bff457",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 12,
+              "y": 16,
+              "directionType": "actor",
+              "otherActorId": "$self$",
+              "direction": "down",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "09c97ab2-4d61-449c-9875-0f642dad5433",
+              "initialOffset": 0,
+              "speed": 4,
+              "animSpeed": 255,
+              "lifeTime": 0.6,
+              "loopAnim": false,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "3"
+              ],
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "f7efbb98-dfa9-4518-8888-bb659448831b"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "6e101a96-5e6f-48a8-bc7b-ef8c73bff457",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 4,
+              "y": 16,
+              "directionType": "actor",
+              "otherActorId": "$self$",
+              "direction": "down",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "09c97ab2-4d61-449c-9875-0f642dad5433",
+              "initialOffset": 0,
+              "speed": 4,
+              "animSpeed": 255,
+              "lifeTime": 0.6,
+              "loopAnim": false,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "3"
+              ],
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "1e40b275-3443-4136-9c5e-371145ca9366"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "6e101a96-5e6f-48a8-bc7b-ef8c73bff457",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": -4,
+              "y": 16,
+              "directionType": "actor",
+              "otherActorId": "$self$",
+              "direction": "down",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "09c97ab2-4d61-449c-9875-0f642dad5433",
+              "initialOffset": 0,
+              "speed": 4,
+              "animSpeed": 255,
+              "lifeTime": 0.6,
+              "loopAnim": false,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "3"
+              ],
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "bf44bce9-8742-413a-b4cf-11a5ccbeda36"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "6e101a96-5e6f-48a8-bc7b-ef8c73bff457",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": -12,
+              "y": 16,
+              "directionType": "actor",
+              "otherActorId": "$self$",
+              "direction": "down",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "09c97ab2-4d61-449c-9875-0f642dad5433",
+              "initialOffset": 0,
+              "speed": 4,
+              "animSpeed": 255,
+              "lifeTime": 0.6,
+              "loopAnim": false,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "3"
+              ],
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "081d040e-8f6a-479f-9c34-d22ab44477be"
+          }
+        ]
+      }
+    }
+  ]
+}

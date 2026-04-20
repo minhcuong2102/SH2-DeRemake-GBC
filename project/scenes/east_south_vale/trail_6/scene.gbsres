@@ -1,0 +1,136 @@
+{
+  "_resourceType": "scene",
+  "id": "7f81e0a5-7c24-4308-bf87-243aac392cd1",
+  "_index": 27,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Trail 6",
+  "symbol": "scene_29",
+  "x": 408,
+  "y": 1192,
+  "width": 20,
+  "height": 60,
+  "backgroundId": "ee777d24-401c-4650-bcf3-31775620dea2",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "",
+    "b57f8e36-9f68-4d93-99cc-19583accdcd7",
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
+    "",
+    "default-bg-3"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_AUTO_FLIP_TILES",
+      "args": {
+        "__comment": true
+      },
+      "id": "5b54a200-e947-4d15-92e6-d61244c78ed3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 8
+        }
+      },
+      "id": "480659fb-bb16-4d4e-b98f-dc2fbae98208"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "cae856a0-97bd-44d1-b7dd-61bed5eed3e3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "d6bf96f4-7783-4f0f-9201-4ac064463bfc"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "06738233-71f7-4a38-add3-8532d39e05bd"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "cddafe90-4799-4962-a061-da337022d2c2"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "4eca8b78-8ed9-4bcf-9867-b8c61cd476b1"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "01ceeed6-e543-4617-9291-d3ed782ac300"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "c85d6186-ed06-46fd-b1d2-faf646cd23c5"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "badf3995-58aa-420d-ae26-c6d0314a920f"
+          }
+        ]
+      },
+      "id": "85f09360-ee95-4f28-82df-83885a99167d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f2+00c+0f8+00c+0f8+00c+0f8+002+0f!009+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f6+005+0f!008+0f6+005+0f!008+0f6+005+0f!008+0f6+005+0f!008+0f6+005+0f!008+0f6+005+0f!008+0f6+005+0f!008+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+002+0f!009+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+002+0f!009+0f8+00c+0f8+00c+0f9+00b+0f9+00b+0f9+00b+0f9+00b+0f8+00c+0f8+00c+0f8+00c+0f8+002+0f!009+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+002+0f!009+0f8+00b+0f9+00!0f3+007+0f9+00!0f3+008+0f8+00!0f3+008+0f8+00!0f3+008+0f8+00!0f3+008+0f6+00e+0f6+005+0f!008+0fc+008+0fc+008+0ff+002+0ff+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0f6+"
+}

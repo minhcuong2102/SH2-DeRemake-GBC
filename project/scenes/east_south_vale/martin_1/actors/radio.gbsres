@@ -1,0 +1,203 @@
+{
+  "_resourceType": "actor",
+  "id": "7c747744-5443-4ddd-80fd-ef903b4497e6",
+  "_index": 0,
+  "symbol": "actor_81",
+  "prefabId": "",
+  "name": "Radio",
+  "coordinateType": "tiles",
+  "x": 5,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bd45c48a-ea76-46b8-af61-5b85d89dc13e",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "85",
+        "flag": 1,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "30f8466a-08c7-4924-903a-d6413a4a925a"
+          }
+        ],
+        "false": []
+      },
+      "id": "462c6751-cc25-41af-a3ae-a5881ea8a196"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "85",
+        "flag": 1,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "80b043e4-9fc7-4a6b-851b-ef1272c607e4"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "823448b3-6c00-4d64-a331-20a139448986"
+            },
+            "id": "9775e99e-3cbc-4085-99b9-d11731a044fb"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 30
+              }
+            },
+            "id": "1649ada2-f7a3-4bcf-b90a-f9ba5da061f8"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "left",
+                "up",
+                "down",
+                "right",
+                "a",
+                "start"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                  },
+                  "id": "aa7a5a97-50bd-459a-8c9d-1c33e25941ab"
+                },
+                {
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "820869bb-0bd0-490a-bf69-65e766687119"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "\"Ja..... I'm..... e.\nCome to.... s.....\"",
+                      "\"........ting f....\"",
+                      "\".......id you k.....\"",
+                      "\"Jam.........\""
+                    ],
+                    "__section": "text",
+                    "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "742883bb-76e7-4a6b-9117-030c5e4c0ac4"
+                },
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "85",
+                    "flag1": false,
+                    "flag2": true,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "b293005c-a2bc-42ae-a56b-abc808d6eea6"
+                },
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "ded0afdc-bebc-4dea-94ac-8a6a0cb3786c"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "addb7279-e4f1-420a-abde-a2b3f96c2317",
+                    "x": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "direction": "right",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "c34066a8-4428-4d34-ae0a-7f4bb038c75a"
+                }
+              ]
+            },
+            "id": "2c959f44-f44c-470e-b68f-28f1337312ab"
+          }
+        ]
+      },
+      "id": "fd9244e1-fffa-49fe-8842-cc27bee8ff0d"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

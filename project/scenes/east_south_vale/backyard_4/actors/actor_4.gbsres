@@ -1,0 +1,83 @@
+{
+  "_resourceType": "actor",
+  "id": "f30c78f9-5edc-480b-a7ea-b64e52658c79",
+  "_index": 3,
+  "symbol": "actor_130",
+  "prefabId": "28e4a095-c2a5-4f77-b3ac-a8479d6a8786",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 13,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {
+    "b85662bd-bd22-4466-a9e9-2811c22794d7": {
+      "id": "b85662bd-bd22-4466-a9e9-2811c22794d7",
+      "args": {
+        "variable": "90",
+        "flag": 1
+      }
+    },
+    "0ff2575a-9c43-4f6f-a2eb-2b80dad3a1b1": {
+      "id": "0ff2575a-9c43-4f6f-a2eb-2b80dad3a1b1",
+      "args": {
+        "variable": "90",
+        "flag2": true,
+        "flag1": false
+      }
+    },
+    "b2b6a010-c61b-45c1-b2de-01c671f25d90": {
+      "id": "b2b6a010-c61b-45c1-b2de-01c671f25d90",
+      "args": {
+        "variable": "90",
+        "flag2": true,
+        "flag1": false
+      }
+    },
+    "24523e3e-5959-4345-8eb3-c1922901aee2": {
+      "id": "24523e3e-5959-4345-8eb3-c1922901aee2",
+      "args": {
+        "variable": "90",
+        "flag2": true,
+        "flag1": false
+      }
+    },
+    "e8e8e2c1-eeee-4126-8bd6-2a5b2ae62804": {
+      "id": "e8e8e2c1-eeee-4126-8bd6-2a5b2ae62804",
+      "args": {
+        "type": "8d8e2e37-9188-42ea-9669-c9905ed9c6f3"
+      }
+    },
+    "79639bfb-1438-4754-9d64-1a2481081ecd": {
+      "id": "79639bfb-1438-4754-9d64-1a2481081ecd",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "14"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 150
+          }
+        }
+      }
+    }
+  },
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

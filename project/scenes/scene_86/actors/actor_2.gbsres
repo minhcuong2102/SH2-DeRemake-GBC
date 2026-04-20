@@ -1,0 +1,92 @@
+{
+  "_resourceType": "actor",
+  "id": "ff48bea0-5fcd-4e0e-bd1f-3abf0f3eb752",
+  "_index": 1,
+  "symbol": "actor_192",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 2,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "3582be4a-a3e4-4a13-ba2c-e1e9399284ed",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "3",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 3
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "fb156671-2c6f-43b8-b2ba-ece9e30deb19"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "$L0$",
+        "x": 2,
+        "y": 4,
+        "location": "background"
+      },
+      "id": "ed7afbb7-9f28-4fb4-83a9-cdb5220eca28"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e4587965-2622-4f25-9998-4a6bedb6da55"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "L0",
+        "operation": "add",
+        "other": "var",
+        "vectorY": "60",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false
+      },
+      "id": "f9e6869d-946f-4795-915f-be535b21df9c"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "$self$",
+        "distance": 20,
+        "speed": 2,
+        "time": 0.2,
+        "frames": 30
+      },
+      "id": "f0d99429-cbf5-411f-92e9-4c14305d8019"
+    }
+  ]
+}

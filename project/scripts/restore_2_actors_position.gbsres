@@ -1,0 +1,86 @@
+{
+  "_resourceType": "script",
+  "id": "262bc22b-d297-4265-ad5c-b0526d8d7a6a",
+  "name": "Restore 2 actors position",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    },
+    "1": {
+      "id": "1",
+      "name": "Actor B"
+    }
+  },
+  "symbol": "script_17",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "variable",
+                "value": "9"
+              },
+              "y": {
+                "type": "variable",
+                "value": "10"
+              }
+            },
+            "id": "919191ac-6fb4-4677-bf82-25934f6774e0"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "1",
+              "x": {
+                "type": "variable",
+                "value": "11"
+              },
+              "y": {
+                "type": "variable",
+                "value": "12"
+              }
+            },
+            "id": "786be40b-a2c7-43f5-84b0-7a3e0f1828e4"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "5fdc8ac1-7737-44ab-8d27-f29822dcb7a7"
+          }
+        ],
+        "false": []
+      },
+      "id": "5d8a2e6b-c541-4e9f-a05e-05429fd4304c"
+    }
+  ]
+}

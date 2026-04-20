@@ -1,0 +1,129 @@
+{
+  "_resourceType": "scene",
+  "id": "cbd58eff-19af-4322-9842-b5f2dc764a29",
+  "_index": 111,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Behind Neely's Bar 3",
+  "symbol": "scene_112",
+  "x": 2200,
+  "y": 1256,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8f32be6e-fc04-4205-86eb-4fe76f3a080f",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e",
+    "",
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "d934d9c0-73e0-40f1-8f2a-fa5f78990bc8"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "262bc22b-d297-4265-ad5c-b0526d8d7a6a",
+        "$actor[0]$": "91c2a3db-9167-4725-9a0d-a116e05c66cc",
+        "$actor[1]$": "903ee11e-f17e-4827-baab-ac95e812ba11"
+      },
+      "id": "b3fc403c-0065-4fee-8e2a-1cd5b6a9a848"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 50
+        }
+      },
+      "id": "b9970445-f377-42c8-8c55-aadd37046523"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "b767419d-179a-4be1-aab9-ed308b063e32"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e936b3db-6204-4f00-b267-ea2d5c8f1663"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": false
+            },
+            "id": "b62076a1-887c-4cc0-b66c-b26715f9e290"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "ec960d1d-e78c-4fe1-b0e6-f90df220dc00"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "319b69f4-34f6-4322-bb7d-66c11d2bf2f7"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "1731decd-fa6e-4e8e-b695-718f52e147f4"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "a4b69176-866a-40d0-87e0-fdba1315e0ac"
+          }
+        ]
+      },
+      "id": "84935fd3-4eb3-4d7c-b5a2-a8988d87b2de"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f44+004+0f10+004+0fd+009+0fb+00a+0fb+007+0fc+008+0fc+006+0f!00!0fc+008+0fc+00a+0fa+00!0f!008+0fa+009+0fb+00a+0fb+009+0fd+004+0f10+004+0f8+"
+}

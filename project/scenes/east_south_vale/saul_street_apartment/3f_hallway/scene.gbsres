@@ -1,0 +1,257 @@
+{
+  "_resourceType": "scene",
+  "id": "eeb7bc80-9c99-4dbe-86ae-9bb2e78e61bc",
+  "_index": 101,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Saul Street Apartment/3F Hallway",
+  "symbol": "scene_102",
+  "x": 288,
+  "y": 1888,
+  "width": 36,
+  "height": 34,
+  "backgroundId": "4427606e-6e1e-44a5-8ec0-a50a7e49b2fe",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b",
+    "8dca260b-112d-43ab-baad-c583040895e2",
+    "9d8e2ae3-7c68-472c-946b-60d4fd8d4933",
+    "e0323961-3399-4571-aa74-50917e96d1fd",
+    "default-bg-5",
+    "default-bg-6",
+    "dmg",
+    "9440983c-90e3-49cd-90f4-32068ac9b02d"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "f17567f2-65b3-4a59-9fe6-40e62241c598"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "104",
+        "flag": 11,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_SCRIPT_LOCK",
+            "args": {},
+            "id": "09a01f26-5966-41d2-81c9-72484268c91c"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "104",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": true,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "0626955b-06c5-42aa-8f13-ba9cf7e5ff8d"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "crash",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "bd0517a0-5cab-4fa3-8b22-ab5dac015998"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.5,
+              "frames": 30,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "id": "ca20cdaa-1bae-41a6-a59b-47c3430a4988"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "92a3e73e-5c6d-4cc4-8bb1-438d792a6a92"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "0b208751-9650-45bf-b17a-44d3c0093655"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The stair is collapsed.\nI can't go back anymore."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "abe3708e-62be-4065-88ff-7a4ea26ba407"
+          },
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "c48dd8f9-b985-4272-bb61-e05617c41394"
+          }
+        ]
+      },
+      "id": "37dc5ca8-f32f-4d60-9eee-d60110ce5404"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 45
+        }
+      },
+      "id": "ba4ec470-92a2-4123-b372-459038a3fba8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "3ed656f5-e30e-4334-bcd5-57cc9a888681"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "7749a66b-bdcd-43ed-b16c-8f52464de860"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "90122e06-9b63-43dc-9fda-18ca9d343bba"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "6642345c-57bb-4d27-b3ae-fa49c0aa7491"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "5e3a1c04-3573-4619-9310-65ef8b11ed95"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "19c486c1-ec0d-4be1-9258-2dfcd1e926d5"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "8b122e20-d2da-41fc-b570-96193e784c07"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "f7618e0f-a7bf-4f3c-b865-3d17b6145c58"
+          }
+        ]
+      },
+      "id": "7ef86fe6-0660-46b7-b22c-d257d891a4f6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f!00c+0f18+00c+0f18+00c+0f18+00c+0f!006+0f11+00c+0f!006+0f11+00c+0f!006+0f11+00c+0f!006+0f11+00c+0f!006+0f11+00c+0f!006+0f11+00c+0f!006+0f11+00c+0f!006+0f11+00c+0f!006+0fb+004+0f2+0013+0f9+006+0f2+00c+0f!006+0fb+002+0f4+004+0f4+004+0f!006+0fb+002+0f4+003+0f6+003+0f!006+0fb+002+0f4+003+0f6+003+0f!006+0f!007+0f2+004+0f3+003+0f6+003+0f!0014+0f3+003+0f6+003+0f!006+0f!00d+0f3+00c+0f!00!0f!002+0f!00!0f!009+0f7+00c+0f!00!0f3+002+0f!009+0f7+00c+0f8+00e+0f2+00c+0f10+002+0f6+00c+0f3+00!0fc+002+0f6+00c+0f!004+0fb+002+0f6+00c+0f!006+0f9+004+0f4+00!0f2+009+0f!006+0f7+008+0f2+00!0f2+009+0f!006+0f7+006+0f4+00!0f5+006+0f!006+0f7+00!0f!004+0f4+00!0f5+006+0f!006+0f7+00!0f2+003+0f4+00!0f2+009+0f!006+0f7+008+0f2+00!0f2+009+0f!006+0f7+008+0f2+00c+0f18+00c+0f17+"
+}

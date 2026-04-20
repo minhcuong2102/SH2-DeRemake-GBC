@@ -1,0 +1,145 @@
+{
+  "_resourceType": "trigger",
+  "id": "bbaddfde-6566-4666-94f5-af5a3194ed5d",
+  "name": "",
+  "prefabId": "",
+  "x": 1,
+  "y": 11,
+  "symbol": "trigger_223",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "2a5c6d6d-d86f-496f-a9d7-31c6a2a30495"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "536e7139-c913-4d99-bd6b-2fd655a23744"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "0ad85d9a-c080-4a45-a255-febdf9b07eb4"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "96",
+              "flag": 7,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "e4fd3b95-84ba-40ce-be96-85de9b1bfa62"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+                    "__comment": false
+                  },
+                  "id": "6f2cbe94-b1a5-4306-b6c5-4d6e7df7321a"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "0c741dca-23fd-4569-b31b-c6b14ebefa75",
+                    "x": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "5c1263e7-1cfe-40de-a1a6-90c4f984cc38"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "66f98da6-5ec4-4f92-92d8-fc8cbb4c0bd4",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "85b41ff9-cea2-4224-9967-c47ba205e288"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "It's locked from the other\nside."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "8cb322d4-4b23-4022-ab52-df69cdda48b2"
+                }
+              ]
+            },
+            "id": "fec2693a-0cb1-42d0-b5d3-5b9acbc7ea9c"
+          }
+        ]
+      },
+      "id": "7b31543d-773a-4867-8a42-a0281d41d9b9"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "f360fe8c-12d6-4209-8b4d-265aec1938ef"
+    }
+  ],
+  "_index": 0
+}

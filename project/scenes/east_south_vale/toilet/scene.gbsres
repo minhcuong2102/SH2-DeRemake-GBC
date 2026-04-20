@@ -1,0 +1,98 @@
+{
+  "_resourceType": "scene",
+  "id": "da98363c-cd62-4e96-af3e-860d18277b8a",
+  "_index": 10,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Toilet",
+  "symbol": "scene_12",
+  "x": 648,
+  "y": 384,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "291de6d9-976d-4509-bb5b-c1eccd887f4d",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8229b0ab-91ec-4164-bb9c-9b6a37a8be84",
+    "",
+    "91b39f68-d5cf-4e7c-821b-e34b7c60506b"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_AUTO_FLIP_TILES",
+      "args": {
+        "__comment": true
+      },
+      "id": "cc207f7b-6a66-4998-a9b6-65d601a41fed"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "909dfcbd-6a2d-4536-80c0-1b8f2265eb93"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "2638d473-60ae-4d9a-9977-eb919cd1177a"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "6e89aab5-1ae7-4d79-9388-488435634012"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "a563022b-2cdc-48f2-93ab-d6202f5f41c3"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "1d2db064-284c-4a89-98b6-b2ac645f3a6c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "2d891c2d-4bba-423a-95b6-be6ef72bbdf0"
+          }
+        ]
+      },
+      "id": "e5cd6a8a-250f-405a-b5d8-408483852a77"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fa3+00!0f6+00!0fc+00e+0f6+00e+0fc+008+0f7b+"
+}

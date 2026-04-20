@@ -1,0 +1,495 @@
+{
+  "_resourceType": "actor",
+  "id": "835810d9-0382-42e0-b2e4-0812c6c0af28",
+  "_index": 0,
+  "symbol": "actor_5",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 21,
+  "y": 29,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "243513e8-8810-4ec6-bb9a-087d8616a685",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": true,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "43"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "ce71f77d-867f-4045-a4c6-85b017559082",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "97ecc3ef-c707-48d8-b954-b33b76e2072e"
+          }
+        ],
+        "false": []
+      },
+      "id": "9650e1db-537a-4727-bdc3-73e2585745d7"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "20",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true,
+              "__comment": true
+            },
+            "id": "c171f47e-29d1-43ec-9411-43c47a622b67"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "select"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__comment": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "20",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "ed685c14-1f18-4fc2-aae0-c7bd1c7fdafd"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
+                    "x": {
+                      "type": "number",
+                      "value": 25
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 21
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "97c1808b-c3ed-440a-b511-57c8fbbf4275"
+                }
+              ]
+            },
+            "id": "55daae79-f6a2-4240-9116-80149bbc881a"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 30
+              }
+            },
+            "id": "46a10782-e041-459a-aca1-be8d4d4497bb"
+          },
+          {
+            "command": "EVENT_SCRIPT_LOCK",
+            "args": {},
+            "id": "1c721e0f-1114-4637-8290-33bb9332db49"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 25
+              },
+              "y": {
+                "type": "number",
+                "value": 20
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "collideWith": []
+            },
+            "id": "41943f49-29f6-46c7-87f9-7112b1ea8ea9"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 30
+              }
+            },
+            "id": "73bf18f7-6861-4c74-aa96-4c3f984d16c4"
+          },
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 1
+              },
+              "speed": 0.5
+            },
+            "id": "a5a7731e-d5f7-45b2-9766-c9d4ab1635b3"
+          },
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "4f600a5d-48d6-4793-8597-9420aa12f46a"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "95c39e08-1c85-4ea9-8c5c-cd436eec1c32"
+            },
+            "id": "c0cb26c6-895f-4ccd-b6c8-d61770c96079"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "In my restless dreams,\nI see that town.",
+                "Silent Hill."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "722a3882-c714-49ff-99e7-79e929a1726f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You promised you'd take\nme there again some day.",
+                "But you never did."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "a662a9c7-4e9d-4edf-a224-1a54b4293ece"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Well, I'm alone there now.",
+                "In our 'special place'.",
+                "Waiting for you."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "0c4191bd-a98a-454c-a4e0-0e5d3a75468e"
+          },
+          {
+            "command": "EVENT_CAMERA_LOCK",
+            "args": {
+              "speed": 1,
+              "axis": [
+                "x",
+                "y"
+              ]
+            },
+            "id": "8e79e870-0dfd-47fc-b74e-ba845a34a039"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I got a letter.",
+                "The name on the envelope\nsaid 'Mary'.",
+                "My wife's name."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "563f0576-ef74-4b4e-8a66-75d1e1ae3c92"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's ridiculous. Couldn't\npossibly be true.",
+                "That's what I keep telling\nmyself.",
+                "Mary died of that damn\ndisease three years ago.",
+                "So then why am I looking\nfor her?",
+                "Our 'special place'...",
+                "What could she mean?"
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "73f7967e-f5af-4aaa-8ff8-3b27da3ee7d4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "This whole town was our\nspecial place.",
+                "Could Mary really be here?",
+                "Is she really alive...?",
+                "Waiting for me?"
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "a3092832-cbd2-41de-bc71-7c54459d854a"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "20",
+              "flag1": true,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "d24da238-de20-459e-ac2b-9a658fdbe516"
+          },
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "acc6fff3-e90f-4335-8a54-d8b98bb98bad"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.25
+              },
+              "frames": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "1384ecdc-b981-4ff3-b422-c6421f7c3192"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Use D-pad to move.\nPress A to interact with objects.\nPress B to dodge (when not\nequipping weapon) or attack.",
+                "Dodge can go through objects,\nbut not through walls or any\nother collisions. When you ar\nstuck inside an object, press B\nin another direction to dash out.",
+                "Press Start to open inventory.\nPress Select to open map or skip\ncutscenes."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "c877084b-6b2c-45f8-8f38-98545f1029f8"
+          },
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "60615aa6-3e2f-4e7e-acf8-88be0408fdfb"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
+              "x": {
+                "type": "number",
+                "value": 25
+              },
+              "y": {
+                "type": "number",
+                "value": 22
+              },
+              "direction": "down",
+              "fadeSpeed": "2"
+            },
+            "id": "031885ef-6c19-40c2-b529-0159e958d780"
+          }
+        ]
+      },
+      "id": "5f6d61f6-5e00-416e-bf27-a21db1e0f37e"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

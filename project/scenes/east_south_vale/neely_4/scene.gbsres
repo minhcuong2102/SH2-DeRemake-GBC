@@ -1,0 +1,156 @@
+{
+  "_resourceType": "scene",
+  "id": "ee82c2c1-863a-4fc5-ab68-a97594100989",
+  "_index": 89,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Neely 4",
+  "symbol": "scene_90",
+  "x": 1416,
+  "y": 2448,
+  "width": 20,
+  "height": 24,
+  "backgroundId": "fd7cf71e-bb25-4575-87a7-de3d268dbe84",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 40
+        }
+      },
+      "id": "861fe28b-05af-47a1-ab25-4d837008a143"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "39bf1484-e67b-4ee6-9906-0a83f273a7fe"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "9922adc7-371f-4f41-bca1-b4762d7a3776"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": false
+            },
+            "id": "d8e91d74-5268-4c76-b1e2-2a884b2abc55"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "a9b017a9-0774-4691-b29f-7d403145b0ad"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "fa3a3d88-c72c-431f-b68b-636de1d37662"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "8415e1af-3410-4c30-90e2-d8a911d5b184"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "7efc5eb7-17f8-45e2-b453-6b991712aed5"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "71"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "id": "ca9804d6-9d44-40db-9a2b-3a98c9786a06"
+                }
+              ],
+              "false": []
+            },
+            "id": "ddf32e96-a914-4606-bf72-925b25e4ddf4"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "94262c20-20a2-4eb4-8fe8-506f25cb353f"
+          }
+        ]
+      },
+      "id": "012dad33-9843-4aef-a34a-6edb0650083d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f4+00d+0f7+00d+0f7+00d+0f3+0011+0f3+00!0f!002+0f!009+0f!002+0f3+0011+0f3+0011+0f3+0011+0f3+0011+0f3+0011+0f3+0011+0f3+0011+0f3+00!0f!002+0f!009+0f!002+0f3+0011+0f3+0011+0f3+0011+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f3f+"
+}

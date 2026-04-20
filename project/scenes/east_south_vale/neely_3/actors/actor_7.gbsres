@@ -1,0 +1,66 @@
+{
+  "_resourceType": "actor",
+  "id": "c3a4c0ca-aea2-440f-8de7-7d4e48c7cfe0",
+  "_index": 6,
+  "symbol": "actor_199",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 21,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5f0b8852-44cb-4ab8-9b63-a4010c668033",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "b5df0a43-858c-4af5-81df-7a77f4d35ffe"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Happy Burger\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "6989f818-e3dc-476b-bdf0-62347d9aaa1e"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

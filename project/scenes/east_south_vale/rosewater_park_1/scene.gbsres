@@ -1,0 +1,178 @@
+{
+  "_resourceType": "scene",
+  "id": "61c23d76-00b7-48b9-b81f-6aed1fee0679",
+  "_index": 106,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Rosewater Park 1",
+  "symbol": "scene_107",
+  "x": 2392,
+  "y": 2520,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "f4cd6032-88f7-4133-93cf-27e400a0676a",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "f17567f2-65b3-4a59-9fe6-40e62241c598",
+    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "f71309c5-d747-42be-bf66-0f47c6e01d65"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY_SEQUENCE",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "tilesetId": "9614dc0f-4be9-4d17-a78b-7b51395daf80",
+        "tileIndex": {
+          "type": "number",
+          "value": 0
+        },
+        "frames": {
+          "type": "number",
+          "value": 2
+        },
+        "variable": "T0",
+        "__comment": true
+      },
+      "id": "e7e2bb73-4296-4efb-8878-aa893c66633c"
+    },
+    {
+      "command": "EVENT_THREAD_START",
+      "args": {
+        "variable": "T0",
+        "__scriptTabs": "true"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LOOP",
+            "args": {},
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_REPLACE_TILE_XY",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "tilesetId": "9614dc0f-4be9-4d17-a78b-7b51395daf80",
+                    "tileIndex": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "0d27fc64-a7bf-4814-a629-08901c7b46c8"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": {
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    "frames": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "407c4fa2-a184-4464-bd2b-e8336a648b14"
+                },
+                {
+                  "command": "EVENT_REPLACE_TILE_XY",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "tilesetId": "9614dc0f-4be9-4d17-a78b-7b51395daf80",
+                    "tileIndex": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "5a6f2d90-a076-4258-b9cc-c8feb157f063"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": {
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    "frames": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "095bc947-55fb-4f9c-8e59-7596f357fcfb"
+                }
+              ]
+            },
+            "id": "3938eecf-756f-4981-a932-393af3adf05e"
+          }
+        ]
+      },
+      "id": "01319dce-66a2-46bb-9c25-5536bfdcabd6"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 3
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "b02e1fa9-1530-448d-a5fe-ac7efadf4fda"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3267e0eb-38e8-49fe-857a-2da3315a7987",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "up",
+        "fadeSpeed": 3
+      },
+      "id": "cc9c1d4f-8f11-4f56-a132-043e57ebc6c8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00c+0f!00b+0f3+005+0f4+006+0f5+005+0f6+004+0f5+005+0f6+004+0f4+007+0f5+003+0f5+007+0f6+002+0f5+007+0f6+003+0f4+007+0f5+004+0f4+007+0f5+004+0f4+007+0f6+003+0f4+007+0f6+003+0f4+007+0f5+004+0f4+007+0f4+005+0fe+007+0fd+007+0fc+00e+0f6+0019+"
+}

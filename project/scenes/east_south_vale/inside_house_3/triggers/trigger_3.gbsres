@@ -1,0 +1,77 @@
+{
+  "_resourceType": "trigger",
+  "id": "6aaff618-6556-4880-a1dd-112ee9e49b2c",
+  "name": "",
+  "prefabId": "",
+  "x": 11,
+  "y": 5,
+  "symbol": "trigger_84",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "a42328d6-497a-4fc8-81f3-976f06c19890"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "572a1a4b-8e7e-48cb-978f-9666bb81e38b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A fridge. Nothing inside."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "9504cb4b-2163-47c7-ad96-9d74990bef33"
+          }
+        ]
+      },
+      "id": "03c467fa-e460-4444-beb3-5c6390b59735"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "a24f4e9d-4350-4527-bd08-563cb22af3d0"
+    }
+  ],
+  "_index": 2
+}

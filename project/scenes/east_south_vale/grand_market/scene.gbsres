@@ -1,0 +1,133 @@
+{
+  "_resourceType": "scene",
+  "id": "9acf90d5-e09a-44eb-b678-7cf7d674b87e",
+  "_index": 71,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Grand Market",
+  "symbol": "scene_72",
+  "x": 1408,
+  "y": 2056,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "49d9cc04-caca-4217-92bb-6eb749351bad",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "",
+    "8dca260b-112d-43ab-baad-c583040895e2"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "7cf3bd7d-2c9c-4555-9530-fe543693086f"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 31
+        }
+      },
+      "id": "2c007e2a-5700-4e5b-bbb4-303af39cea3e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "159a691b-26e8-4181-a788-12fbb3a563c0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "743a2f6e-c887-47ee-8a0d-923020cefce3"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "7cf705af-62ad-4faf-9d0b-f54c2edaabc6"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "bd92e9a2-3ee4-44ca-955c-63270d5c4caf"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "1e3cd540-643a-4498-bd95-50f8f3afa491"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "e0215197-2a7a-4fb4-80ad-be65de237f56"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "9a8c90b3-b444-4b5b-8994-e4372bd78bd0"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "68fd7c92-9d08-4a89-9143-5fb1ac9d4927"
+          }
+        ]
+      },
+      "id": "057795f2-030f-4a78-aba7-8eddd7bdecab"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f58+005+0f8+00c+0f9+006+0f2+009+0f4+004+0f4+003+0f2+003+0f4+004+0f4+002+0f4+002+0f4+004+0f4+002+0f4+002+0f4+004+0f4+002+0f4+002+0f4+004+0f4+002+0f4+002+0f4+004+0f4+002+0f4+002+0f4+004+0f4+002+0f4+002+0f4+004+0f4+002+0f4+002+0f4+004+0f4+002+0f4+002+0f2+0012+0f15+"
+}

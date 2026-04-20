@@ -1,0 +1,140 @@
+{
+  "_resourceType": "script",
+  "id": "d7a31dd7-8238-4f13-a1e8-9e03d60205f0",
+  "name": "Red Screen",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_8",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette1": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette2": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette3": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette4": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette5": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette6": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette7": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "__collapse": true
+            },
+            "id": "c83b887b-bc82-43dd-9913-ee842a1a42f0"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette1": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette2": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette3": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette4": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette5": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette6": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "palette7": "d54de17d-754b-4035-8ab7-91da63dcf7c0",
+              "__collapse": true
+            },
+            "id": "752e8c99-6225-4fc5-b166-3af3035d05c6"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.2
+              },
+              "frames": {
+                "type": "number",
+                "value": 30
+              },
+              "__collapse": true
+            },
+            "id": "7a751c94-8f21-487b-b883-41265d020ecb"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette1": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette2": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette3": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette4": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette5": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette6": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette7": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "__collapse": true
+            },
+            "id": "3fc84eb6-e154-41e2-93d3-cd1e6a8bc447"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette1": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette2": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette3": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette4": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette5": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette6": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "palette7": "48bb6045-a77f-4e84-b413-8a9eb1b2014e",
+              "__collapse": true
+            },
+            "id": "62de23f1-c70f-4f60-8399-4f7ea5d309c2"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.2
+              },
+              "frames": {
+                "type": "number",
+                "value": 30
+              },
+              "__collapse": true
+            },
+            "id": "ebdf6825-744d-4a8a-bd29-ca0902b672bb"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette1": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette2": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette3": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette4": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette5": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette6": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette7": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "__collapse": true
+            },
+            "id": "fb21b736-065e-4dc4-ab2e-b9195ccbf2ae"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette1": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette2": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette3": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette4": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette5": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette6": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "palette7": "242956af-b5b3-42de-a23a-c7381fe9a569",
+              "__collapse": true
+            },
+            "id": "3a277dc9-861a-4188-aadd-5f7b807b32fd"
+          }
+        ]
+      },
+      "id": "5f828bfc-5222-4e62-b9e2-bb72d31c9b38"
+    }
+  ]
+}

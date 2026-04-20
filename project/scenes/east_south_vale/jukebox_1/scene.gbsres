@@ -1,0 +1,110 @@
+{
+  "_resourceType": "scene",
+  "id": "7df0f454-2849-4f4a-af05-b8d2761f5b89",
+  "_index": 83,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Jukebox 1",
+  "symbol": "scene_84",
+  "x": 2136,
+  "y": 2360,
+  "width": 20,
+  "height": 25,
+  "backgroundId": "46ea7e0e-d6f1-4f1c-9d61-f774b3d533e1",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d296302f-db68-4bfa-bed0-6360b2b0847c",
+    "dbf10128-5454-48b0-8eba-f4d8500f0a07",
+    "84f904de-98d6-41fb-9b20-2b853593f75e",
+    "fbe1bab7-b0fd-4d49-97ae-225af416218a",
+    "a545772e-d888-4c4d-a7a0-32d4d0bfa739"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "17b18bdf-3149-4584-96f2-f9b77ac4bd67",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "442ee630-f30e-46c1-9730-4c750840d953"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "e06a933a-3948-4688-81cf-99a6c5aa38c0"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
+      },
+      "id": "d22c7530-9a1a-431a-a05b-8d02cfe6d05b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "e29e7b2b-aa79-46ce-ace3-196e2c1cb49e",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "f2d4e6b6-473a-4501-9e4d-75ca226ce324"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 7
+            },
+            "id": "ecd0a72c-2d8e-43a5-8a01-3d599e8dad6d"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "3267e0eb-38e8-49fe-857a-2da3315a7987",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "9631cb07-2680-4b27-96ca-85ad40060f78"
+          }
+        ]
+      },
+      "id": "e52fa5c4-fc79-4a09-8aed-6c23fe0afce9"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

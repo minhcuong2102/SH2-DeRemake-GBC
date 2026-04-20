@@ -1,0 +1,177 @@
+{
+  "_resourceType": "scene",
+  "id": "ab74bbb4-627c-48b7-b093-d1ff6d9ee458",
+  "_index": 114,
+  "type": "TOPDOWN",
+  "name": "Map/Woodside Apartment 1F",
+  "symbol": "scene_115",
+  "x": 1588.7552108764648,
+  "y": 406.8359184265137,
+  "width": 25,
+  "height": 21,
+  "backgroundId": "01befd0c-925d-4408-ac09-9153016eb220",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "e3d3de42-0bdc-4dad-b904-485401a4ccef",
+    "3cac93a2-f6f2-4cf5-9099-0c8e6a49ab22",
+    "98a680d3-b176-4eaa-92d3-78f6d71e81cc",
+    "f597897e-bf00-436e-ba5f-056178d87c66",
+    "c45c30eb-7d25-4fa5-b03d-79d68b510f99",
+    "e8fa78e8-05de-45c0-a31e-936e1d92c7af",
+    "c9520a7d-f8c1-4b5d-8283-852a1b6296de",
+    "auto"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "d963f2ca-1fc8-4121-b1e9-e678a39889c4"
+    },
+    {
+      "command": "EVENT_CAMERA_SET_POSITION",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "415ea666-bc59-4b4c-8991-3181071ecff7"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "bca88300-736f-4698-bb5e-17b924dd1eb5"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 1,
+              "__comment": true
+            },
+            "id": "854265f4-839a-4df1-bb95-6c604398cd8e"
+          }
+        ]
+      },
+      "id": "90319442-5dc6-465c-9833-33e43157f980"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 1,
+              "__comment": true
+            },
+            "id": "f484196c-a2b1-4142-82af-a3c6a7e43382"
+          }
+        ]
+      },
+      "id": "4886aa18-af33-46a5-b5d6-1f6dfdfb9f7d"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "39bcd0f8-d9cf-423b-b26d-c496ea86553b"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "05001bbc-05e1-4f53-b221-2dfd38eb9da0"
+          }
+        ]
+      },
+      "id": "056bca24-16bd-43ee-9fe7-a39af70cd6c3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

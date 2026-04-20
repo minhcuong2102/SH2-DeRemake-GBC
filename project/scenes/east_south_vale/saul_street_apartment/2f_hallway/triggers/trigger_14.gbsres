@@ -1,0 +1,96 @@
+{
+  "_resourceType": "trigger",
+  "id": "91774d83-74a5-438e-b4c5-c846e9030a00",
+  "name": "",
+  "prefabId": "",
+  "x": 6,
+  "y": 16,
+  "symbol": "trigger_258",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "d51413ff-ebae-46fe-ab6c-51acbfb55248"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "c2c9ee8c-82f9-4a4e-aebd-4a9aad8d1921"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9fcb594e-8f41-4eb9-a84f-fe460ae678f0",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "27fae9e4-d651-47ef-852e-3776c0fe749e"
+          },
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": "2"
+            },
+            "id": "eecd65d1-aa55-415a-92c0-cc91ed9a2373"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -4
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "collideWith": []
+            },
+            "id": "c9f8b8a1-5091-4ffc-8491-4d8a8e0a983a"
+          },
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": "2"
+            },
+            "id": "a121ddab-7b8b-452f-9578-da1aa2b32342"
+          }
+        ]
+      },
+      "id": "890cccc1-065c-4f61-a9ae-6302e278aea6"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "ed4277a7-43ce-48c4-9d1d-b93f0e259726"
+    }
+  ],
+  "_index": 13
+}

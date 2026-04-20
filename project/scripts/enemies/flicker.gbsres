@@ -1,0 +1,69 @@
+{
+  "_resourceType": "script",
+  "id": "34ae4ebf-f270-4db5-bbbc-1bbae94f071d",
+  "name": "Enemies/Flicker",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_27",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "0",
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "fae42a37-d6d8-4ff4-b060-ab4f538dad4a"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "0",
+              "distance": 20,
+              "speed": 2,
+              "time": 0.3,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "05cc84ee-642b-47e9-9757-9a33bb8b8090"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "0",
+              "__collapse": false
+            },
+            "id": "31af032d-c242-4483-b9cb-81099db3a80d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "",
+              "loopAnim": false,
+              "__collapse": true,
+              "__comment": true
+            },
+            "id": "d02f4bdc-5a25-45e7-9bfd-12f142d4a85d",
+            "children": {}
+          }
+        ]
+      },
+      "id": "082f3836-a71d-49f2-8367-4e1a2c5040f1"
+    }
+  ]
+}

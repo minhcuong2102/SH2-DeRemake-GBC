@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "1702162a-a073-4ea9-9391-1174b9f00c44",
+  "_index": 41,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Lindsey 2",
+  "symbol": "scene_42",
+  "x": 1334.8262759305308,
+  "y": 1034.642703287402,
+  "width": 25,
+  "height": 40,
+  "backgroundId": "19965dc0-919e-471e-9307-b4ab8a972f96",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8cf213cd-1f22-4d94-bb81-d6a25f6d084e"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 15
+        }
+      },
+      "id": "6aeb9170-56b2-437d-bd75-030354d9d9cc"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "040edb86-cf82-48e9-aca5-6398beff22e4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "c99b4208-6fc1-4474-b438-c3daee783a29"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": false
+            },
+            "id": "dadd35b0-16d5-4669-9b41-5666129a7af3"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "d503c866-32d9-4ebc-a9da-3d1ac2166f08"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "e9f177ce-de94-4c62-b2ea-47761beafc0d"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "0f4dd45c-984f-468b-b36b-37150baf4d77"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "3efec41a-7bbd-4c47-9261-0cfdec5787b0"
+          }
+        ]
+      },
+      "id": "b11ce6b0-0f14-4942-a528-0d08d4d4cd14"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f20+00d+0fc+00d+0fc+00d+0fc+00d+0fc+00d+0fe+008+0f2+00!0fc+002b+0f7+0012+0f7+00d+0fc+00d+0fe+008+0f2+00!0fc+00d+0fc+00d+0fc+00d+0fc+00d+0fc+00d+0fe+008+0f2+00!0fc+00d+0fc+00d+0fb+00e+0fb+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00f+0fa+00e+0fb+00e+0fb+00!0f2+008+0f2+00!0fb+00e+0fb+00e+0fb+00e+0f5+"
+}

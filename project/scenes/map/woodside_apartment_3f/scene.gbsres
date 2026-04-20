@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "1f3fa940-ef3a-4b4d-af86-95c433a551e4",
+  "_index": 116,
+  "type": "TOPDOWN",
+  "name": "Map/Woodside Apartment 3F",
+  "symbol": "scene_117",
+  "x": 1968,
+  "y": 416,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "2a8fd29b-15ed-4bbc-8c62-403c6422aad8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        }
+      },
+      "id": "6effb2ad-6cb0-4af7-a565-9765637661b8"
+    },
+    {
+      "command": "EVENT_CAMERA_SET_POSITION",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        },
+        "__comment": true
+      },
+      "id": "fcbad5ef-6e88-4bf2-831f-19c7f0f15ab3"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "19f45155-dfbc-48a6-a900-aeaea646fa23"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": []
+      },
+      "id": "42ed63ae-785e-4594-be80-189d5f42b4a3"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": []
+      },
+      "id": "2476b8b1-4909-47b2-8458-5743c9ded763"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": []
+      },
+      "id": "de7513ba-5264-45c5-8d4e-bc1371bed7ec"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

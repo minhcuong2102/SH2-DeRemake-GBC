@@ -1,0 +1,63 @@
+{
+  "_resourceType": "actor",
+  "id": "a59c61db-d6cc-4a27-833b-b1c30b92ed20",
+  "_index": 1,
+  "symbol": "actor_51",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2617be75-5c86-4f6b-8429-52f0abf2387c",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "What is this?"
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1cd3ecfd-814f-4320-ba32-80c70c3f5740"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "bde12742-9220-4602-8bd7-b39c56fcfd96"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

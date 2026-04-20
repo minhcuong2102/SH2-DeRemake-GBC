@@ -1,0 +1,135 @@
+{
+  "_resourceType": "trigger",
+  "id": "65d5bc65-f4f7-468c-94b9-badfadf594aa",
+  "name": "",
+  "prefabId": "",
+  "x": 3,
+  "y": 10,
+  "symbol": "trigger_199",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "339f6f88-3320-4114-bfbb-9dd8ae856dd7"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "488aa446-efd1-4aef-ba10-5f3b4654fa15"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "5b97e04f-2342-4c57-a405-f639ca483390"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "102"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "6ced895d-e440-4872-878e-a1f79aa57083",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "4f491e3c-f00b-49f1-ac27-b920ce019534"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The jukebox is not working\nunless I put a coin in."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "3d4286b3-4452-4704-97db-32d81a1053b2"
+                }
+              ]
+            },
+            "id": "b5a8fa3c-f901-4d33-a558-a9f6fdf53ab7"
+          }
+        ]
+      },
+      "id": "47e085e9-2b0b-407f-a121-354f3b0baf0a"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "b0b86c4f-fce0-4a93-92e0-8edf1349907e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "01f1c756-a75c-42af-8919-16cedd580d86"
+    }
+  ],
+  "_index": 0
+}

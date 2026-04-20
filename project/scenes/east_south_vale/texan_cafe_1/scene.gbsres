@@ -1,0 +1,90 @@
+{
+  "_resourceType": "scene",
+  "id": "2afbf6c1-f533-49a9-9eb5-8bba5eb3a01c",
+  "_index": 84,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Texan Cafe 1",
+  "symbol": "scene_85",
+  "x": 2184,
+  "y": 2592,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "0c0dbb3e-abd8-4463-a72f-3ace94688e2a",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "17b18bdf-3149-4584-96f2-f9b77ac4bd67",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "485da63b-2ed7-4fd7-b361-37baf355c234"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "64d3bca2-9629-44f4-b614-829398249904"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
+      },
+      "id": "96c3b5d0-3020-4eeb-8be3-f585e479ffc2"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 7
+            },
+            "id": "cd38b320-c5fd-46b5-aa68-2b19f868c693"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "3b41524e-7d6d-4af7-a368-7f68e659db21",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "direction": "left",
+              "fadeSpeed": "2"
+            },
+            "id": "e9a391e1-4b99-4239-9fd9-5846614867cb"
+          }
+        ]
+      },
+      "id": "5daf1326-4380-4433-afb7-aa6d14917497"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "8838193b-3640-4703-b199-ea4483026f6e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

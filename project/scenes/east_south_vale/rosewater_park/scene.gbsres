@@ -1,0 +1,86 @@
+{
+  "_resourceType": "scene",
+  "id": "5046044a-8b89-4a9b-a73f-cc54e2c3375a",
+  "_index": 105,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Rosewater Park",
+  "symbol": "scene_106",
+  "x": 2320,
+  "y": 2344,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "70211a63-ef8f-4827-87aa-19a53c80aff7",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4",
+  "script": [
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "96",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": true,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "bbfbab53-8b8a-4452-967c-30332b5ded81"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "1f0c2956-14d0-4c87-ba11-6597f5f49b0d"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 3
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "60be5c17-b14a-4d32-b81b-dd301bb28d2c"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "61c23d76-00b7-48b9-b81f-6aed1fee0679",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": 3
+      },
+      "id": "3284c602-4e71-49cb-b125-2bc796665e5b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

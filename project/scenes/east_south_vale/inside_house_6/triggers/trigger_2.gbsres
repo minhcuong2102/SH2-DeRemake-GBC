@@ -1,0 +1,96 @@
+{
+  "_resourceType": "trigger",
+  "id": "58d2a6b6-4518-4903-ae6a-3198ecec5fb1",
+  "name": "",
+  "prefabId": "",
+  "x": 9,
+  "y": 5,
+  "symbol": "trigger_91",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CLEAR_FLAGS",
+            "args": {
+              "variable": "20",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": true,
+              "flag16": false
+            },
+            "id": "6f06fcad-a6ca-4190-ba49-cc8555c11594"
+          },
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {
+              "__comment": false
+            },
+            "id": "9619bfa2-e222-49f4-8006-63534d70396a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+              "__comment": true
+            },
+            "id": "0c2a3feb-8581-46ea-82b5-fe45a22f3f21"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "3a63098f-6e41-4ad0-8c56-df67149259f6",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "7713db14-60c9-4820-a32d-efc71014495c"
+          }
+        ]
+      },
+      "id": "0df373fe-3e62-4dba-b45b-79f439295e21"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "a2abad2c-bf78-46a5-8c11-a68df4f1c35e"
+    }
+  ],
+  "_index": 1
+}

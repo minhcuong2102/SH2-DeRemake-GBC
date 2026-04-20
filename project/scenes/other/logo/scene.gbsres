@@ -1,0 +1,88 @@
+{
+  "_resourceType": "scene",
+  "id": "8f2c861b-45a3-4742-872d-3025fbd2958a",
+  "_index": 7,
+  "type": "TOPDOWN",
+  "name": "Other/Logo",
+  "symbol": "scene_9",
+  "x": 60,
+  "y": 30,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "6b98d6e7-f9b2-4541-8421-f3253d66145f",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "02a4f1f6-aee6-42a4-a505-c3e165e8622c"
+    },
+    {
+      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "73c66560-6407-4307-b6d8-56ad496be8ff",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "4acd9d8d-a5d4-4728-a58b-628bb9a54d71"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e469ec23-8376-45ab-81ed-e882230547e8",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "0557455d-5264-4c06-8ddc-9e49c469564c"
+          }
+        ]
+      },
+      "id": "7a2d0431-46e0-4f77-909e-3a38b9f07529"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

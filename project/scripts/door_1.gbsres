@@ -1,0 +1,55 @@
+{
+  "_resourceType": "script",
+  "id": "23d69127-a8b2-4ee1-bdfa-4fb0c45a90af",
+  "name": "Door 1",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_9",
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_LOCK",
+      "args": {},
+      "id": "96f25ddf-50f3-4fa2-b48c-8a06f9da10a6"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "44edc7f4-0bf7-4324-ab4d-0f55d99d1f2b",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "cd4e85b1-a0d2-47bd-8911-a6dbdbe9b8d4"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": "2"
+      },
+      "id": "50fe7032-c1c9-4071-a27c-5eccc4f8e63b"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "db25d8b4-2fd3-4b8b-b099-31f2d388743a"
+    },
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "e76a3ad1-3839-491c-bb51-4aad72c78fde"
+    }
+  ]
+}

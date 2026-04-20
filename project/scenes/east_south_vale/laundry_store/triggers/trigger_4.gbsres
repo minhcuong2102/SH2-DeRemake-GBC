@@ -1,0 +1,135 @@
+{
+  "_resourceType": "trigger",
+  "id": "9275d49f-35b8-4224-beec-f1df50b12b0a",
+  "name": "",
+  "prefabId": "",
+  "x": 3,
+  "y": 3,
+  "symbol": "trigger_125",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "361978d9-9599-437e-a44f-f76e24b4c4b8"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "1da61e90-00fe-4a42-9519-c29e66f30e61"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "86",
+              "flag": 8,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "39ad508a-10d2-4d38-9aed-1004473de6bc"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+                    "__comment": true
+                  },
+                  "id": "3834d9d7-e32a-401c-ae63-2726025f80b2"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "9fcb594e-8f41-4eb9-a84f-fe460ae678f0",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "274b3736-8f44-4568-83f9-a6ac8bb60116"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "4736ee5e-ef97-4a96-8523-b3d2a72a8d5e",
+                    "x": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "5cda9ab6-7cd3-4930-b4af-26970aa6b3d9"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "There's a window.\nMaybe I can break it."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__comment": true
+                  },
+                  "id": "6863d4fb-49af-41b6-a349-89e9d0941746"
+                }
+              ]
+            },
+            "id": "4d2ddc90-c224-43e9-b2f3-3363d5a1ca60"
+          }
+        ]
+      },
+      "id": "ed067e28-2b20-4d28-b2bc-3cef61c9291e"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "906e5de2-415e-4bab-af8d-1644f86f22c1"
+    }
+  ],
+  "_index": 3
+}

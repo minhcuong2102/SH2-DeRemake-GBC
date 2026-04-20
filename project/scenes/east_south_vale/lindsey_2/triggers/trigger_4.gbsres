@@ -1,0 +1,41 @@
+{
+  "_resourceType": "trigger",
+  "id": "ddec1ea2-1f4b-4a90-b8fd-ac167ec6c719",
+  "name": "",
+  "prefabId": "",
+  "x": 7,
+  "y": 1,
+  "symbol": "trigger_70",
+  "prefabScriptOverrides": {},
+  "width": 13,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "What happened to this \ntown?"
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "a6152158-4158-4811-9c7a-db2f8c0ce754"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}

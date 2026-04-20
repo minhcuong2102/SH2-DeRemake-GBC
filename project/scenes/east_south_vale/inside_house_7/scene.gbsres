@@ -1,0 +1,158 @@
+{
+  "_resourceType": "scene",
+  "id": "62b27847-507e-4599-9f1c-dcdb5dc083bc",
+  "_index": 55,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Inside House 7",
+  "symbol": "scene_56",
+  "x": 1904,
+  "y": 1040,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "6263adb8-696e-499e-9e48-df4358ee8080",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "",
+    "8dca260b-112d-43ab-baad-c583040895e2"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "85",
+              "flag": 0,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "197a9416-efb9-4b50-bf4a-93ff7bd37e09"
+                  },
+                  "id": "2e91bb62-4790-46f8-84c3-fb7f9daf4a7c"
+                }
+              ],
+              "false": []
+            },
+            "id": "627e2e28-4a2e-4a49-aa5f-3dab74a31a86"
+          }
+        ]
+      },
+      "id": "11c2ae65-ba59-447b-bde8-5515534ad7c8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 18
+        }
+      },
+      "id": "17cc7ea9-5def-4e31-9abc-a8c6f1c714d7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "a0edc91a-235b-4ae5-ac4b-4e8dc33851cb"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": false
+      },
+      "id": "31be469e-5e8c-45ac-82a2-3aa9ff6d9891"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "813323c4-f085-48e4-a53c-f510b7ca085f"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "efca09ee-2c0a-4ec4-90a1-ec8192f395b4"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "75bf9ba7-d9bd-4511-9b5b-5eac048a5615"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "4c8812da-7434-4ab7-a514-3cc25ab48526"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "a186fffe-1526-49c0-95bc-4751df475848"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "c0cbaa95-9012-4b44-86bd-8cd739843357"
+          }
+        ]
+      },
+      "id": "d7d7462a-5e20-41b1-a196-9592e43000cb"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f6a+008+0fc+008+0fc+008+0fc+006+0fe+006+0fe+006+0fe+006+0fe+008+0fc+008+0fc+008+0f42+"
+}

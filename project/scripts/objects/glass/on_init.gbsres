@@ -1,0 +1,180 @@
+{
+  "_resourceType": "script",
+  "id": "d0fa4b32-0399-4684-9036-9073adc56b9a",
+  "name": "Objects/Glass/On Init",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_34",
+  "script": [
+    {
+      "command": "EVENT_IF_ACTOR_DIRECTION",
+      "args": {
+        "actorId": "0",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -8
+              },
+              "width": {
+                "type": "number",
+                "value": 8
+              },
+              "height": {
+                "type": "number",
+                "value": 16
+              }
+            },
+            "id": "254a8246-a389-4449-86ea-11670d2ea611"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+                  "args": {
+                    "actorId": "0",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": -8
+                    },
+                    "width": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "height": {
+                      "type": "number",
+                      "value": 16
+                    }
+                  },
+                  "id": "b63b3989-e5de-449d-974d-c56befb72c1a"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_ACTOR_DIRECTION",
+                  "args": {
+                    "actorId": "0",
+                    "direction": {
+                      "type": "direction",
+                      "value": "down"
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+                        "args": {
+                          "actorId": "0",
+                          "x": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "width": {
+                            "type": "number",
+                            "value": 16
+                          },
+                          "height": {
+                            "type": "number",
+                            "value": 8
+                          }
+                        },
+                        "id": "d9348ac7-b85c-4974-a35b-e8e5da877226"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                        "args": {
+                          "actorId": "0",
+                          "direction": {
+                            "type": "direction",
+                            "value": "up"
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_SET_COLLISION_BOX",
+                              "args": {
+                                "actorId": "0",
+                                "x": {
+                                  "type": "number",
+                                  "value": 0
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 0
+                                },
+                                "width": {
+                                  "type": "number",
+                                  "value": 16
+                                },
+                                "height": {
+                                  "type": "number",
+                                  "value": 8
+                                }
+                              },
+                              "id": "62a76162-e899-48d9-996c-fe7c110aba5b"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "169f8a97-b1e6-4e59-9322-613a4fd3f0f0"
+                      }
+                    ]
+                  },
+                  "id": "6850ceb3-6367-449d-89d3-ed26385e9e32"
+                }
+              ]
+            },
+            "id": "621c37f7-8314-46cf-8ef3-328d761c6463"
+          }
+        ]
+      },
+      "id": "44a35869-3193-446f-b2ad-f186138f243c"
+    }
+  ]
+}

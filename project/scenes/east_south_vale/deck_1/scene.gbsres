@@ -1,0 +1,100 @@
+{
+  "_resourceType": "scene",
+  "id": "fa5ab1d8-e6f8-4481-bdd4-ac061c51addb",
+  "_index": 4,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Deck 1",
+  "symbol": "scene_8",
+  "x": 60,
+  "y": 368,
+  "width": 28,
+  "height": 18,
+  "backgroundId": "8c2a7cc9-3ed9-4cd6-a121-b8ce9e18ecf6",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "9d8e2ae3-7c68-472c-946b-60d4fd8d4933",
+    "266e40fd-7ea8-432d-9033-b078389eeb7b",
+    "f17567f2-65b3-4a59-9fe6-40e62241c598",
+    "",
+    "9c9aea5a-8cb3-42d5-b3ff-8eaa72340373"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_AUTO_FLIP_TILES",
+      "args": {
+        "__comment": true
+      },
+      "id": "a1cd1a19-5edd-44d4-acd3-1b4afab40bd2"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "91ad51ce-57c4-4aa5-b2e0-5177f034d25d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "cf481c5f-8fbf-442b-ba8c-0d4c054f7bfa"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "767fbd41-9cce-4602-ab9c-dffdbeeec1c0"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "0633ce8a-52f0-47cc-81b2-901c5320980e"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "897fb038-8f6f-4cab-853a-9fa4fd01604a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "80c40a7f-f7a7-41bd-bca9-7daa76340223"
+          }
+        ]
+      },
+      "id": "22fbe2a5-9f98-4f48-b3bd-76aed0838b98"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fe0+00!0f2+004+0f7+00!0f2+00!0f!00105+"
+}

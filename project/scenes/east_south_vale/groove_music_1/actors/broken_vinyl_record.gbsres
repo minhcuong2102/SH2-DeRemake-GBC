@@ -1,0 +1,200 @@
+{
+  "_resourceType": "actor",
+  "id": "9a62c9a3-7a12-4d29-857d-a249952acf45",
+  "_index": 1,
+  "symbol": "actor_152",
+  "prefabId": "",
+  "name": "Broken Vinyl Record",
+  "coordinateType": "tiles",
+  "x": 7,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "535abff1-36f7-4f7f-86eb-8b03f576e12c",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "73f16823-8112-44dc-be89-c4904c826253",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "338e0831-fc2a-4e9f-9f2b-1d2f64429425"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "90",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": true
+      },
+      "id": "fde5f26c-41c8-4e49-a197-bfee9216ca70"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "54"
+      },
+      "id": "c5ab85df-5fdf-4c3b-a841-a384091d8ed8"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "97"
+      },
+      "id": "4c404d10-c619-40dc-980b-dd6e36ffcf96"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I got a !F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Broken Vinyl\nRecord!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3c4bdeb7-3a8e-4e72-ba55-1d0a41c5246f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$97$ == 2 && $98$ >= 1"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "73f16823-8112-44dc-be89-c4904c826253",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "d9b5c5c0-dd16-4d95-b030-eba0a53e1174"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "97",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "8f440e78-3490-4999-bd9f-7803054fa2d6"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Combined the items to create\n!F:72f3ca6c-b8fc-42b4-bcf7-ebac3e071388!Glued Up Vinyl Record!F:788a7c71-321c-48e0-b75d-21f6faf83e8d!.",
+                "It writes, \"The Long Way Home\"."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4eb77777-07d8-48ad-a032-6ef443ac80e0"
+          }
+        ],
+        "false": []
+      },
+      "id": "afa7299e-8de0-432c-8d3b-b0fda5192d70"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3b0b87ea-f40a-448c-96dd-0fea10f0626e"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "90",
+        "flag": 15,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "298c20a8-0901-4f94-94ae-de563d9ef13f"
+          }
+        ],
+        "false": []
+      },
+      "id": "432f7fb7-55c4-4d3d-b615-aa8c4a562518"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

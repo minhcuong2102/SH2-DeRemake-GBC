@@ -1,0 +1,188 @@
+{
+  "_resourceType": "trigger",
+  "id": "25abd198-85a4-4aa1-bec3-cd99270afe0a",
+  "name": "",
+  "prefabId": "",
+  "x": 8,
+  "y": 2,
+  "symbol": "trigger_145",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "029e50f4-ab37-4c39-a0c1-fe53b9a77bbf"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "b6bc82fd-29f8-4c4e-8242-4f3334f209ee"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "6c299ffe-f4a8-4ec1-8645-22f881355367"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 500,
+              "duration": 0.1,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "91ba47c7-d410-4382-b8e2-e479916d1474"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "expression",
+                "value": "$91$ == 4 && $92$ == 4 &&\n$93$ == 4 &&\n$35$ == 0"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "90",
+                    "flag1": false,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": true,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "4bfaa50c-adf5-459a-817e-c466aaae6653"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "9f5f6957-2f25-4010-a93d-74412bd8f1f6",
+                    "priority": "high",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "01894bed-b474-4f5c-9d65-e662a3aae02a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Now it's unlocked."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "45c49490-151b-4372-9e6d-76e21d017671"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "705a9b4f-2964-4177-8e7d-d6913a830930",
+                    "x": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "5295000a-24e7-483c-bd8e-dee0b9ed6def"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
+                  },
+                  "id": "03e5f14c-ebd0-4abc-9d69-e232159848e9"
+                }
+              ]
+            },
+            "id": "eb82ec33-33b5-4ee1-a334-aeddab776e04"
+          }
+        ]
+      },
+      "id": "3352cb80-61d6-48b5-b28c-a9699ee9e85b"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "0c768cf8-49ca-4729-bbbe-685986d4c8a4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "ab639c2a-49f0-4acd-819c-2ab974c362a1"
+    }
+  ],
+  "_index": 4
+}

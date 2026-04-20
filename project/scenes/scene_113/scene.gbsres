@@ -1,0 +1,61 @@
+{
+  "_resourceType": "scene",
+  "id": "4e9508af-57ff-435f-8159-cc8edf6d7629",
+  "_index": 112,
+  "type": "TOPDOWN",
+  "name": "Scene 113",
+  "symbol": "scene_113",
+  "x": 1071.8957824707031,
+  "y": 1382.2256418863933,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "23479178-f28b-4cc8-a5fa-d0a69b008f50",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "843348fd-5301-41ed-995d-d92deb34e79a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "aaddc42b-b45f-4af8-bbb4-5ac3c3551db7"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "\\007\\002The demo is completed.\nThank you for playing.\n       Stay tune!      ",
+        "x": 4,
+        "y": 7,
+        "location": "background"
+      },
+      "id": "0a3827e4-9862-4a09-9d81-3b3cbab5b11e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "73c66560-6407-4307-b6d8-56ad496be8ff",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "6e2f9940-5ae3-4b5f-b0dc-586ad2038b88"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

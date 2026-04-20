@@ -1,0 +1,132 @@
+{
+  "_resourceType": "trigger",
+  "id": "7241c797-fbd1-49df-9122-635c86bea2ab",
+  "name": "",
+  "prefabId": "",
+  "x": 5,
+  "y": 5,
+  "symbol": "trigger_163",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "58f77c87-caa1-4802-bdc1-a070013b2ac4"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "8b977ec6-e54c-45be-908c-38af2ec267cc"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "e1d6f11d-fe1c-45cd-919e-fa53be51dd62"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "86",
+              "flag": 15,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "51e9044b-58a4-45f4-9f30-8cc1145b1c63"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+                    "__comment": true
+                  },
+                  "id": "3f9cdeb3-eaf5-412e-a70d-bae17e47a0d8"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "f673182d-6123-4636-87b0-86dec1c3647d",
+                    "x": {
+                      "type": "number",
+                      "value": 5
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "5ff62a7a-f2f8-4b93-a39f-b945a1a5836d"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "There's a room ahead, but\nthe window is blocking me."
+                    ],
+                    "__section": "text",
+                    "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 2,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "3099f1bf-9447-4375-bf8d-e4b516027443"
+                }
+              ]
+            },
+            "id": "9974227b-8ca9-46a3-896e-1a637a4d048b"
+          }
+        ]
+      },
+      "id": "e755ea58-b448-4ee8-a27d-2e6d7d69d270"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "25928936-f082-4e33-8fdb-c2a264db1b7c"
+    }
+  ],
+  "_index": 2
+}

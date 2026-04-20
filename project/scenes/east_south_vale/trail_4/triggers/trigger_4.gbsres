@@ -1,0 +1,96 @@
+{
+  "_resourceType": "trigger",
+  "id": "47a6e918-a036-4505-8bce-c04aab6ba4e1",
+  "name": "",
+  "prefabId": "",
+  "x": 39,
+  "y": 12,
+  "symbol": "trigger_29",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "85062266-a762-4c78-9418-c905b9e07b38"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "1dda413e-cbaf-4e8e-8f1a-7fcf41499ee9"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "7e1fe8ea-de3f-4945-9ef8-0f15f3a03a4c"
+      },
+      "id": "7df3f26f-a857-420e-b297-c4f4f2a68475"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "1a606f60-c03d-4639-85ad-d052593e2c74",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "19e1ab77-b056-4dc8-9f59-a57e2ff8585d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's locked."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "543e3da6-80f7-4489-afa5-b4e9d0b1eed9"
+          }
+        ]
+      },
+      "id": "d32d25e7-4d5c-4f25-a74a-6cb9f2d54b3a"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "e82b086c-5219-4367-b021-41b265b775ad"
+    }
+  ],
+  "_index": 3
+}

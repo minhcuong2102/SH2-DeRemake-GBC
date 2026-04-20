@@ -1,0 +1,93 @@
+{
+  "_resourceType": "trigger",
+  "id": "3168abe5-fa3a-433b-97ec-734e0534bfa1",
+  "name": "",
+  "prefabId": "",
+  "x": 8,
+  "y": 7,
+  "symbol": "trigger_150",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "6077dd8f-59bd-44de-a37b-fb87fdabf327"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "0ced7c2d-7b14-4adc-9304-56d5f21f5134"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "fa87a230-04d3-4926-9d6a-7b6c99843d64"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
+            },
+            "id": "96a4dc33-eb0f-41ff-86b9-7bcda4acdef6"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 500,
+              "duration": 0.1,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "695400aa-9f0d-4f42-82a4-fe62ff275b1a"
+          }
+        ]
+      },
+      "id": "0f19bc44-2ed5-47be-a4cc-7ac93dd11830"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "5d301fe6-7727-4ab3-850c-d9ff619d2796"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "18001f30-0fb2-4fb5-9189-79fbae7321bc"
+    }
+  ],
+  "_index": 8
+}

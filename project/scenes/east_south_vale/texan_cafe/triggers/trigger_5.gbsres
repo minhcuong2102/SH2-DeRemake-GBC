@@ -1,0 +1,82 @@
+{
+  "_resourceType": "trigger",
+  "id": "f67d01e8-3a82-44a9-96bd-2701521bbbcb",
+  "name": "",
+  "prefabId": "",
+  "x": 7,
+  "y": 7,
+  "symbol": "trigger_207",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9fcb594e-8f41-4eb9-a84f-fe460ae678f0",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "19d2ed5c-2bac-4045-8a49-802fa456d765"
+          },
+          {
+            "command": "EVENT_SCRIPT_LOCK",
+            "args": {},
+            "id": "8a4fda7a-f9b3-4997-bf22-b58180d61b65"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -3
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "collideWith": []
+            },
+            "id": "d537f9e7-2359-48d5-80a8-534e04f89ba4"
+          },
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "b0ec281b-7b39-4921-b853-0e4b59f38cfe"
+          }
+        ]
+      },
+      "id": "3a67c207-dc5b-4263-a604-e51749e3ca25"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "7d992239-7dca-4514-a7e4-a57ba57d0527"
+    }
+  ],
+  "_index": 4
+}

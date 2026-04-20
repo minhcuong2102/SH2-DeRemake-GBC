@@ -1,0 +1,99 @@
+{
+  "_resourceType": "actor",
+  "id": "96a02fee-e04b-475f-9cf4-91e183a207d7",
+  "_index": 0,
+  "symbol": "actor_39",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 4,
+  "y": 16,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "32c341fc-ddcc-443d-a7cc-4ae169191d3f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "59"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "6ced895d-e440-4872-878e-a1f79aa57083",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "6ddfd570-cae2-49ce-9c09-e6a2a9bfcb2e"
+          },
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "59"
+            },
+            "id": "a13af7d1-dde7-4509-86fa-606689522383"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e6bef52c-413c-4067-bf7c-5c6263acb3b2"
+            },
+            "id": "4ae13096-c08c-4c06-9c5c-589d9f5e3b48"
+          }
+        ]
+      },
+      "id": "839947f2-6efe-4d23-a182-2e468ffba4f8"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "6203b744-6ee3-4848-af7d-1cf903a5ed27"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

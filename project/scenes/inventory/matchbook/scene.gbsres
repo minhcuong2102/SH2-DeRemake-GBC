@@ -1,0 +1,155 @@
+{
+  "_resourceType": "scene",
+  "id": "3353efb7-8d15-42ee-9a46-53c3e12f4758",
+  "_index": 59,
+  "type": "TOPDOWN",
+  "name": "Inventory/Matchbook",
+  "symbol": "scene_60",
+  "x": 1512,
+  "y": 216,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d4747bc9-9712-4aae-a3a7-3ab5130535f3",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c05d4519-46a0-4b6a-af54-b420b4c6aab1",
+    "e2657ad6-56f1-4106-9184-d30908431f2e",
+    "f287d28e-4a9d-437f-bfa4-eaa67146e71c",
+    "147de939-7ad2-44d7-9b66-71d537bac67a",
+    "83016cef-a8a7-4645-b54a-201ccee7d917",
+    "36a6db02-36e2-4187-89f7-fb75ff17d467",
+    "ea906577-146b-4733-8162-364e6dfa1649",
+    "auto",
+    "bc91f4db-52c3-4d87-8c79-6f61b3df562c",
+    "13974044-51f1-4ffe-b436-d6deb6fd2ee2",
+    "6cf53c39-3bba-4391-b61b-06a3c85245df",
+    "e7185c31-888c-4c98-9659-297c5df1b1b4",
+    "b3fc7ddf-bc41-45aa-8bd7-06de3da6be1c",
+    "b872e51f-cc1e-4c4c-98af-ecb2f4a40fe8",
+    "dee7bd41-35bf-429b-bfe0-fb46973ea817",
+    "ef17d868-811f-4658-b029-867044786647",
+    "9561606f-41fc-4ac1-8090-dadc8e90ad3b",
+    "9a4eb99d-dc39-4118-9027-8754e87fe3cb",
+    "7ed8c0c8-b5f8-47fc-810a-37b060f57e3b",
+    "4ee387b6-ff13-482e-8c0e-af6cbccd22cd",
+    "5187f93b-a2d7-4369-8bc4-8a144f63bf7a",
+    "121efb9b-7bf6-41e3-a72b-3608bc6672d1",
+    "19d80a41-3e93-41af-9734-265086de4457",
+    "f0496b1b-b75f-46f4-8172-5692380b4aeb",
+    "422114eb-1323-4533-aa56-fa7b5157c3f6",
+    "b97358b3-e4e6-4d33-99ff-ab83ca0dc728",
+    "15180055-0257-49a4-b1fa-2a59dd94ff7d",
+    "b643fab8-fbbe-4128-969c-1f35b0df11e6",
+    "279680f2-d9e7-490b-8690-92bb316c3a4b",
+    "2518273d-12c0-42e7-94c1-d95502352523",
+    "7bd8d862-1564-4a3b-bbcf-ea721b56a7ad",
+    "7337e674-2b45-4e0c-99b4-43f34d69927f",
+    "1daad505-ee9b-4c9c-821b-6ff1198d2682",
+    "c6e91a3d-4808-4801-b3b7-a26739f929c3",
+    "0b20d17e-1bce-4ab4-94f8-4b569c98fbf2",
+    "a6b40328-4b57-4ede-a732-e508fe0e05a2",
+    "9d69286b-4767-45f9-aa5c-c8d8c1a84fbd",
+    "285c486f-695c-4727-b440-fb4739e696fb",
+    "1e5c97ad-c41f-4e7e-afb9-f11f369d4cb8",
+    "c226bc3d-f5ef-41a8-9698-0efe78b363b3",
+    "e019200b-7cfc-4254-95da-68713c50630b",
+    "7dc821ad-a463-4423-841a-810938abec09",
+    "9852055e-f10b-484a-9a1e-2b59236c3b28",
+    "4d384282-6ef1-4817-9b13-ed103f91f554",
+    "67a99c4d-5dd6-4588-aaf1-2ed043a5b0e1",
+    "869d03ca-74d3-4e0c-a1c2-dee77a9699ec",
+    "467da130-321b-4947-9a14-4bc8509ed676",
+    "dbbbd026-8910-4efb-ab34-0e973b6273bb",
+    "a09eb94c-92a2-4b74-b9f5-13f1ecfe0b03",
+    "1bc45143-8c77-4275-83e7-f1be779d08a0",
+    "a9fa43ae-35cb-4db8-abc8-280674ea0052",
+    "85aaf1af-3a28-4eee-86d9-0366d5f7f3b0",
+    "dd47c6c3-3990-46d0-a8ec-e7c0446147d8",
+    "a3a0679a-74b9-4bc8-9ee4-ca433b09463e",
+    "72edbf12-5528-400c-bf9f-4285063010be",
+    "5aeb5d0b-b9b3-4e72-8e96-264583336d7e"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "38be27b5-f38a-4e1a-9f32-628004b65ac3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "57",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "a0420e84-9946-4c5e-a3b0-3d5dcf518b4a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "78a8be8f-680b-46be-af2b-e73af7d6de58"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Bar Neely's\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "4fb16a7b-c9a2-4a3c-a20e-366967852921"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "d21777dd-ae78-4929-b9eb-c0107eb7df10",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "064b7c13-d640-4ae9-b148-697b35f263cc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

@@ -1,0 +1,205 @@
+{
+  "_resourceType": "actor",
+  "id": "b7a98768-1c3d-45e3-b2bf-b92a90c69967",
+  "_index": 2,
+  "symbol": "actor_34",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 6,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "efc4b340-00ca-4bf1-99b9-cb069f55009c",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Angela's Knife\nThe knife left by Angela. It feels\nheavier than it looks."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1ddcd16a-c245-49ab-a3ba-8e5971db3b8f"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "T0",
+        "trueText": " Read",
+        "falseText": " Go back"
+      },
+      "id": "d9cca28e-9534-49ad-8696-baba8ab3d415"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "T0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "In my restless dreams,\nI see that town.",
+                "Silent Hill."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4af94fb3-d3d5-46ae-8898-784da2efd9f5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You promised you'd take\nme there again some day.",
+                "But you never did."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8e27bf37-a6ea-4cdd-8842-60549312e9cf"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Well, I'm alone there now.",
+                "In our 'special place'.",
+                "Waiting for you."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "de1bd806-c6bd-454b-9c45-271ca553d250"
+          }
+        ],
+        "false": []
+      },
+      "id": "7afa0fbe-30b6-4e92-aed0-39708b3b6b97"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$",
+        "__comment": true
+      },
+      "id": "aab6dd9b-37c2-47fe-bb71-a9676df66ae5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "58"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "13a729c8-2d73-4282-995d-619a773c1da6"
+          }
+        ],
+        "false": []
+      },
+      "id": "85800daf-206f-4909-8c4e-638dba23dfc9"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

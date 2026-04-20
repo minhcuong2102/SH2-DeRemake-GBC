@@ -1,0 +1,82 @@
+{
+  "_resourceType": "scene",
+  "id": "92e252c2-3e80-4120-919e-0d37ecd69cac",
+  "_index": 95,
+  "type": "TOPDOWN",
+  "name": "Inventory/Old Map",
+  "symbol": "scene_96",
+  "x": 1688,
+  "y": 216,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "3dcaf114-11c7-416e-b5da-3f629a63c4ac",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5650221e-ba3a-4dea-b29a-35597b1dcbad",
+    "1d0fc02c-c8d7-47e0-bb3b-de7f8717073a",
+    "8bbb70dd-e5a6-4511-a999-976043f57c06",
+    "d94b0f5d-2f45-4757-993b-ff74811b3d84",
+    "2e7c8a2d-b8b1-47df-94f2-394db043c60c",
+    "70f7d968-3569-4e79-8d03-bdb32aa5b8f0",
+    "2a1b240a-ff99-432b-b7ca-3b17b50f4ace",
+    "9440983c-90e3-49cd-90f4-32068ac9b02d"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "28d7de53-5bc2-433c-a7ed-d09585d06f2c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "57",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "3abed79b-a277-43fb-9f33-46c1cd460f69"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "0d3eae06-f018-41d6-b7d5-e226fb7a34ab"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "d21777dd-ae78-4929-b9eb-c0107eb7df10",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "253b9f11-dbdc-4176-ae0c-f7ab7cd8dd66"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

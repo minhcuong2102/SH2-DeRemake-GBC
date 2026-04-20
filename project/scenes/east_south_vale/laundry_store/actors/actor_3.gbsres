@@ -1,0 +1,56 @@
+{
+  "_resourceType": "actor",
+  "id": "c117a650-258f-4fa7-b9a7-75b81b3c73bd",
+  "_index": 3,
+  "symbol": "actor_103",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 7,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2617be75-5c86-4f6b-8429-52f0abf2387c",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A bloody green jacket in\nthe washing machine.",
+          "Ugh..."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "10abcd5c-b616-4e41-bdc1-fef43b33475d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

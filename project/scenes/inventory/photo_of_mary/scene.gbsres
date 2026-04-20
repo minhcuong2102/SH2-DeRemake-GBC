@@ -1,0 +1,70 @@
+{
+  "_resourceType": "scene",
+  "id": "58d97ebc-4e99-4fc7-a1ca-9458a8534367",
+  "_index": 35,
+  "type": "LOGO",
+  "name": "Inventory/Photo of Mary",
+  "symbol": "scene_36",
+  "x": 1159.674736661533,
+  "y": 210.11994712258223,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "f1a70c33-007c-4771-8d96-f50500c3dc51",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a",
+          "start",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "57",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "129ac9a3-af61-45c8-9af1-f655aee3bc53"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "49d8bc2e-ad12-4327-b5d6-50f0d61674ef",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "b160defa-dc03-4a43-af14-a756a44bb0f1"
+          }
+        ]
+      },
+      "id": "e713fe83-5146-4a75-879f-38df5431dfd8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

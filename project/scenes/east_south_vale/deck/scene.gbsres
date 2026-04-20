@@ -1,0 +1,550 @@
+{
+  "_resourceType": "scene",
+  "id": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Deck",
+  "symbol": "scene_5",
+  "x": 304,
+  "y": 224,
+  "width": 40,
+  "height": 46,
+  "backgroundId": "ce74936e-14ff-4c3f-ad43-995dc4d6f778",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "9d8e2ae3-7c68-472c-946b-60d4fd8d4933",
+    "186bfe65-0ff0-4eb7-b85d-952558eebf2c",
+    "266e40fd-7ea8-432d-9033-b078389eeb7b",
+    "",
+    "b8b9e10b-d0f1-4ce5-89b6-41068d8d7715",
+    "eedd2209-e294-4278-8eb2-4e0ddd59544f"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_AUTO_FLIP_TILES",
+      "args": {
+        "__comment": true
+      },
+      "id": "39b9c83c-05b8-4b35-99d5-72375c85be91"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "55ab6393-07c9-4c90-86b2-fb873f3d479a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "2f043363-0e29-473f-8f12-beba38d1b7ed"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "20",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5"
+            },
+            "id": "94e04ad0-0fd7-46bb-9684-73ea58f09669"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "select"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "20",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "3a1451d8-9eaa-408d-ab69-321856aebaf8"
+                },
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "dfbf7104-2ed7-4684-a09f-9dff9c45a47d"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
+                    "x": {
+                      "type": "number",
+                      "value": 25
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 21
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "95632056-3d21-46b5-a59e-55cfe4ffc203"
+                }
+              ]
+            },
+            "id": "ae2a81e2-2ef9-4335-9522-f7cb026ee49d"
+          }
+        ]
+      },
+      "id": "5a0b3ab4-9bda-4bd8-b593-2c7cce32894e"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "20",
+        "flag": 0,
+        "__collapseElse": false,
+        "__collapse": true,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "c7cffe72-5769-4e27-a0ef-34f776215938"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "select"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "20",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "cef4176c-f45f-45a7-9d85-20e57540dce6"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
+                    "x": {
+                      "type": "number",
+                      "value": 25
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 21
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "4986fd18-4101-49a4-a43d-358c8b561fe1"
+                }
+              ]
+            },
+            "id": "16803a7d-f763-4b16-aadd-5c3f1e27aba4"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 30
+              }
+            },
+            "id": "b22ce1ce-6c17-4251-af1c-986ece9203c2"
+          },
+          {
+            "command": "EVENT_SCRIPT_LOCK",
+            "args": {},
+            "id": "21b15383-0844-4ab8-beff-8bf2f7a6f2e5"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 25
+              },
+              "y": {
+                "type": "number",
+                "value": 20
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "collideWith": []
+            },
+            "id": "87dbdb5d-d191-44dd-ba80-7b250a1a8564"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 30
+              }
+            },
+            "id": "2b2d1a51-9b76-4494-a9c3-bbed2bc769ae"
+          },
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 1
+              },
+              "speed": 0.5
+            },
+            "id": "9ef499a6-30e9-4709-8ec5-15b402549bc0"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "In my restless dreams,\nI see that town.",
+                "Silent Hill."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4fb453d8-4e32-4eab-9292-8a7b5b6d7f8b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You promised you'd take\nme there again some day.",
+                "But you never did."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "01e75462-417a-477b-a721-07500007debc"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Well, I'm alone there now.",
+                "In our 'special place'.",
+                "Waiting for you."
+              ],
+              "__section": "text",
+              "avatarId": "a32b907e-5fb9-48f7-b8ce-63e3fa7086c9",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "099df408-f294-4688-ba90-b00e014872ae"
+          },
+          {
+            "command": "EVENT_CAMERA_LOCK",
+            "args": {
+              "speed": 1,
+              "axis": [
+                "x",
+                "y"
+              ]
+            },
+            "id": "49e15d70-6684-4869-8cc8-0555e66185ea"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I got a letter.",
+                "The name on the envelope\nsaid 'Mary'.",
+                "My wife's name."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "b43b660d-f6b7-4b61-b30e-8c3ab8e0ac3c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's ridiculous. Couldn't\npossibly be true.",
+                "That's what I keep telling\nmyself.",
+                "Mary died of that damn\ndisease three years ago.",
+                "So then why am I looking\nfor her?",
+                "Our 'special place'...",
+                "What could she mean?"
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "33119d40-03f0-47cc-abe5-f7846631d4a3"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "This whole town was our\nspecial place.",
+                "Could Mary really be here?",
+                "Is she really alive...?",
+                "Waiting for me?"
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "86f173df-8c3e-4bfe-adaa-32534547792c"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "20",
+              "flag1": true,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "d801b13c-3036-4f70-ae1d-c0a6c2d34c45"
+          },
+          {
+            "command": "EVENT_SCRIPT_UNLOCK",
+            "args": {},
+            "id": "b9d541f2-463a-459c-9103-f5f591cc5d91"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e00eead4-ea79-4d71-b856-0608b1cf4d3b",
+              "x": {
+                "type": "number",
+                "value": 25
+              },
+              "y": {
+                "type": "number",
+                "value": 22
+              },
+              "direction": "down",
+              "fadeSpeed": "2"
+            },
+            "id": "0eb68f9f-f4ee-42d7-bf1d-7824c50d939b"
+          }
+        ]
+      },
+      "id": "cc922b97-329f-4808-a58c-24e444db4d77"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "e591a8de-d1ac-4c2b-8eb1-e615f355904c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "6ab223d0-2ac2-45a9-8a31-b62e46a6c9e0"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true,
+              "__comment": true
+            },
+            "id": "deed3cfd-ec9a-4fd3-bdff-e832ad4c7f46"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "7aa446d9-6f72-4076-bca5-35018e0be05b"
+          }
+        ]
+      },
+      "id": "260c48f8-7288-4d34-ba31-086cb2b90bf9"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001e2+0f9+0014+0f9+002+0f9+0014+0f9+002+0f!007+0f7+00e+0f9+002+0f!007+0f7+00e+0fc+003+0f5+005+0f1b+003+0f5+005+0f18+001f+0f9+001f+0f9+001f+0f9+001e+0fa+001e+0fa+001f+0f9+001f+0f9+0024+0f!00283+0f28+0078+"
+}

@@ -1,0 +1,159 @@
+{
+  "_resourceType": "scene",
+  "id": "56d714de-b6b9-4e23-a0b3-5d44de1fd0f1",
+  "_index": 40,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Lying Figure",
+  "symbol": "scene_41",
+  "x": 1168,
+  "y": 1024,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8b36d594-9e33-405b-9a1d-eea2cbeaaa02",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "88392835-0bd7-4971-b9aa-de57c3c9ed02",
+    "cc0c545c-d8c9-4fc7-8f8d-2eb1fd57d546",
+    "73467ed9-9419-44e8-819a-af5ae33afe91",
+    "08b2ce2a-7a16-4951-8ada-4901a76dffcb",
+    "91721d9b-01c4-4717-8310-b186982a0546",
+    "84371b34-ef78-4a09-a4e4-c7d8edd36f5a",
+    "4e378af7-0518-497f-9fd4-24dd79aeb51a",
+    "9440983c-90e3-49cd-90f4-32068ac9b02d",
+    "000cf95a-adaf-46fc-ab92-3653c4749525",
+    "83de391e-4bbb-45bd-acd0-650b0ac01830"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "default-bg-3"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "20",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": true,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "f167a6c7-0e98-48f8-89f6-319afaab8a60"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "37e46d27-485b-492a-a1da-85e3454e3c95"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 2
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "f3f3985e-906d-4f89-85b2-0e0fb087e550"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Hey! Wait!"
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7fa2dd29-40ba-421c-b933-2295992b0b9b"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "6457a579-7c74-42c9-9bd3-27fe7f11afcf",
+        "distance": 20,
+        "speed": 2,
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "b6eec97f-f003-434b-9d76-18e9e19fb25d"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "6457a579-7c74-42c9-9bd3-27fe7f11afcf"
+      },
+      "id": "b57d8a4f-9bfd-4221-9371-3d4aa7f9b552"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "2899dd31-0a6a-4a00-aa94-50da6d35d882"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1702162a-a073-4ea9-9391-1174b9f00c44",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 39
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "1e1aaede-c86c-47f9-959e-0ce6471e1de9"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

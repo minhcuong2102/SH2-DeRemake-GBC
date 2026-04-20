@@ -1,0 +1,93 @@
+{
+  "_resourceType": "trigger",
+  "id": "06475268-5037-44fd-9ed2-7afe63b9256f",
+  "name": "",
+  "prefabId": "",
+  "x": 13,
+  "y": 9,
+  "symbol": "trigger_153",
+  "prefabScriptOverrides": {},
+  "width": 3,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "570f5883-e7f7-40e9-b9a8-b6313e43cb18"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "bf72c8b3-d723-4342-ab31-de517933fd37"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "abec987f-a81a-46e8-a8cb-cfae9df18cc1"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
+            },
+            "id": "77bc2a38-cfcc-4edc-826d-16e6f0d32081"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 500,
+              "duration": 0.1,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "2867068f-f6ca-448f-8adc-4938e6776d19"
+          }
+        ]
+      },
+      "id": "8719b6b7-01e4-4923-8fff-e17f39bf22f7"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "75754b49-1bff-4806-af2f-8b9359e91053"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "21cfc8e2-aa74-41ce-be73-d4b9919acd6a"
+    }
+  ],
+  "_index": 11
+}

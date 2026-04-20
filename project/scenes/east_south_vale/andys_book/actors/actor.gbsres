@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "7f2d7254-1404-4a19-9363-43dcfb642b60",
+  "_index": 0,
+  "symbol": "actor_95",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 8,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6a037c5f-29af-4a7e-b4a8-93eaed85ac61",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There's a newspaper on the\ntable."
+        ],
+        "__section": "text",
+        "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 2,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e7886cdf-850b-49e0-94a5-2d5010136db3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "In March of 1965, the town of\nSilent Hill was visited by the\nMaine Psychical Research\nAssociation.",
+          "After thorough examination, a \nteam of expert dowsers from the\nAssociation concluded the area\nsurrounding the now-historic",
+          "Wiltse Coal Mine to be \"highly\nactive\". They also expressed their\nhopes for further research and\nexploration of the gorge.",
+          "These hopes, however, were never\nfulfilled due to the location being\nrestricted as a historic nature",
+          "reserve, as declared by the\nSilent Hill Historical Society.",
+          "Additionally, the idea was met\nwith resistance from the local\ncommunity, which claimed that the\nnature of the Association's",
+          "research would hinder tourist\nactivity in the area. \"Questioning\nthe credibility of our research\nand hiding behind day-trippers",
+          "seems like an excuse to prevent\nus from seeing what's really out\nthere,\" commented one of the\nresearchers.",
+          "Unfortunately, none of the local\nrepresentatives were available to\ncomment on the matter.",
+          "Editor's note: At the time of\npublishing, there exist no evidence\nsupporting credibility of\nradiesthesia, or proving",
+          "effectiveness of any dowsing\nmethods. Opinions expressed in the\narticle do not reflect the author's\nviews."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__comment": false
+      },
+      "id": "914c92d5-5995-4f77-ba25-154d3a05baad"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

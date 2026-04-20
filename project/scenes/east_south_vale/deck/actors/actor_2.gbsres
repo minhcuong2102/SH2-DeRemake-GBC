@@ -1,0 +1,109 @@
+{
+  "_resourceType": "actor",
+  "id": "5a3bc349-d039-4a78-aa90-84b1f04e1c32",
+  "_index": 1,
+  "symbol": "actor_6",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a0693ca1-6941-46ef-9be7-da6ba8d7b693",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_LOCK",
+      "args": {},
+      "id": "5b02fcf0-ae83-49d8-9f8d-51bdbe9ad3cb"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "collideWith": []
+      },
+      "id": "e779096d-a508-492d-bbe8-c8ba1884aadc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "9976daaf-b186-4739-85c2-89632d12296d"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 0.5
+      },
+      "id": "65855f2b-acef-427e-b744-770e768129cd"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "98d96106-4141-47d4-a263-fbedf9a59381"
+    },
+    {
+      "command": "EVENT_CAMERA_LOCK",
+      "args": {
+        "speed": 0.5,
+        "axis": [
+          "x",
+          "y"
+        ]
+      },
+      "id": "a3c3ecbe-ccc9-4d74-a18d-ec82293a13fc"
+    },
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "662648d3-e308-49fb-8446-5bd78fb13a96"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,96 @@
+{
+  "_resourceType": "scene",
+  "id": "6084c391-fcdb-4ae6-936b-a9c6ac214e92",
+  "_index": 22,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Silent Hill Ranch",
+  "symbol": "scene_24",
+  "x": 472,
+  "y": 1008,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a16ff5f3-f756-48cc-a7f1-049ff882b8fb",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "1f6ad742-a753-471d-9e33-ead54fdd607d",
+    "9d2f958f-fb20-41ab-8ef4-6ea732b240ee",
+    "514781dc-391c-46b9-b6b3-a372bb2b0cb7",
+    "1801a3c9-311e-417d-922f-e536bfd2cfb1",
+    "50b5dfdb-3ac9-47b5-b9d4-4f8d9d3f9cd4",
+    "b8b8ab87-fb91-42a8-a628-ecd1b8b757d3",
+    "2adbfa6e-32bb-4e9d-8088-c632e2c3bf14",
+    "auto"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "d9a31fc3-e3e8-4220-9c87-50c5a81f4f33"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "3bcf2d5b-9b7d-4ac1-961e-d372ed9669da"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Silent Hill Ranch\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "2506a54d-07e1-4e4e-bb6a-f0f6a440bec3"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "073b24d3-ec5c-41ad-ac09-73424fadff60",
+        "x": {
+          "type": "number",
+          "value": 35
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "8aee038d-5a94-4a46-8dd8-d17deba2f876"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

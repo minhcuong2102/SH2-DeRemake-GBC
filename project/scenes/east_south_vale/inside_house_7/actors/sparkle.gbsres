@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "ab6a1beb-1245-4dae-a03b-c49e07ed217a",
+  "_index": 1,
+  "symbol": "actor_78",
+  "prefabId": "74699f5a-5297-4c5a-a02b-2a97b8a4bcc1",
+  "name": "Sparkle",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057776f7-a754-44f6-bf00-b20715c505de",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {
+    "324fc98f-244a-4cb9-ae97-f401c313e0c5": {
+      "id": "324fc98f-244a-4cb9-ae97-f401c313e0c5",
+      "args": {
+        "actorId": "$self$"
+      }
+    },
+    "43459daa-8826-4356-b016-229f72703a25": {
+      "id": "43459daa-8826-4356-b016-229f72703a25",
+      "args": {
+        "actorId": "197a9416-efb9-4b50-bf4a-93ff7bd37e09"
+      }
+    },
+    "1b05ed19-83a3-4a16-b7a0-79dab0a5d1f6": {
+      "id": "1b05ed19-83a3-4a16-b7a0-79dab0a5d1f6",
+      "args": {
+        "flag1": false,
+        "flag2": true
+      }
+    },
+    "45e422aa-ec87-49b2-8b60-6f51f3bd07f7": {
+      "id": "45e422aa-ec87-49b2-8b60-6f51f3bd07f7",
+      "args": {
+        "flag": 1
+      }
+    }
+  },
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

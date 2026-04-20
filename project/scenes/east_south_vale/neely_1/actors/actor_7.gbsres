@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "da2aa769-5d2a-48d3-9d93-acb8e188156e",
+  "_index": 6,
+  "symbol": "actor_126",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 11,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d2b82810-874b-4243-a1d4-c86a086d34b8",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"The door that wakes\n              in darkness,\n         opening into \n                  nightmares.\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "56f2518b-26c7-4966-81d2-4d08d070053d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

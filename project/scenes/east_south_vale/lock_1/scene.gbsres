@@ -1,0 +1,120 @@
+{
+  "_resourceType": "scene",
+  "id": "b5bb26f4-bfde-4893-a61d-56ce05d03aa2",
+  "_index": 69,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Lock 1",
+  "symbol": "scene_70",
+  "x": 1408,
+  "y": 2264,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "b7d5f73b-4305-4972-ba30-a6f82a3a4401",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "17b18bdf-3149-4584-96f2-f9b77ac4bd67",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "d1dde82a-2fc1-44f6-9702-861366ec30d8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "f1aacbd3-9bce-4a30-a575-2cee29130f7e"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980"
+      },
+      "id": "66394dcd-aa57-4d4e-95ca-f716fe6692aa"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 7
+            },
+            "id": "b733c792-ef48-49c0-aec5-ebdf796565cc"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "705a9b4f-2964-4177-8e7d-d6913a830930",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "0ba62d48-c821-4b3a-9ec2-e19ab8c38a35"
+          }
+        ]
+      },
+      "id": "2bc3cf4e-ff32-4675-be30-416060dbeeb9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Press A to enter the pass code,\npress B to leave."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "832e329a-96a7-4e13-aa09-2a0a01e4670a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

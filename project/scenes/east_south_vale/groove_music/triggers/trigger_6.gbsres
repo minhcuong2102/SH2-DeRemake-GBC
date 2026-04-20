@@ -1,0 +1,112 @@
+{
+  "_resourceType": "trigger",
+  "id": "b8b1f0f7-8ca2-4da1-bd24-f6eae7a0c9df",
+  "name": "",
+  "prefabId": "",
+  "x": 17,
+  "y": 5,
+  "symbol": "trigger_166",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "f053ee06-fc5a-4d7b-bc81-a21ff72a8c96"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "56558454-2aec-4b09-b9e5-d884b57a7ace"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "079ee7b2-5c0f-4e51-99f1-c75defa468b5"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "There's a poster on the \nwall."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2b91258f-030b-415a-838e-a635747c7056"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "\"Face the music!\nFind the melody of your dreams\nand kick up your heels!\""
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "92ef7d20-11d2-4563-96f6-cfab984badcc"
+          }
+        ]
+      },
+      "id": "e3e46400-17d1-45b3-bbca-9961adab2830"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "b0527f24-6a5c-49c4-8cec-d23615d6cd2c"
+    }
+  ],
+  "_index": 5
+}

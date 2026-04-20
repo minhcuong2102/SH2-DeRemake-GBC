@@ -1,0 +1,118 @@
+{
+  "_resourceType": "scene",
+  "id": "2fd20742-1a46-4c1d-92d4-9d3c59a5aec1",
+  "_index": 6,
+  "type": "LOGO",
+  "name": "East South Vale/Hand",
+  "symbol": "scene_2",
+  "x": 576,
+  "y": 32,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "1d8d0646-0906-4700-8df3-fa63baed4ed0",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "3cfa6099-22a9-430a-947f-7f94004861bc",
+    "618b6781-aeec-4623-8cd7-393c955c109f",
+    "5edbef47-9352-41bf-a27a-934e8c746988",
+    "febef053-81f7-4555-b397-7e532621e125",
+    "8f2ea78b-37b9-4c59-8aa3-4b477809e4fa",
+    "c4c3373a-52bc-4e23-ba4c-e994b32423be",
+    "8b6bd8fb-4a5d-4367-81cc-96b531617f59",
+    "9440983c-90e3-49cd-90f4-32068ac9b02d"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "34"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 200
+              }
+            },
+            "id": "6de29ca7-6c21-424d-9621-3c2507e922fc"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 100
+              }
+            },
+            "id": "a8d36683-c833-4d5a-a4a8-2d4e8714c18f"
+          }
+        ]
+      },
+      "id": "bc984bfd-f770-463a-9ac4-e637a373fb5b"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7551e9b0-d548-4073-923d-19cdcdc2ee4b"
+      },
+      "id": "5a1173b5-cf00-4eef-9d58-80f394ef0981"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 4
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "b812a5aa-bca0-4c7a-a59d-6079b7ec2a36"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "e165149b-9f83-4c21-b8ad-be1aa1611a01",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": 3
+      },
+      "id": "cd300c77-b162-4629-b996-773f615ae9c0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

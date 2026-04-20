@@ -1,0 +1,155 @@
+{
+  "_resourceType": "scene",
+  "id": "7e91103c-a268-43c6-9ef8-86848e3cc0af",
+  "_index": 29,
+  "type": "TOPDOWN",
+  "name": "Map/East South Vale",
+  "symbol": "scene_30",
+  "x": 576,
+  "y": 1472,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "f94f0efb-e244-4c7e-99a8-34ea0d36b020",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "070b86a5-6fb7-4655-ac3d-3fde6e9dbbf6"
+    },
+    {
+      "command": "EVENT_CAMERA_SET_POSITION",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "cf43f609-72e8-4182-942a-c588dda7245b"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "516112ca-9b64-4bfe-b3b4-d9b2e035c1dd"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 1
+            },
+            "id": "7d9e697a-7f45-43e9-bfdf-27cb98b5d94a"
+          }
+        ]
+      },
+      "id": "77d71539-00ee-45c0-9818-cd1adf15e788"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 1
+            },
+            "id": "3161085d-5efa-4092-9dff-08c2689017a8"
+          }
+        ]
+      },
+      "id": "6e1285c3-fee5-4f76-a64b-d4c9156d3c9b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "48fe704a-bb22-4e35-8dc7-0c98e236f74f"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "74f0f936-0e18-4a19-bbe6-eed49f26c074"
+          }
+        ]
+      },
+      "id": "8d8682d6-87b5-4c58-81d0-ea9cd4baf8cf"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

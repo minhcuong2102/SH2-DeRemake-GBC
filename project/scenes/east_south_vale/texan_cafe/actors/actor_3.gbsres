@@ -1,0 +1,81 @@
+{
+  "_resourceType": "actor",
+  "id": "619a0ca2-e563-4570-a2b2-5e7dbcc3800d",
+  "_index": 3,
+  "symbol": "actor_184",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 11,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0e3dbcfe-9480-4cd8-85a3-713c353f58bb",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "102"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "4c5bdc27-da16-4e3c-ae6e-805e8708e2b4"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "2afbf6c1-f533-49a9-9eb5-8bba5eb3a01c",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "32a3e0e4-e673-49ec-ac27-62e1200b2438"
+          }
+        ],
+        "false": []
+      },
+      "id": "a78340a7-a94f-4bfc-a0c9-4d4f34acfad5"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

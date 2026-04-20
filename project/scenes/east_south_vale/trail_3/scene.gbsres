@@ -1,0 +1,121 @@
+{
+  "_resourceType": "scene",
+  "id": "b0814ea9-8144-4d70-a0db-dddecec96830",
+  "_index": 19,
+  "type": "TOPDOWN",
+  "name": "East South Vale/Trail 3",
+  "symbol": "scene_21",
+  "x": 1072,
+  "y": 776,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "77e902ef-4d13-4e1c-b1aa-326a7c2f11e2",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "1174a250-be29-494f-a187-6c4a80dcceb6",
+    "0016d801-f6d1-4b31-a66a-576ac3b09c67"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_AUTO_FLIP_TILES",
+      "args": {
+        "__comment": true
+      },
+      "id": "ddc4bb82-7c78-4493-9eb3-2556f6c3ec5f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "d45d503b-491b-44b6-94e3-be3e3b81d01f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "3ab7dc97-da85-4036-b9d3-d62edf5d7660"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "586448df-497e-48ac-8d28-47e6a14d37a5"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "896978a9-ea91-4b21-862c-99c474b37119"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "c6844746-9b41-4685-92c5-5e6ce5bee53c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "f6805ccb-1d42-42a5-b799-e5c689844222"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "26f77762-cac6-4066-82c8-2a750011c952"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "d0f19cbf-e77e-42fc-934b-f8f6e96232a5"
+          }
+        ]
+      },
+      "id": "557347bf-1725-447f-b8d0-40d4d58c5c79"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0fa+00a+0f5+"
+}

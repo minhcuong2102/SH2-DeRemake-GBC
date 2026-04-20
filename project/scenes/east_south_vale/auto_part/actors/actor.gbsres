@@ -1,0 +1,56 @@
+{
+  "_resourceType": "actor",
+  "id": "cecb168e-6d8c-4ad8-a405-756d4eba2c91",
+  "_index": 0,
+  "symbol": "actor_24",
+  "prefabId": "",
+  "name": "",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6a037c5f-29af-4a7e-b4a8-93eaed85ac61",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"WENT TO TOWN TO GET THE\nWINDOW FIXED.\"",
+          "\"SPARE KEY'S IN THE DRAWERS.\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "2551e5fb-ba43-4bb1-9941-8029007b3f20"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
