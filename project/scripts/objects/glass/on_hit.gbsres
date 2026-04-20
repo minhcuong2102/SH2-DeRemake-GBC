@@ -1,0 +1,69 @@
+{
+  "_resourceType": "script",
+  "id": "e24e92db-c0f4-42dc-a698-538b4e354576",
+  "name": "Objects/Glass/On Hit",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_35",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "84a10e67-a2d0-4753-97d3-143ead2f3813"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "dbe760bd-5f07-4211-839b-7e3c3705a3a2",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "5d45aca9-bd5d-46e7-8dd5-9c1ffd0e74fd"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "Died",
+              "loopAnim": false
+            },
+            "id": "ce80cec9-5581-4249-b5a8-f984348c0d02"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "576c6972-831b-4576-bd2a-320fbd75487b"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "0bc0dc34-0150-4887-acab-30a4557ee4c6"
+          }
+        ]
+      },
+      "id": "4d1a162b-505e-4027-8298-fe9f062c6c3c"
+    }
+  ]
+}

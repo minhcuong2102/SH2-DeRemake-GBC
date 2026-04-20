@@ -125,7 +125,47 @@
                   "id": "e1c500e6-f9ec-48f3-ae2b-e59d754eecc5"
                 }
               ],
-              "true1": [],
+              "true1": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "104",
+                    "flag": 15,
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "TEXAN CAFE\nWe Gotta Leave\nMeet Me There"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "4b9165c4-82ce-40a7-80d1-0e04b651c14b"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c93325ef-fbc0-41f5-80ed-5515863087cb"
+                }
+              ],
               "true2": [],
               "true3": [],
               "true4": [],

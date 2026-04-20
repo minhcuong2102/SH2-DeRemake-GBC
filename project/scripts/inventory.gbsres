@@ -109,7 +109,8 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -310,6 +311,13 @@
         ]
       },
       "id": "d03516f5-a8a7-4e2d-85e6-3a68a59b9b5f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d30b87d8-b1ac-48f2-894c-0aea4492f3ec"
+      },
+      "id": "0e78aba7-aa2b-4416-ac3e-eb1558fd4229"
     }
   ]
 }

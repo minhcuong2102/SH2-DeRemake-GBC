@@ -1,0 +1,167 @@
+{
+  "_resourceType": "scene",
+  "id": "a7d6f27f-de1b-4069-8fe4-0e008a036532",
+  "_index": 115,
+  "name": "Map/Woodside Apartment 2F",
+  "backgroundId": "9d8983f7-4f8d-4c4c-ac4c-c0922ad2f7df",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_116",
+  "x": 1800,
+  "y": 416,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        }
+      },
+      "id": "a52f6344-edca-4595-979e-7c0ee3a088dd"
+    },
+    {
+      "command": "EVENT_CAMERA_SET_POSITION",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        },
+        "__comment": true
+      },
+      "id": "992ea244-8324-431c-8097-ea1967ed1529"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "973273cf-9fd0-4086-bbf3-067ebb75fb55"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 1,
+              "__comment": true
+            },
+            "id": "be9cece4-dd4c-4f2e-b9fe-560df4b3a165"
+          }
+        ]
+      },
+      "id": "66e1780b-ff13-4552-9b4c-c77e7b51dc16"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 1,
+              "__comment": true
+            },
+            "id": "caf98a2d-337c-415d-acfe-f53ceca1bf65"
+          }
+        ]
+      },
+      "id": "5ffd5901-3abd-4954-86ba-c776c3880292"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "c5692bb0-5f02-44b5-8821-bd8d0db89071"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "64c0d40e-27e8-401a-b7b3-c4e45c95b877"
+          }
+        ]
+      },
+      "id": "315cfb57-a773-4c66-b512-00a8ae8ed464"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

@@ -31,7 +31,8 @@
     {
       "command": "EVENT_INC_VALUE",
       "args": {
-        "variable": "82"
+        "variable": "82",
+        "__comment": true
       },
       "id": "68d4bf0a-ee79-4176-87b7-027548650df5"
     },
@@ -45,6 +46,32 @@
         }
       },
       "id": "3025897e-1e1c-4fa9-835f-b5d2b2e51fb4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "$82$"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__comment": true
+      },
+      "id": "85a061fb-d849-4c22-ae47-e75bdc623e1e"
     },
     {
       "command": "EVENT_WAIT",

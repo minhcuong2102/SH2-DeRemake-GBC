@@ -16,7 +16,15 @@
   "prefabScriptOverrides": {},
   "symbol": "actor_36",
   "script": [],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "4757c38b-eca0-4780-b157-1dd08c91e57e"
+    }
+  ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],

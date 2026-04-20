@@ -130,7 +130,7 @@
                   "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
                     "variable": "104",
-                    "flag": 15,
+                    "flag": 7,
                     "__collapseElse": true
                   },
                   "children": {
@@ -139,7 +139,9 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "TEXAN CAFE\nWe Gotta Leave\nMeet Me There"
+                            "I'm certain now, it's coming\nfrom that apartment upstairs.\nI keep telling them\nwhy won't they do something?",
+                            "It's unbearable\nI can feel it seeping into\nmy skin",
+                            "pushing itself into\nmy lungs"
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -158,7 +160,7 @@
                           "closeDelayTime": 0.5,
                           "closeDelayFrames": 30
                         },
-                        "id": "80ff6d0f-1850-4c0a-95a0-65392b779f6f"
+                        "id": "973b47a2-d2c1-487a-94f1-bc8bdbe3d310"
                       }
                     ],
                     "false": []

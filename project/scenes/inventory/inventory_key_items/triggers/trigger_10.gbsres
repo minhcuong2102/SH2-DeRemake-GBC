@@ -82,21 +82,11 @@
             "children": {
               "true0": [
                 {
-                  "command": "EVENT_IF",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "condition": {
-                      "type": "eq",
-                      "valueA": {
-                        "type": "variable",
-                        "value": "50"
-                      },
-                      "valueB": {
-                        "type": "number",
-                        "value": 1
-                      }
-                    },
-                    "__collapseElse": true,
-                    "__collapse": true
+                    "variable": "106",
+                    "flag": 10,
+                    "__collapseElse": true
                   },
                   "children": {
                     "true": [
@@ -104,7 +94,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "Auto Parts Key\nA key found in the workshop of \nBest Auto Parts."
+                            "Wood Side Apartments Key\nAn old-looking key. Attached note\nsays \"Wood Side Apartments\"."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -128,7 +118,7 @@
                     ],
                     "false": []
                   },
-                  "id": "580664f2-15d0-4138-9cbe-2920f11c8774"
+                  "id": "c7118faa-f91a-4079-8ee1-f56f9e900c67"
                 }
               ],
               "true1": [],

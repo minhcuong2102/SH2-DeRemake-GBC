@@ -147,7 +147,49 @@
                   "id": "c71c7af1-8513-4fa0-a29b-cee1025d6104"
                 }
               ],
-              "true1": [],
+              "true1": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "106",
+                    "flag": 3,
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "\"He came back after you left.\nIt's fine, he didn't try anything.\nHe just seemed sad.",
+                            "\"Mumbled something about\ngetting out of town with someone.\nI wasn't gonna let him drive in\nhis condition, so I locked him out.",
+                            "\"His car should be out back.\nMaybe check if it's still there by\nmorning. It's the greenish-blue\none, plate number ending with\n06, I think.\""
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "e7928e3b-ffd0-44f4-a911-6f62d09d84d9"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "5f0d5c31-90e4-48ca-af81-2fc76cc8ad32"
+                }
+              ],
               "true2": [],
               "true3": [],
               "true4": [],

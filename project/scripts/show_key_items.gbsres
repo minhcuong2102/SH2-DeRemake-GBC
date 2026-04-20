@@ -479,7 +479,7 @@
                       "type": "gte",
                       "valueA": {
                         "type": "variable",
-                        "value": "102"
+                        "value": "98"
                       },
                       "valueB": {
                         "type": "number",
@@ -564,7 +564,7 @@
                       "type": "gte",
                       "valueA": {
                         "type": "variable",
-                        "value": "105"
+                        "value": "102"
                       },
                       "valueB": {
                         "type": "number",
@@ -649,7 +649,7 @@
                       "type": "gte",
                       "valueA": {
                         "type": "variable",
-                        "value": "101"
+                        "value": "105"
                       },
                       "valueB": {
                         "type": "number",
@@ -734,7 +734,7 @@
                       "type": "gte",
                       "valueA": {
                         "type": "variable",
-                        "value": "100"
+                        "value": "101"
                       },
                       "valueB": {
                         "type": "number",
@@ -813,10 +813,19 @@
                   "id": "f1600c49-3289-44f1-933c-d297d9b8bc57"
                 },
                 {
-                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "command": "EVENT_IF",
                   "args": {
-                    "variable": "106",
-                    "flag": 10,
+                    "condition": {
+                      "type": "gte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "100"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
                     "__collapseElse": false
                   },
                   "children": {
@@ -886,49 +895,83 @@
                       }
                     ]
                   },
-                  "id": "3aa55dd0-ef07-4bd9-972f-c78e213ec890"
+                  "id": "68352f04-bee6-4fce-9a0a-4bebd860d028"
                 },
                 {
-                  "command": "EVENT_REPLACE_TILE_XY",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
-                    "x": {
-                      "type": "number",
-                      "value": 13
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 9
-                    },
-                    "tilesetId": "17a5261d-165a-4536-88f9-7248b1b027dd",
-                    "tileIndex": {
-                      "type": "add",
-                      "valueA": {
-                        "type": "number",
-                        "value": 18
-                      },
-                      "valueB": {
-                        "type": "mul",
-                        "valueA": {
-                          "type": "sub",
-                          "valueA": {
-                            "type": "variable",
-                            "value": "59"
-                          },
-                          "valueB": {
+                    "variable": "106",
+                    "flag": 10,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_REPLACE_TILE_XY",
+                        "args": {
+                          "x": {
                             "type": "number",
-                            "value": 1
+                            "value": 13
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "tilesetId": "17a5261d-165a-4536-88f9-7248b1b027dd",
+                          "tileIndex": {
+                            "type": "add",
+                            "valueA": {
+                              "type": "number",
+                              "value": 18
+                            },
+                            "valueB": {
+                              "type": "mul",
+                              "valueA": {
+                                "type": "sub",
+                                "valueA": {
+                                  "type": "variable",
+                                  "value": "59"
+                                },
+                                "valueB": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "valueB": {
+                                "type": "number",
+                                "value": 40
+                              }
+                            }
+                          },
+                          "__collapse": false,
+                          "tileSize": "16px"
+                        },
+                        "id": "1dd937ba-da8b-45d0-a4ee-827e4f5a55a9"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_REPLACE_TILE_XY",
+                        "args": {
+                          "x": {
+                            "type": "number",
+                            "value": 13
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "tilesetId": "2ad50815-8dc2-4f07-a3c4-c756978c8002",
+                          "tileIndex": {
+                            "type": "number",
+                            "value": 0
                           }
                         },
-                        "valueB": {
-                          "type": "number",
-                          "value": 40
-                        }
+                        "id": "2cf7bbdf-02a8-4fe5-a21f-544c5e33ee6a"
                       }
-                    },
-                    "__collapse": false,
-                    "tileSize": "16px"
+                    ]
                   },
-                  "id": "1dd937ba-da8b-45d0-a4ee-827e4f5a55a9"
+                  "id": "3aa55dd0-ef07-4bd9-972f-c78e213ec890"
                 }
               ]
             },

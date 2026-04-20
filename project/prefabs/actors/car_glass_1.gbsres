@@ -31,13 +31,6 @@
         ],
         "false": [
           {
-            "command": "EVENT_ACTOR_ACTIVATE",
-            "args": {
-              "actorId": "$self$"
-            },
-            "id": "751cd7bf-dce1-4921-b89e-2ca6eb54bd41"
-          },
-          {
             "command": "EVENT_IF_ACTOR_DIRECTION",
             "args": {
               "actorId": "$self$",
@@ -46,7 +39,8 @@
                 "value": "left"
               },
               "__collapseElse": false,
-              "__collapse": false
+              "__collapse": false,
+              "__comment": true
             },
             "children": {
               "true": [
@@ -154,11 +148,11 @@
             "id": "31857078-a701-445b-b122-d781d53b149f"
           },
           {
-            "command": "EVENT_ACTOR_SHOW",
+            "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
-              "actorId": "$self$"
+              "customEventId": "d0fa4b32-0399-4684-9036-9073adc56b9a"
             },
-            "id": "df4547be-fafe-4fc6-b743-f7e93b6ed6e0"
+            "id": "bcb63ec4-296d-422f-badc-715ac5a27a42"
           }
         ]
       },
@@ -169,35 +163,6 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [
-    {
-      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
-      "args": {
-        "actorId": "$self$"
-      },
-      "id": "7559014d-db3f-4976-a336-71405df4395d"
-    },
-    {
-      "command": "EVENT_SOUND_PLAY_EFFECT",
-      "args": {
-        "type": "dbe760bd-5f07-4211-839b-7e3c3705a3a2",
-        "priority": "high",
-        "pitch": 4,
-        "frequency": 200,
-        "duration": 0.5,
-        "wait": true,
-        "effect": 0
-      },
-      "id": "34b58322-89de-44d9-9808-1100b3f0c7e5"
-    },
-    {
-      "command": "EVENT_ACTOR_SET_STATE",
-      "args": {
-        "actorId": "$self$",
-        "spriteStateId": "Died",
-        "loopAnim": false
-      },
-      "id": "53404c17-2c04-43c1-a680-6ef58c811132"
-    },
     {
       "command": "EVENT_ADD_FLAGS",
       "args": {
@@ -253,19 +218,66 @@
       "id": "1dceb4b7-9f59-4f2f-97c0-959167fd4496"
     },
     {
-      "command": "EVENT_WAIT",
+      "command": "EVENT_GROUP",
       "args": {
-        "time": 0.5,
-        "frames": 30
+        "__comment": true
       },
-      "id": "84e70ea5-ee4b-4f21-870f-16e396a4090e"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "7559014d-db3f-4976-a336-71405df4395d"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "dbe760bd-5f07-4211-839b-7e3c3705a3a2",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "34b58322-89de-44d9-9808-1100b3f0c7e5"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Died",
+              "loopAnim": false
+            },
+            "id": "53404c17-2c04-43c1-a680-6ef58c811132"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "84e70ea5-ee4b-4f21-870f-16e396a4090e"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "bffaf7f3-ff22-46ac-a9d3-cb73ebf68237"
+          }
+        ]
+      },
+      "id": "53e66c18-7578-4c66-9175-151b614c653a"
     },
     {
-      "command": "EVENT_ACTOR_DEACTIVATE",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "actorId": "$self$"
+        "customEventId": "e24e92db-c0f4-42dc-a698-538b4e354576"
       },
-      "id": "bffaf7f3-ff22-46ac-a9d3-cb73ebf68237"
+      "id": "e0f3e06e-217d-48f1-9095-501972680210"
     }
   ]
 }
