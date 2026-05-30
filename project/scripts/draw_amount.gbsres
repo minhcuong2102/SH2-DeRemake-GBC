@@ -1,0 +1,232 @@
+{
+  "_resourceType": "script",
+  "id": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e",
+  "name": "Draw amount",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_37",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "73"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "$61$",
+                    "x": 13,
+                    "y": 6,
+                    "location": "background",
+                    "__collapse": false
+                  },
+                  "id": "66ef1018-437c-442b-a202-7a695d95d775"
+                }
+              ],
+              "false": []
+            },
+            "id": "c35880a4-af2a-4a04-b203-ad894397065b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "74"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "$63$",
+                    "x": 5,
+                    "y": 12,
+                    "location": "background",
+                    "__collapse": false
+                  },
+                  "id": "d6e81b66-426a-4ca6-ad3a-df8cf9670936"
+                }
+              ],
+              "false": []
+            },
+            "id": "8b65bb3f-b945-49c7-9568-1ce0d5001a06"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "75"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "$65$",
+                    "x": 9,
+                    "y": 12,
+                    "location": "background",
+                    "__collapse": false
+                  },
+                  "id": "3b4dc85e-06b8-4483-a0af-66e0261450c1"
+                }
+              ],
+              "false": []
+            },
+            "id": "1413b7d1-0028-404b-824a-37dd591e3858"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "62"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "$62$",
+                    "x": 17,
+                    "y": 6,
+                    "location": "background",
+                    "__collapse": false
+                  },
+                  "id": "888b8331-a7b2-452f-a79f-e88b7c481a37"
+                }
+              ],
+              "false": []
+            },
+            "id": "d621e7ba-00cb-4f11-843a-4c4ac426052d"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "64"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "$64$",
+                    "x": 17,
+                    "y": 9,
+                    "location": "background",
+                    "__collapse": false
+                  },
+                  "id": "b217dcaa-00ba-43c2-bd82-677e5b26abda"
+                }
+              ],
+              "false": []
+            },
+            "id": "a1f9bc32-cd92-4cb7-85f7-6210cc7fba05"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "66"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "$66$",
+                    "x": 17,
+                    "y": 12,
+                    "location": "background",
+                    "__collapse": false
+                  },
+                  "id": "838b2b73-4464-47ef-ab52-a6af69d774a3"
+                }
+              ],
+              "false": []
+            },
+            "id": "f0002ddd-1133-429e-9768-4f8cab58f130"
+          }
+        ]
+      },
+      "id": "786eb409-8b44-4048-8e7f-b57238d9b5b1"
+    }
+  ]
+}

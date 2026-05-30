@@ -1,12 +1,12 @@
 {
   "_resourceType": "scene",
   "id": "1f3fa940-ef3a-4b4d-af86-95c433a551e4",
-  "_index": 116,
+  "_index": 113,
   "type": "TOPDOWN",
   "name": "Map/Woodside Apartment 3F",
   "symbol": "scene_117",
-  "x": 1968,
-  "y": 416,
+  "x": 1976,
+  "y": 408,
   "width": 20,
   "height": 18,
   "backgroundId": "2a8fd29b-15ed-4bbc-8c62-403c6422aad8",
@@ -16,6 +16,14 @@
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
   "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "c748189a-8504-4c9d-aa45-0d715b49294c"
+    },
     {
       "command": "EVENT_ACTOR_SET_POSITION",
       "args": {
@@ -101,13 +109,35 @@
         "__scriptTabs": "press"
       },
       "children": {
-        "true": []
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "934755ef-d5e6-4aa9-9dab-691bfc7d7174",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "4938c5f3-f8e7-4163-92d5-7485ee21942c"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "d4754a25-457f-4ce1-96cb-c5bca00b094c"
+          }
+        ]
       },
-      "id": "de7513ba-5264-45c5-8d4e-bc1371bed7ec"
+      "id": "c831fc58-70f2-4ce4-a9d4-ff184164f935"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "00168+"
+  "collisions": "00168+",
+  "playerSpriteSheetId": "17b18bdf-3149-4584-96f2-f9b77ac4bd67"
 }

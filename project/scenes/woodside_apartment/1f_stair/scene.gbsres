@@ -1,0 +1,109 @@
+{
+  "_resourceType": "scene",
+  "id": "38907c44-91c7-49f8-838c-3bb30bb1b91e",
+  "_index": 116,
+  "type": "TOPDOWN",
+  "name": "Woodside Apartment/1F Stair",
+  "symbol": "scene_120",
+  "x": 2576,
+  "y": 1360,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "ef06f418-7a47-4cc0-acc3-2803fefd3f66",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "default-bg-5",
+    "133b6ea1-f65f-4519-ada1-90a7ed7401ce",
+    "f2684e33-49fd-4806-9eac-564368366823",
+    "",
+    "15db9b55-1203-44c3-9f5f-6043d90e0f55"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "d890da2d-a730-4654-b3ee-233bd90c20af"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 53
+        }
+      },
+      "id": "3759b7fe-9a33-4a4f-b696-a7247fcad8e7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "d7434ba1-f776-462b-b28a-51190dfff12f"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "e4bcbef2-eede-425f-b731-d2e1d150d83c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "23bfb8c9-6d17-4f97-93e3-9245b842faff"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "d7ce0b7c-d7f2-4357-b1c4-7af20ab521ef"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "9a97c934-a431-4d9c-b8d2-c6d254dcf3d7"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "d7b4ab23-0c0a-4d12-a314-566953dc33f4"
+          }
+        ]
+      },
+      "id": "cfc09e26-1eba-48b6-a49c-622af93afbd5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f2c+00!08!0f12+00!08!0f12+00!08!0f9+002+0f7+00!08!04!00a+0f7+00!08!04!00a+0f7+00!08!04!002+0f4+004+0f7+00!08!04!002+0f4+004+0f7+00!08!04!002+0f4+004+0f7+00!08!0f!002+0f4+004+0f7+002+08!0f!02!0f4+004+0f7+003+012+0f4+004+0fa+00a+0fb+009+0f10+004+0f10+004+0f10+004+0f3+"
+}

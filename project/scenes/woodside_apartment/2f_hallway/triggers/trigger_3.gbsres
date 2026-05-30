@@ -1,0 +1,92 @@
+{
+  "_resourceType": "trigger",
+  "id": "3094a4f4-d11c-44e0-8a5c-dcba1be12ac3",
+  "name": "",
+  "prefabId": "",
+  "x": 6,
+  "y": 10,
+  "symbol": "trigger_315",
+  "prefabScriptOverrides": {},
+  "width": 3,
+  "height": 4,
+  "script": [
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {},
+      "id": "cda0b4e4-f610-462f-8952-7efa89afbca6"
+    },
+    {
+      "command": "EVENT_IDLE",
+      "args": {},
+      "id": "90e4596f-26f9-4b9c-a607-0cbedfc3f537"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_SPRITE",
+      "args": {
+        "palette0": "restore",
+        "palette1": "restore",
+        "palette2": "keep",
+        "palette3": "keep",
+        "palette4": "keep",
+        "palette5": "keep",
+        "palette6": "keep",
+        "palette7": "keep"
+      },
+      "id": "798eb63f-7fff-4369-af81-44ddda722273"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "70"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": false
+            },
+            "id": "c0af8036-4ce6-4430-b352-dd1840e02f0f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "fd10782a-d978-42c9-9cd9-1b0eeafdc5a4",
+              "palette1": "fd10782a-d978-42c9-9cd9-1b0eeafdc5a4",
+              "palette2": "keep",
+              "palette3": "keep",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            },
+            "id": "2fb8bd4c-5363-4e18-8316-91abcf7e929a"
+          }
+        ]
+      },
+      "id": "0774243f-d4cd-4f76-b73e-7fb7726591c2"
+    }
+  ],
+  "_index": 2
+}

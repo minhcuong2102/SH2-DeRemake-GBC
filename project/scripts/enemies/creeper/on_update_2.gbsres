@@ -90,7 +90,7 @@
               },
               "y": {
                 "type": "number",
-                "value": 16
+                "value": 0
               },
               "width": {
                 "type": "number",
@@ -211,7 +211,7 @@
                       {
                         "command": "EVENT_LAUNCH_PROJECTILE",
                         "args": {
-                          "__section": "source",
+                          "__section": "projectile",
                           "spriteSheetId": "6655091e-f01e-4b46-a117-9efc8bc6b4c4",
                           "spriteStateId": "",
                           "actorId": "player",

@@ -21,6 +21,13 @@
       "id": "92fded7b-4bba-42df-81ea-292cbc50eafd"
     },
     {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "34b782fe-a92b-462c-8553-378099627823"
+      },
+      "id": "6cd8034a-1d67-4534-b8ae-9a6754acee26"
+    },
+    {
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
@@ -352,6 +359,13 @@
         ]
       },
       "id": "c5913e2a-a166-4d87-8d31-1a7ab05a0fbf"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "34b782fe-a92b-462c-8553-378099627823"
+      },
+      "id": "4fb872b3-5e2c-4a34-9029-6cad12b5620a"
     }
   ],
   "_index": 1

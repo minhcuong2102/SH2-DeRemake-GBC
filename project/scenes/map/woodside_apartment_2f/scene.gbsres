@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "a7d6f27f-de1b-4069-8fe4-0e008a036532",
-  "_index": 115,
+  "_index": 112,
   "type": "TOPDOWN",
   "name": "Map/Woodside Apartment 2F",
   "symbol": "scene_116",
@@ -16,6 +16,14 @@
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
   "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "a7eff362-9028-4911-9acc-aa3a495504c7"
+    },
     {
       "command": "EVENT_ACTOR_SET_POSITION",
       "args": {
@@ -164,5 +172,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "00168+"
+  "collisions": "00168+",
+  "playerSpriteSheetId": "17b18bdf-3149-4584-96f2-f9b77ac4bd67"
 }

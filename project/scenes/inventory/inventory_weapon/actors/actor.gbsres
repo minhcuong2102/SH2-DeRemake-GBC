@@ -22,9 +22,16 @@
   "prefabScriptOverrides": {},
   "script": [
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e"
+      },
+      "id": "e9479184-fd61-4ef4-ad66-d6aef4baf72e"
+    },
+    {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -50,11 +57,11 @@
                 {
                   "command": "EVENT_TEXT_DRAW",
                   "args": {
-                    "text": "\\013\\06$61$",
+                    "text": "$61$",
                     "x": 13,
                     "y": 6,
                     "location": "background",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "a5b86b53-5625-4b04-8c61-a58dc7bc6991"
                 }
@@ -85,7 +92,7 @@
                 {
                   "command": "EVENT_TEXT_DRAW",
                   "args": {
-                    "text": "\\013\\06$63$",
+                    "text": "$63$",
                     "x": 5,
                     "y": 12,
                     "location": "background",
@@ -120,11 +127,11 @@
                 {
                   "command": "EVENT_TEXT_DRAW",
                   "args": {
-                    "text": "\\013\\06$65$",
+                    "text": "$65$",
                     "x": 9,
                     "y": 12,
                     "location": "background",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "dc4f1000-58b3-493b-a141-511cdf50a90a"
                 }
@@ -155,11 +162,11 @@
                 {
                   "command": "EVENT_TEXT_DRAW",
                   "args": {
-                    "text": "\\013\\06$62$",
+                    "text": "$62$",
                     "x": 17,
                     "y": 6,
                     "location": "background",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "b607a583-89cf-406c-a813-0330e17a82d1"
                 }
@@ -190,11 +197,11 @@
                 {
                   "command": "EVENT_TEXT_DRAW",
                   "args": {
-                    "text": "\\013\\06$64$",
+                    "text": "$64$",
                     "x": 17,
                     "y": 9,
                     "location": "background",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "e086d127-6497-4ba5-9941-ab30190de633"
                 }
@@ -225,11 +232,11 @@
                 {
                   "command": "EVENT_TEXT_DRAW",
                   "args": {
-                    "text": "\\013\\06$66$",
+                    "text": "$66$",
                     "x": 17,
                     "y": 12,
                     "location": "background",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "356b202a-c456-4baf-9c33-96fcd3b30288"
                 }
@@ -435,7 +442,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -652,6 +659,13 @@
         ]
       },
       "id": "f3e5ec2f-b792-4738-a34d-0c5c57a7e5d4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e"
+      },
+      "id": "4e7c770c-0efb-4a5a-aac9-8a64c3afd998"
     }
   ],
   "startScript": [

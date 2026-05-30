@@ -22,9 +22,16 @@
   "prefabScriptOverrides": {},
   "script": [
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e"
+      },
+      "id": "a457ede8-c090-4774-9bef-682b08c9763b"
+    },
+    {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -435,7 +442,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -652,6 +659,13 @@
         ]
       },
       "id": "746fa543-8854-4542-bd35-bde47d3d82a1"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e"
+      },
+      "id": "cccb95a5-c6ac-4cb3-b40d-6767ab316ac2"
     }
   ],
   "startScript": [

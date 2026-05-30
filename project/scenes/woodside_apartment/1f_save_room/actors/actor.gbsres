@@ -1,0 +1,153 @@
+{
+  "_resourceType": "actor",
+  "id": "c48bb149-da81-4107-8ed1-6d7d80630f48",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "26bb6aef-b428-4791-91e5-f2c44a5a4702",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_328",
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "118",
+        "flag": 1,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "120",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "d1985dc8-a765-4cbe-9514-707825731d27"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "119",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "390d881f-24da-4c2a-b24b-3fccd6be698f"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dfa495f8-4487-42f7-abf5-fb943cab75e6",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "25ccebd8-ca46-4bc9-9f47-c332331503d7"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+            "args": {
+              "type": "630d2c83-e72a-471c-8e79-188154151e08",
+              "pitch": 4,
+              "frequency": 300,
+              "duration": 0.05,
+              "effect": 0
+            },
+            "id": "2cb4e85a-8fad-4ece-aa8c-419f36cb363d"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "118",
+              "flag1": false,
+              "flag2": true,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "e9fb46f7-1d88-4acd-b391-e209487f70e8"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Down",
+              "loopAnim": false
+            },
+            "id": "732fb2db-0ec0-4120-8fb8-832a11e1bbcc"
+          }
+        ]
+      },
+      "id": "11fc5019-8835-4561-9cc2-c6e8a187fd76"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "118",
+        "flag": 1,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Down",
+              "loopAnim": false
+            },
+            "id": "6a24e18f-0335-4eb4-ac8c-9d2834cb2878"
+          }
+        ],
+        "false": []
+      },
+      "id": "dda5edc6-7878-4717-b049-6631ac61f042"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 2,
+  "y": 4,
+  "_index": 2
+}

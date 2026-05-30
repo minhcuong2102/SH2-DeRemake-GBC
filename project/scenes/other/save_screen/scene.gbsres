@@ -12,7 +12,16 @@
   "backgroundId": "ee83a883-ce8f-4c8d-89e1-c49af308dd7b",
   "tilesetId": "",
   "colorModeOverride": "none",
-  "paletteIds": [],
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "auto"
+  ],
   "spritePaletteIds": [
     ""
   ],
@@ -44,7 +53,7 @@
       "command": "EVENT_SET_DIALOGUE_FRAME",
       "args": {
         "tilesetId": "f99bb392-3835-4ece-bd31-f7d03a8471c5",
-        "__comment": true
+        "__comment": false
       },
       "id": "3a06f2ad-48a6-4313-af5f-ff3dff7c1ef8"
     },

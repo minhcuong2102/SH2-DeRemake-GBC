@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "49d8bc2e-ad12-4327-b5d6-50f0d61674ef",
-  "_index": 31,
+  "_index": 30,
   "type": "TOPDOWN",
   "name": "Inventory/Inventory Personal",
   "symbol": "scene_32",
@@ -318,7 +318,8 @@
               "text": "\\013\\07",
               "x": 10,
               "y": 1,
-              "location": "background"
+              "location": "background",
+              "__comment": true
             },
             "id": "91ddfe53-2f65-474a-8d2d-ecee8fcee384"
           },
@@ -353,6 +354,17 @@
                     "effect": 0
                   },
                   "id": "c430adc3-9b9d-4681-86f4-0b60b477bfea"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\08",
+                    "x": 10,
+                    "y": 1,
+                    "location": "background",
+                    "__comment": true
+                  },
+                  "id": "72cc3391-78de-47f7-b6ca-2016813f1c8e"
                 },
                 {
                   "command": "EVENT_SCENE_POP_STATE",

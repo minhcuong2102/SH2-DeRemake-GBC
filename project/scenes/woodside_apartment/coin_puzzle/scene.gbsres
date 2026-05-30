@@ -1,0 +1,270 @@
+{
+  "_resourceType": "scene",
+  "id": "dfa495f8-4487-42f7-abf5-fb943cab75e6",
+  "_index": 118,
+  "type": "TOPDOWN",
+  "name": "Woodside Apartment/Coin Puzzle",
+  "symbol": "scene_50",
+  "x": 2584,
+  "y": 1192,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a2927def-7df9-4592-8eae-54fe86187493",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8e73d94e-d051-476f-a41a-6e55d10e9978",
+    "ad27a42e-a9a4-4bf5-a710-02ca5b22118d",
+    "fd340af5-024f-4ffc-b668-540594b4e2cd",
+    "525ea207-96d9-4c7a-b5a0-1fd58e8fea80",
+    "eb059a22-be43-460e-972b-f2c6ecf77210",
+    "b2fa0832-99e8-47bc-bfbf-eb5a41ca07f5",
+    "f0f4e672-a79e-4edd-8e56-cfb160084390"
+  ],
+  "spritePaletteIds": [
+    "",
+    "default-bg-3",
+    "default-bg-1"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "17b18bdf-3149-4584-96f2-f9b77ac4bd67",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "122",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true
+            },
+            "id": "add0001b-2ac2-47f5-9119-acb96cecd57a"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "121",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true
+            },
+            "id": "99527822-3bd0-4bfc-abfe-260bbb38a73e"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "123",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true
+            },
+            "id": "f425f3e2-ae3b-45f7-8657-12414e47ce71"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "9a8c8db1-3ec0-4b44-86cf-cb109977d173",
+              "__collapse": true
+            },
+            "id": "a1126cc6-f3c5-480b-993a-d53a29bcf177"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "7c47d279-817c-42d0-83a2-5777f93f901c",
+              "__collapse": true
+            },
+            "id": "71341042-ca4e-4954-a530-e85ece05de18"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "76d0ab28-3c55-4b82-87a1-fbf9411b7469",
+              "__collapse": true
+            },
+            "id": "b01b9426-cf32-460f-b918-b2f4582032d2"
+          }
+        ]
+      },
+      "id": "9067fa36-e627-4548-8490-b579c650e49e"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "1468bd63-1360-4697-8988-3d6e833fe980",
+        "__comment": true
+      },
+      "id": "f7e6a41b-af47-4fb6-a1e8-39bba88ada4c"
+    },
+    {
+      "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+      "args": {
+        "speedIn": 0,
+        "speedOut": 0,
+        "speed": 0,
+        "allowFastForward": true
+      },
+      "id": "dd7955ed-8639-4f6b-b57a-40eb6eab45fd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "9d4d5cb1-a0d3-458e-9aa7-42b64d9072f3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "35"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "PT_EVENT_REPAINT_BACKGROUND",
+            "args": {},
+            "id": "1b65fb94-085a-4bbd-9cc9-4cb59d393b3e"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Three bright coins in the five holes\nbe, first sits the Maiden \nunderneath the tree.",
+              "x": 1,
+              "y": 1,
+              "location": "background"
+            },
+            "id": "28c77130-f8a7-4395-b7a0-0d5f6949942e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Three bright coins in the five holes\nbe, first sits the Maiden \nunderneath the tree."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 6,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "top",
+              "clearPrevious": true,
+              "showFrame": true,
+              "speedIn": -3,
+              "speedOut": -3,
+              "closeWhen": "notModal",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__comment": true
+            },
+            "id": "57f3de3b-7b6c-446f-b018-d83fd180e5ad"
+          }
+        ],
+        "false": []
+      },
+      "id": "d027c8f7-bafb-49a8-afab-243227076e18"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+            "args": {
+              "speedIn": 0,
+              "speedOut": -3,
+              "speed": 1,
+              "allowFastForward": true
+            },
+            "id": "a934117d-a89a-418b-a3e6-91c264d64f14"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "becdc89c-f1bc-4456-bfe3-3f00ea1bc7b1",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "4c0aa891-f1cc-420c-be54-71d879faca5f"
+          }
+        ]
+      },
+      "id": "18d00613-6872-4d42-992a-48043fc100b7"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "22784c33-970b-424b-aa25-b67e89227ebb"
+      },
+      "id": "15b4139b-1da4-4c10-a719-0d2794823908"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "74831ca6-b4e6-461f-8016-82a4480cb673",
+        "$actor[0]$": "9a8c8db1-3ec0-4b44-86cf-cb109977d173"
+      },
+      "id": "5be2e097-b1a2-47e0-94d4-908f0291dc25"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7abcf7a4-b020-439e-8762-8a8bcced39a9",
+        "$actor[0]$": "76d0ab28-3c55-4b82-87a1-fbf9411b7469"
+      },
+      "id": "0fc56261-f2b6-41bb-b2b4-5e39bf7287ac"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d1b79f46-d970-4a90-8642-95d72f739855",
+        "$actor[0]$": "7c47d279-817c-42d0-83a2-5777f93f901c"
+      },
+      "id": "22538e86-e46d-4716-8153-665f6a3fe286"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f78+00f0+"
+}

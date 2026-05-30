@@ -42,22 +42,22 @@
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$55$",
+              "text": "$55$",
               "x": 9,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "a85caf30-5dd5-4cc2-811f-138da2404816"
           },
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$53$",
+              "text": "$53$",
               "x": 16,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "b01f38a3-891e-4ff0-b47b-40de94a1e4fb"
           }
@@ -449,22 +449,22 @@
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$55$",
+              "text": "$55$",
               "x": 9,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "d9cf3a33-14e0-4bfa-b0b1-a2ce424a1f42"
           },
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$53$",
+              "text": "$53$",
               "x": 16,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "4fcd9e20-dd58-4d40-a51a-8fc052372bb3"
           }
@@ -479,14 +479,14 @@
       "args": {
         "actorId": "$self$",
         "__collapse": false,
-        "__comment": true
+        "__comment": false
       },
       "id": "7ab56430-2458-4cb1-bdb1-f3dfa2d400b4"
     },
     {
       "command": "EVENT_TEXT_DRAW",
       "args": {
-        "text": "\\013\\06$53$",
+        "text": "$53$",
         "x": 16,
         "y": 4,
         "location": "background"

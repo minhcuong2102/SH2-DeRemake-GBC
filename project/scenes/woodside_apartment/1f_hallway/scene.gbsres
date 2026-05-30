@@ -1,0 +1,120 @@
+{
+  "_resourceType": "scene",
+  "id": "d46ad620-79e8-4594-a7cf-0e27654ed61d",
+  "_index": 110,
+  "type": "TOPDOWN",
+  "name": "Woodside Apartment/1F Hallway",
+  "symbol": "scene_114",
+  "x": 2584,
+  "y": 1536,
+  "width": 34,
+  "height": 18,
+  "backgroundId": "36a611b9-b99d-4a8e-973c-02c9a81a7f80",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "cf662d5d-96e7-4ea1-91fb-11bd054d8545",
+    "133b6ea1-f65f-4519-ada1-90a7ed7401ce",
+    "2a543ba8-9755-4833-b438-f779f0a8c561"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "1033ae39-3bed-46d2-bb60-358b54d3795d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 51
+        }
+      },
+      "id": "96bfefdf-3f35-4762-bc72-e1b6356b33ce"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "a70e6833-700e-4bef-919d-a90cae7bd56e"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ed51395c-a066-40da-b9e3-d660e8a26362",
+              "__collapse": true,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__comment": true
+            },
+            "id": "15d53dc8-9816-4fd8-a989-f7e91528111a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "58b677b0-c2e0-46c3-8c69-ebd6b70e13dc"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "90b9358d-5ef4-4853-8ce7-1d2be933163e"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "a61c491d-de0e-45ee-b448-27af1a9dcd8c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "e0d3cb58-e94c-46eb-93f7-37b74095e0a5"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "c244c2d7-69a0-46df-8310-e6509ae0be6b"
+          }
+        ]
+      },
+      "id": "0b11b1bb-c096-43eb-bc00-b9954a381223"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f!007+0f1b+007+0f1b+007+0f10+005+0f6+007+0f10+005+0f6+007+0f10+009+0f2+0020+0f2+0020+0f2+0020+0f2+0020+0f9+00f+0f13+00f+0f13+00c+0f19+007+0f1b+007+0f1b+007+0f1b+007+0f1b+007+0f32+"
+}

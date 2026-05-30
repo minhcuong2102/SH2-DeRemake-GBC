@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "d21777dd-ae78-4929-b9eb-c0107eb7df10",
-  "_index": 34,
+  "_index": 33,
   "type": "TOPDOWN",
   "name": "Inventory/Inventory Memos",
   "symbol": "scene_35",
@@ -138,7 +138,8 @@
               "text": "\\013\\07",
               "x": 10,
               "y": 1,
-              "location": "background"
+              "location": "background",
+              "__comment": true
             },
             "id": "7b4c28c3-b67f-4cdc-b06d-2e4c50d9fcef"
           },
@@ -173,6 +174,17 @@
                     "effect": 0
                   },
                   "id": "e007f4e9-4622-42bf-8ced-7c2fe6c64ab1"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\08",
+                    "x": 10,
+                    "y": 1,
+                    "location": "background",
+                    "__comment": true
+                  },
+                  "id": "8ee79d9c-c93b-44c5-9396-e4416f93c8b7"
                 },
                 {
                   "command": "EVENT_SCENE_POP_STATE",

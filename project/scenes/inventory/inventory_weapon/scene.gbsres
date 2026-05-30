@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "165fc077-f55e-41d6-a2b4-c04b99249ae5",
-  "_index": 32,
+  "_index": 31,
   "type": "TOPDOWN",
   "name": "Inventory/Inventory Weapon",
   "symbol": "scene_33",
@@ -391,7 +391,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -610,6 +610,13 @@
       "id": "5e4ed3a2-fe5f-4d65-95c8-ea2867e3186c"
     },
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e"
+      },
+      "id": "6873e0fe-1ce3-4d33-a13e-fcb0a06c3c70"
+    },
+    {
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
@@ -641,7 +648,8 @@
               "text": "\\013\\07",
               "x": 10,
               "y": 1,
-              "location": "background"
+              "location": "background",
+              "__comment": true
             },
             "id": "47da835e-5bc1-415d-a227-5110c9c5130e"
           },
@@ -676,6 +684,17 @@
                     "effect": 0
                   },
                   "id": "aa40764b-45eb-45b2-8ec5-6a2db4c523c3"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\08",
+                    "x": 10,
+                    "y": 1,
+                    "location": "background",
+                    "__comment": true
+                  },
+                  "id": "8f494c1e-1301-4639-97e3-cb19a482e6e7"
                 },
                 {
                   "command": "EVENT_SCENE_POP_STATE",

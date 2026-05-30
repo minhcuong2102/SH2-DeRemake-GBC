@@ -24,7 +24,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -243,6 +243,13 @@
       "id": "cdd21a88-bc26-49a9-903b-5a2ce24ddfdc"
     },
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e"
+      },
+      "id": "30b4c862-01f5-4931-ae9c-5ad1d19092d4"
+    },
+    {
       "command": "EVENT_MENU",
       "args": {
         "variable": "T0",
@@ -435,7 +442,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -652,6 +659,13 @@
         ]
       },
       "id": "dd2c24e4-547f-45ff-b38c-c6336b87c1a1"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7cb8c6a2-9d15-4f46-bb22-3fb49bd3463e"
+      },
+      "id": "33664039-1673-472d-9fa5-81a9195b42fd"
     }
   ],
   "startScript": [

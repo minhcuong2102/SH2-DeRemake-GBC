@@ -34,12 +34,20 @@
           "value": 9
         },
         "direction": "",
-        "fadeSpeed": "2"
+        "fadeSpeed": 0
       },
       "id": "cc9ea754-d5bb-4144-bcd9-7f09f3e73816"
     }
   ],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "b73071de-6b1e-4d14-8028-0fe574861e0b"
+    }
+  ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],

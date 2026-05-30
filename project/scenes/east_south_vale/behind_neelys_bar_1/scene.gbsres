@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "dec4a9ac-9b24-482b-9d85-d708c6fe732b",
-  "_index": 109,
+  "_index": 106,
   "type": "TOPDOWN",
   "name": "East South Vale/Behind Neely's Bar 1",
   "symbol": "scene_110",
@@ -60,6 +60,13 @@
               "actorId": "bbfbaca5-90d5-4e4b-b221-d45744167e60"
             },
             "id": "58f73d4d-c6f9-4456-9400-a79128b47a83"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0f9936e3-99ab-4718-a81a-74db628479f2"
+            },
+            "id": "a08b263c-5e2c-4211-b17e-c04b4247a45d"
           }
         ],
         "false": []

@@ -1,0 +1,84 @@
+{
+  "_resourceType": "trigger",
+  "id": "ec43ac35-ae5c-4700-a7c4-3dfe21dbce4c",
+  "name": "",
+  "prefabId": "",
+  "x": 11,
+  "y": 5,
+  "symbol": "trigger_299",
+  "prefabScriptOverrides": {},
+  "width": 3,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "e0bcc443-57e6-4912-9180-875e534ca6dd"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "03d9ca7b-1caf-4f7d-989c-668c190210de",
+              "__comment": true
+            },
+            "id": "684d0915-4a5f-41ef-8750-7fce0513def7"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9fcb594e-8f41-4eb9-a84f-fe460ae678f0",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "d140fa0c-3105-4f5e-89f3-b0afcd6535a0"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "becdc89c-f1bc-4456-bfe3-3f00ea1bc7b1",
+              "x": {
+                "type": "number",
+                "value": 6
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "da6a4e93-7765-4d73-b96d-3401b3aa36fa"
+          }
+        ]
+      },
+      "id": "5c834ff8-d0b8-4563-9374-c2b679b5f374"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "fed8cbab-5094-436b-8bb7-619d9d1d571d"
+    }
+  ],
+  "_index": 4
+}

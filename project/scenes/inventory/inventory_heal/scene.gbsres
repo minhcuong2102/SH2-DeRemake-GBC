@@ -266,7 +266,8 @@
               "text": "\\013\\07",
               "x": 10,
               "y": 1,
-              "location": "background"
+              "location": "background",
+              "__comment": true
             },
             "id": "e3137f23-6a4d-424e-9167-1e5e79cadcc5"
           },
@@ -301,6 +302,17 @@
                     "effect": 0
                   },
                   "id": "cc4a7645-a0c6-448c-a6a2-42270bd6b732"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "\\013\\07",
+                    "x": 10,
+                    "y": 1,
+                    "location": "background",
+                    "__comment": true
+                  },
+                  "id": "9a355ade-65a0-46fc-ab11-ca3bd24d568b"
                 },
                 {
                   "command": "EVENT_SCENE_POP_STATE",

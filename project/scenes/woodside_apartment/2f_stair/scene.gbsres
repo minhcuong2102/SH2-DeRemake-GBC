@@ -1,0 +1,190 @@
+{
+  "_resourceType": "scene",
+  "id": "3bdd55b2-7cf5-41a3-b5f6-a9581a834df0",
+  "_index": 119,
+  "name": "Woodside Apartment/2F Stair",
+  "backgroundId": "0f5157ec-ff13-4bfb-9b32-048287e4e8fd",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "133b6ea1-f65f-4519-ada1-90a7ed7401ce",
+    "50b81918-5899-4239-87c0-6ed118082a34",
+    "f17567f2-65b3-4a59-9fe6-40e62241c598"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f9+003+0f10+003+0f10+003+0fe+005+0ff+004+0f10+003+0f11+002+0f12+002+0f12+002+0f12+002+0f12+002+0f12+002+0f12+002+0f12+002+0f12+002+0f12+002+0f12+002+0f22+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_16",
+  "x": 3040,
+  "y": 1240,
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "118",
+        "flag": 4,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "118",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": true,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "c48f6d3e-50fb-4723-a447-4568fbec70ab"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "c70dd4be-b57d-4715-9f3a-089216d10cee",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "49bc00c8-6f8f-4923-9b42-e14946f2ff78"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "367f246e-99c6-4d15-b38e-3c12dadc72ff"
+            },
+            "id": "f2fbf755-ccae-4aab-bf7d-1b73efc12a94"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Hello? Anyone there?"
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "c440c8f1-497a-446c-9055-f967321d3b04"
+          }
+        ]
+      },
+      "id": "c6ec9976-7ad5-4ec8-9b78-fbdaf83602db"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "b1a95e8f-a288-4f39-8526-bc64ffc37330"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 53
+        }
+      },
+      "id": "8c9c0897-28f5-44c1-bb08-60460b1d2350"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "5641a550-ec00-4a36-8472-86e551b51749"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "68f43aaf-443c-47b4-a9a0-adc6de32a285",
+              "__collapse": true
+            },
+            "id": "2537b755-b921-42b5-b8c8-de40b561cb6f"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d09cf334-7899-4073-adf7-2a3155ecb089",
+              "__collapse": true
+            },
+            "id": "f06ef83c-cf85-464b-83b3-63a0f21ea9f8"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "54f7d734-0c6d-4d0e-b0b4-23fd233478e5",
+              "__collapse": true
+            },
+            "id": "48ebdb8a-3838-4510-995c-714331a6362a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e10b9cde-0fd7-4457-af5b-02fb7b810f4c",
+              "__collapse": true
+            },
+            "id": "517a9ebb-7443-4883-b0fb-d6828836a77f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "36fd1351-8d39-4644-a56d-6b4d19be9344"
+          }
+        ]
+      },
+      "id": "7bb00d14-4ec2-4ad2-be8b-e7f16d7859e0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

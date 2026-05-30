@@ -1,8 +1,8 @@
 {
   "_resourceType": "settings",
-  "startSceneId": "256d4481-dabc-4c78-bdbc-0ddfb52d5b0f",
-  "startX": 7,
-  "startY": 8,
+  "startSceneId": "8393f23a-e35a-4acf-b5dd-a87206a2b681",
+  "startX": 11,
+  "startY": 5,
   "startMoveSpeed": 1,
   "startAnimSpeed": 7,
   "startDirection": "down",
@@ -55,7 +55,7 @@
   "defaultPlayerSprites": {
     "TOPDOWN": "7bad6f1c-c551-40af-998a-2a91278a54ae",
     "PLATFORM": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-    "ADVENTURE": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+    "ADVENTURE": "914a40db-06ae-4e3d-9115-adcd26187675",
     "SHMUP": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
     "POINTNCLICK": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
     "LOGO": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
@@ -107,10 +107,15 @@
   "scriptEventDefaultPresets": {},
   "runSceneSelectionOnly": false,
   "spriteMode": "8x16",
-  "openBuildFolderOnExport": false,
+  "openBuildFolderOnExport": true,
   "showRomUsageAfterBuild": true,
   "romFilename": "game",
   "defaultSceneTypeId": "TOPDOWN",
-  "disabledSceneTypeIds": [],
+  "disabledSceneTypeIds": [
+    "PLATFORM",
+    "POINTNCLICK",
+    "SHMUP",
+    "ADVENTURE"
+  ],
   "autoTileFlipEnabled": false
 }

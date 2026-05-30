@@ -42,22 +42,22 @@
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$55$",
+              "text": "$55$",
               "x": 9,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "42171e38-b47a-488d-b3b5-4bb6cd81e5ee"
           },
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$53$",
+              "text": "$53$",
               "x": 16,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "9cdbf739-b91e-4e38-94b8-0d0321620176"
           }
@@ -451,22 +451,22 @@
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$55$",
+              "text": "$55$",
               "x": 9,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "3a758136-047e-4a6c-b965-b247b882d499"
           },
           {
             "command": "EVENT_TEXT_DRAW",
             "args": {
-              "text": "\\013\\06$53$",
+              "text": "$53$",
               "x": 16,
               "y": 4,
               "location": "background",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "af1b88b5-5da1-4e64-8caa-c695a0a2e72b"
           }
@@ -480,7 +480,7 @@
       "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
       "args": {
         "actorId": "$self$",
-        "__comment": true
+        "__comment": false
       },
       "id": "cf8a497a-4a36-410d-9fd7-6ec2197b4050"
     },
@@ -520,7 +520,7 @@
     {
       "command": "EVENT_TEXT_DRAW",
       "args": {
-        "text": "\\013\\06$55$",
+        "text": "$55$",
         "x": 9,
         "y": 4,
         "location": "background"
