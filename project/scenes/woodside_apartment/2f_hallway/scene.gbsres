@@ -141,6 +141,32 @@
               "__collapse": true
             },
             "id": "98d65081-0c69-467b-a4e2-4b132362235e"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "77",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true,
+              "__comment": true
+            },
+            "id": "a5e6e312-3b2e-4612-a64f-c3600da7dfa6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "70",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true,
+              "__comment": true
+            },
+            "id": "2a35108e-c0e1-4a95-93cd-c2d1b5763da2"
           }
         ]
       },
@@ -230,6 +256,46 @@
                     "palette7": "keep"
                   },
                   "id": "2aefa791-841d-4f3a-962c-52346f9056d3"
+                },
+                {
+                  "command": "EVENT_SET_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "select"
+                    ],
+                    "override": true,
+                    "__scriptTabs": "press"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "It's too dark to see the\nmap."
+                          ],
+                          "__section": "text",
+                          "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 2,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "255f0eb9-80b6-4811-979f-c81d03aa499e"
+                      }
+                    ]
+                  },
+                  "id": "ad8922d8-0cac-40a4-9faf-56a36a5d01a0"
                 }
               ]
             },

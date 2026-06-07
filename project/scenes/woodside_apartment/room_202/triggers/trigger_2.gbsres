@@ -1,0 +1,79 @@
+{
+  "_resourceType": "trigger",
+  "id": "57a52fea-6a18-4a9c-83e4-b40d6eaec456",
+  "name": "",
+  "prefabId": "",
+  "x": 17,
+  "y": 14,
+  "symbol": "trigger_320",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "1b10e50d-5d98-40a6-aa99-5ce4eab609f5",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "712c277a-64ac-42d5-a937-05922c19df0e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It looks like the lock is\nbroken. I can't open it."
+              ],
+              "__section": "text",
+              "avatarId": "c638579a-222e-444a-942e-d7194fec1120",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 2,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8f8be7cf-89d6-478c-838c-1da42ba5c0ee"
+          }
+        ]
+      },
+      "id": "20b54901-0692-441e-b577-80103536e4c1"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "938f8a93-d842-48da-92c3-5ae7c239ceaf"
+    }
+  ],
+  "_index": 1
+}

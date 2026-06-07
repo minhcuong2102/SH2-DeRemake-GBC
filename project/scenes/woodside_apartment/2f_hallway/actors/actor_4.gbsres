@@ -18,7 +18,15 @@
   "symbol": "actor_340",
   "script": [],
   "startScript": [],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_STOP_UPDATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "ea3afd8f-7b12-4d86-8390-af84e86c5120"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],

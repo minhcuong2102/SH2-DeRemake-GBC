@@ -655,7 +655,51 @@
       "id": "130",
       "name": "leave_ending",
       "symbol": "var_leave_ending"
+    },
+    {
+      "id": "131",
+      "name": "fog_thread",
+      "symbol": "var_fog_thread"
+    },
+    {
+      "id": "132",
+      "name": "projectileX",
+      "symbol": "var_projectilex"
+    },
+    {
+      "id": "133",
+      "name": "projectileY",
+      "symbol": "var_projectiley"
+    },
+    {
+      "id": "134",
+      "name": "player_get_hit",
+      "symbol": "var_player_get_hit"
+    },
+    {
+      "id": "135",
+      "name": "loop",
+      "symbol": "var_loop"
     }
   ],
-  "constants": []
+  "constants": [
+    {
+      "id": "51f6ae14-c225-4d3f-97bd-bada6a50510b",
+      "name": "HALF_HP_EASY",
+      "symbol": "const_half_hp_easy",
+      "value": 200
+    },
+    {
+      "id": "996ac07d-01ca-4d6b-89a5-d72191cee761",
+      "name": "HALF_HP_NORMAL",
+      "symbol": "const_half_hp_normal",
+      "value": 350
+    },
+    {
+      "id": "fdc80658-30c2-4678-b866-735a95461ced",
+      "name": "HALF_HP_HARD",
+      "symbol": "const_half_hp_hard_0",
+      "value": 850
+    }
+  ]
 }

@@ -17,7 +17,15 @@
   "prefabScriptOverrides": {},
   "symbol": "actor_338",
   "script": [],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_STOP_UPDATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "de1d9baa-6a4f-47a0-b597-0803bcb56086"
+    }
+  ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
